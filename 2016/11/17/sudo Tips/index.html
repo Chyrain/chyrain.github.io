@@ -18,7 +18,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Hello World | Chyrain</title>
+  <title>sudo 命令的一些小技巧 | Chyrain</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -205,39 +205,74 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2016-11-16T08:49:00.000Z" itemprop="datePublished">
-          2016-11-16
+      <time datetime="2016-11-17T14:23:00.000Z" itemprop="datePublished">
+          2016-11-17
       </time>
     
 </span>
-                <h1>Hello World</h1>
+                <h1>sudo 命令的一些小技巧</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+      		<h2 id="sudo"><a href="#sudo" class="headerlink" title="sudo"></a>sudo</h2><blockquote>
+<p>在Linux下，我们需要使用sudo命令，让普通用户也能执行一些root命令，本文对常用的一些sudo操作以及平时没有发现的小技巧进行简单介绍。</p>
+</blockquote>
+<h3 id="1-授权"><a href="#1-授权" class="headerlink" title="1. 授权"></a>1. 授权</h3><p>普通用户如果没有权限访问某些文件或者执行某个命令时，要是该用户获得root授权，就可以通过在要执行的命令前加上sudo，临时切换到root用户的权限完成相关操作。</p>
+<p>怎样让用户可以临时获取root权限呢？这就需要在<code>/etc/sudoers</code>文件中进行配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#授权给单个用户所有命令的执行权限</div><div class="line">username ALL=(ALL) ALL</div></pre></td></tr></table></figure>
+<p>上面这个例子中：</p>
+<ul>
+<li>username: 允许使用suod的用户名</li>
+<li>ALL: 允许从任何终端(机器)使用sudo</li>
+<li>(ALL): 允许以任何用户身份执行sudo</li>
+<li>ALL: 允许sudo权限执行任何命令</li>
+</ul>
+<p>如果我们想让用户<code>chyrain</code>只能在本机（主机名为<code>work-pc</code>）以<code>root</code>账户执行<code>/bin/chown</code>、<code>/bin/chmod</code>这两条命令，那么就应该这样配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chyrain work-pc=(root) /bin/chown,/bin/chmod</div></pre></td></tr></table></figure>
+<p>当你的帐号在<code>/etc/sudoers</code>文件中被授予 sudo 的权限，那么你就可以将任何 root 命令作为 sudo 命令的参数，使用 root 权限来执行该命令。首次使用会要求你输入当前用户的密码，系统确实输入正确即以 root 权限来执行 mount 命令，接下来一段时间（默认为5分钟）再次使用 sudo 命令就不需要输密码了。</p>
+<h3 id="2-执行root命令后忘记加sudo"><a href="#2-执行root命令后忘记加sudo" class="headerlink" title="2. 执行root命令后忘记加sudo"></a>2. 执行root命令后忘记加sudo</h3><p>我们会碰到这样一种情形，当我们输入一个长长的命令，果断地敲下回车之后出现无权限操作，才发现忘记在命令前面加sudo了，一般我们的做法是按 ↑ 回到上一条命令，在该命令之前加上sudo，再执行该命令。</p>
+<p>其实，我们并不需要这样，只要输入<code>sudo !!</code>即可，这里的<code>!!</code>代表上一条命令。如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">$ cat /etc/sudoers</div><div class="line">cat: cannot open /etc/sudoers for reading: Permission denied</div><div class="line"></div><div class="line">$ sudo !!</div><div class="line">sudo cat /etc/sudoers</div><div class="line">## sudoers file.</div><div class="line">##</div><div class="line">## This file MUST be edited with the &apos;visudo&apos; command as root.</div><div class="line">## Failure to use &apos;visudo&apos; may result in syntax or file permission errors</div><div class="line">## that prevent sudo from running.</div><div class="line">##</div><div class="line">## See the sudoers man page for the details on how to write a sudoers file.</div><div class="line">##</div><div class="line">## User privilege specification</div><div class="line">##</div><div class="line">root ALL=(ALL) ALL</div><div class="line">%admin  ALL=(ALL) ALL</div><div class="line">#</div></pre></td></tr></table></figure>
+<h3 id="3-vim编辑完成后发现忘记使用sudo无法保存"><a href="#3-vim编辑完成后发现忘记使用sudo无法保存" class="headerlink" title="3. vim编辑完成后发现忘记使用sudo无法保存"></a>3. vim编辑完成后发现忘记使用sudo无法保存</h3><p>我们经常会遇到这样的一个囧境：使用 <code>vim</code> 对某个文件进行编辑，编辑完之后，按 ESC 之后回到普通模式，再按 <code>:wq</code> 准备保存退出时，发现没有权限对该文件进行修改，我们在使用 vim 命令时忘记在前面加 sudo 了。我就经常出现这种问题，之前的做法是只能不保存强退，再加上 sudo 重新编辑。</p>
+<p>但是今后我们再也不需要用这么愚蠢的做法了，我们可以在 vim 的普通模式下，按 <code>:w !sudo tee %</code> ，这样就可以 root 权限来保存文件了，你也无需因为自己一时忘记加个 sudo 而沮丧懊恼了！</p>
+<h3 id="4-shell-内置命令如何使用-sudo"><a href="#4-shell-内置命令如何使用-sudo" class="headerlink" title="4. shell 内置命令如何使用 sudo"></a>4. shell 内置命令如何使用 sudo</h3><p>shell 是一个交互式的应用程序，在执行外部命令时通过 fork 来创建一个子进程，再通过 exec 来加载外部命令的程序来执行，但是如果一个命令是 shell 内置命令，那么只能直接由 shell 来运行。sudo 的意思是，以别的用户（如root）的权限来 fork 一个进程，加载程序并运行，因此 sudo 后面不能跟 shell 的内置命令，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ sudo cd /sys/kernel/debugfs</div><div class="line">sudo: cd: command not found</div></pre></td></tr></table></figure>
+<p>在这种情况，我们又没有 root 账户的密码，我们怎样执行该命令呢？有种办法就是使用 <code>sudo</code> 获得root shell 的权限，然后 <em>在root shell 中执行该命令</em> 。进入root shell 很简单，输入sudo bash 确认本用户的密码即可，此时你会发现命令提示符显示当前是 root。一旦获得root shell，你可以执行任何命令而不需要在每条命令前输入sudo了。</p>
+<p>另外，常用的shell 内置命令在这里 有简单介绍，我们可以使用 type 命令来查看命令的类型，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ type ls</div><div class="line">ls is /bin/ls</div><div class="line">$ type umask</div><div class="line">umask is a shell builtin</div></pre></td></tr></table></figure>
+<h3 id="5-sudo操作记录日志"><a href="#5-sudo操作记录日志" class="headerlink" title="5. sudo操作记录日志"></a>5. sudo操作记录日志</h3><p>作为一个 Linux 系统的管理员，不仅可以让指定的用户或用户组作为root用户或其它用户来运行某些命令，还能将指定的用户所输入的命令和参数作详细的记录。而sudo的日志功能就可以用户跟踪用户输入的命令，这不仅能增进系统的安全性，还能用来进行故障检修。但是要记录sudo的日志还要一些简单的配置：</p>
+<ul>
+<li><p>创建sudo日志文件<br>  我们将sudo日志文件放置在<code>/var/log/sudo.log</code>文件中：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo touch /var/log/sudo.log</div></pre></td></tr></table></figure>
+</li>
+<li><p>修改<code>/etc/rsyslog.conf</code>配置文件<br>  我的系统为Ubuntu为该名字，但有些系统名为<code>/etc/syslog.conf</code>，注意不同发行版本之间的差别，在该文件加入下面一行：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">local2.debug    /var/log/sudo.log    #空白不能用空格，必须用tab</div></pre></td></tr></table></figure>
+</li>
+<li><p>修改<code>/etc/sudoers</code>配置文件<br>  注意网上很多关于sudo日志文件配置的都缺少这一步，在该文件中加入下面一行：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Defaults    logfile=/var/log/sudo.log</div></pre></td></tr></table></figure>
+</li>
+<li><p>重启syslog服务</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo service rsysylog restart</div></pre></td></tr></table></figure>
+</li>
+<li><p>查看suod日志记录<br>  经过上面配置，sudo的命令记录都会记录到文件<code>/var/log/sudo.log</code>中，例如我们执行几条sudo命令之后，查看该文件的记录如下：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ cat sudo.log</div><div class="line">Nov 17 22:23:52 : chyrain : TTY=pts/1 ; PWD=/var/log ; USER=root ; COMMAND=/bin/cat /etc/sudoers</div><div class="line">Nov 17 22:24:42 : chyrain : TTY=pts/1 ; PWD=/var/log ; USER=root ; COMMAND=/bin/ls</div><div class="line">Nov 17 22:28:12 : chyrain : TTY=pts/1 ; PWD=/var/log ; USER=root ; COMMAND=/usr/sbin/service rsyslog restart</div><div class="line">Nov 17 22:29:26 : chyrain : TTY=pts/1 ; PWD=/var/log ; USER=root ; COMMAND=/bin/ls /root/</div></pre></td></tr></table></figure>
+</li>
+</ul>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="pagination" role="pagination">
     
-    <a class="pull-left" href="/2016/11/17/Chess-With-React/" style="float: left;">
-        ← Chess With React
-    </a>
     
+    <a class="pull-right" href="/2016/11/17/Chess-With-React/">
+        Chess With React →
+    </a>
     
 </nav>
 
         <div class="duoshuo">
-<div class="ds-thread" data-thread-key="2016/11/16/hello-world/" data-title="Hello World" data-url="https://chyrain.github.io/2016/11/16/hello-world/"></div>
+<div class="ds-thread" data-thread-key="2016/11/17/sudo Tips/" data-title="sudo 命令的一些小技巧" data-url="https://chyrain.github.io/2016/11/17/sudo Tips/"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"chyrain"};
 (function() {
