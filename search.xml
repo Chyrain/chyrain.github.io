@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[Chess With React]]></title>
+      <url>https://chyrain.github.io/2016/11/17/Chess-With-React/</url>
+      <content type="html"><![CDATA[<h2 id="ChessWithReact"><a href="#ChessWithReact" class="headerlink" title="ChessWithReact"></a>ChessWithReact</h2><p>A chess web game use <a href="https://facebook.github.io/react" target="_blank" rel="external">react</a> and <a href="http://gaearon.github.io/react-dnd/" target="_blank" rel="external">react-dnd</a>.</p>
+<h2 id="Sample"><a href="#Sample" class="headerlink" title="Sample"></a>Sample</h2><p><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/chess_react.gif" width="330" alt="chess_react" align="center"></p>
+<h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>详见: <a href="">使用React和React-Dnd编写国际象棋</a></p>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><blockquote>
+<p>  MIT License<br>  Copyright (c) 2016 <a href="http://chyrain.com" target="_blank" rel="external">Chyrain</a></p>
+<p>  Permission is hereby granted, free of charge, to any person obtaining a copy<br>    of this software and associated documentation files (the “Software”), to deal<br>    in the Software without restriction, including without limitation the rights<br>    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br>    copies of the Software, and to permit persons to whom the Software is<br>    furnished to do so, subject to the following conditions:</p>
+<p>  The above copyright notice and this permission notice shall be included in all<br>    copies or substantial portions of the Software.</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>https://chyrain.github.io/2016/11/16/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title><![CDATA[about]]></title>
+      <url>https://chyrain.github.io/about/index.html</url>
+      <content type="html"><![CDATA[<h1 id="About"><a href="#About" class="headerlink" title="About"></a>About</h1><ul>
+<li>Chyrain<blockquote>
+<ul>
+<li>chyrain.com</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+]]></content>
+    </entry>
+    
+  
+</search>
