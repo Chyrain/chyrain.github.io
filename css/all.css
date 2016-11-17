@@ -351,7 +351,7 @@ input#delivery {
 }
 .center-me {
 	display: table-cell;
-	vertical-align: middle;
+	vertical-align: bottom;
 }
 /* No padding on-the-fly */
 .nopadding {
@@ -967,6 +967,9 @@ span.sb-caret { /* Caret Down */
 	margin-bottom: 20px;
 	display: inline-block;
 	padding: 14px;
+	font-family: sans-serif, 'Georgia', serif, Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial;
+	font-style: italic;
+	font-size: 16px;
 }
 #hero p {
 	color: #333;
