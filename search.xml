@@ -4,8 +4,23 @@
   
     
     <entry>
+      <title><![CDATA[React实现国际象棋]]></title>
+      <url>https://chyrain.github.io/2016/11/17/Chess-With-React/</url>
+      <content type="html"><![CDATA[<h2 id="ChessWithReact"><a href="#ChessWithReact" class="headerlink" title="ChessWithReact"></a>ChessWithReact</h2><p>A chess web game use <a href="https://facebook.github.io/react" target="_blank" rel="external">react</a> and <a href="http://gaearon.github.io/react-dnd/" target="_blank" rel="external">react-dnd</a>.</p>
+<p>本实例参考<code>react-dnd</code>官方Tutorial实例，并进行扩展和改进。</p>
+<h2 id="Sample"><a href="#Sample" class="headerlink" title="Sample"></a>Sample</h2><p><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/chess_react.gif" width="330" alt="chess_react" align="center"></p>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p><a href="https://github.com/Chyrain/ChessWithReact.git" target="_blank" rel="external">github地址</a></p>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><blockquote>
+<p>  MIT License<br>  Copyright (c) 2016 <a href="http://chyrain.com" target="_blank" rel="external">Chyrain</a></p>
+<p>  Permission is hereby granted, free of charge, to any person obtaining a copy<br>    of this software and associated documentation files (the “Software”), to deal<br>    in the Software without restriction, including without limitation the rights<br>    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br>    copies of the Software, and to permit persons to whom the Software is<br>    furnished to do so, subject to the following conditions:</p>
+<p>  The above copyright notice and this permission notice shall be included in all<br>    copies or substantial portions of the Software.</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[sudo 命令的一些小技巧]]></title>
-      <url>https://chyrain.github.io/2016/11/17/sudo%20Tips/</url>
+      <url>https://chyrain.github.io/2016/03/17/sudo%20Tips/</url>
       <content type="html"><![CDATA[<h2 id="sudo"><a href="#sudo" class="headerlink" title="sudo"></a>sudo</h2><blockquote>
 <p>在Linux下，我们需要使用sudo命令，让普通用户也能执行一些root命令，本文对常用的一些sudo操作以及平时没有发现的小技巧进行简单介绍。</p>
 </blockquote>
@@ -54,23 +69,8 @@
     </entry>
     
     <entry>
-      <title><![CDATA[React实现国际象棋]]></title>
-      <url>https://chyrain.github.io/2016/11/17/Chess-With-React/</url>
-      <content type="html"><![CDATA[<h2 id="ChessWithReact"><a href="#ChessWithReact" class="headerlink" title="ChessWithReact"></a>ChessWithReact</h2><p>A chess web game use <a href="https://facebook.github.io/react" target="_blank" rel="external">react</a> and <a href="http://gaearon.github.io/react-dnd/" target="_blank" rel="external">react-dnd</a>.</p>
-<p>本实例参考<code>react-dnd</code>官方Tutorial实例，并进行扩展和改进。</p>
-<h2 id="Sample"><a href="#Sample" class="headerlink" title="Sample"></a>Sample</h2><p><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/chess_react.gif" width="330" alt="chess_react" align="center"></p>
-<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p><a href="https://github.com/Chyrain/ChessWithReact.git" target="_blank" rel="external">github地址</a></p>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><blockquote>
-<p>  MIT License<br>  Copyright (c) 2016 <a href="http://chyrain.com" target="_blank" rel="external">Chyrain</a></p>
-<p>  Permission is hereby granted, free of charge, to any person obtaining a copy<br>    of this software and associated documentation files (the “Software”), to deal<br>    in the Software without restriction, including without limitation the rights<br>    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br>    copies of the Software, and to permit persons to whom the Software is<br>    furnished to do so, subject to the following conditions:</p>
-<p>  The above copyright notice and this permission notice shall be included in all<br>    copies or substantial portions of the Software.</p>
-</blockquote>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[Hello World]]></title>
-      <url>https://chyrain.github.io/2016/11/16/hello-world/</url>
+      <url>https://chyrain.github.io/2015/05/16/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
