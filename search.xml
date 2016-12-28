@@ -4,6 +4,65 @@
   
     
     <entry>
+      <title><![CDATA[2016年终总结]]></title>
+      <url>https://chyrain.github.io/2016/12/23/2016%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</url>
+      <content type="html"><![CDATA[<h1 id="2016年终总结"><a href="#2016年终总结" class="headerlink" title="2016年终总结"></a>2016年终总结</h1><blockquote>
+<p>“时间是一切财富中最宝贵的财富。。。” — 狭缩德</p>
+</blockquote>
+<h2 id="迅捷的2016"><a href="#迅捷的2016" class="headerlink" title="迅捷的2016"></a>迅捷的2016</h2><blockquote>
+<p><em>——人生天地之间，若白驹过隙，忽然而已。蓦然回首，头上似霜雪，脸上似山川。</em></p>
+</blockquote>
+<p><strong>一年过去了，总结自己有以下几个遗憾：</strong></p>
+<ul>
+<li>没有时间坚持技术博客写作，尽管在不断给自己的某某云服务充值，博客内容始终空空如也</li>
+<li>没能坚持走一条完整的技术路线，而是四处涉猎，缺哪补哪</li>
+<li>工资不够花（好吧，我知道你也一样）</li>
+</ul>
+<p><strong>一年过去了，我都干了些啥：</strong></p>
+<ul>
+<li>公司Android平台App的全新2.x版本的升级，以及功能更新和维护，从原先的开放链接下载到陆续上架到应用宝、豌豆荚、360手机助手，最近还将推出小米市场专版</li>
+<li>公司iOS平台App的业务完善和发布，以及上架这一年的常规功能更新和维护</li>
+<li>公司Android和iOS两个平台的SDK接口的逐步完善和稳定，不定时地充当这两个sdk的技术客服</li>
+<li>从9月底开始接手公司HTML5开发维护任务，完成了大概13个座席版本和10个客户版本的release功能升级和bug维护</li>
+<li>拿了驾照，经过了前后6个月时间，利用个别零散的休息日，也时而请下假，算是比较轻松地拿下了驾照</li>
+<li>总结：几乎把所有时间给了公司，白天上班，晚上回来经常加班加点完善产品</li>
+</ul>
+<p><strong>一年过去了，同样也会有如下几个收获：</strong></p>
+<ul>
+<li>横跨三大技术路线(其实并不想…)，从Android到iOS再到H5的“无缝衔接”，当然，这很让人头大，就像熟悉了Eclipse的切换到Android Studio，从Eclipse切换到Xcode再切换到Sublime Text，这其中的快捷键使用，还有java、OC和js的语法经常方寸大乱。</li>
+<li>重拾大学时期接触过的网页开发知识，发现如今前端技术架构已发生巨变，WVVM架构和组件化的思路是一大亮点(与App开发越发接近)</li>
+<li>公司客服系统的所有前端产品算是都让我给承包了，感到责任重于泰山啊😹</li>
+<li>获得温柔贤淑的女票一枚</li>
+</ul>
+<p><strong>这一年的自我感觉：</strong></p>
+<ul>
+<li>感觉能力提升不大，但思维方式改变比较多</li>
+<li>开发的同时也注重产品思维</li>
+<li>看到大牛的博客依然莫名的兴奋</li>
+<li>执行力决定效果，杜绝了大部分的光说不练</li>
+</ul>
+<h2 id="2017？"><a href="#2017？" class="headerlink" title="2017？"></a>2017？</h2><p>身体是革命的本钱，这一年发现眼神越来越不好了，经常有莫名的闪光和模糊，毕竟作为程序员一整天面对显示屏，这个日后一定得好好保护。未来一年，不需要太多的计划，有时间多出去走走，把生活过得更像生活一些，而不只是工作。</p>
+<p>计划：</p>
+<ul>
+<li>利用空闲时间做一款让自己满意的作品（网页竞价推广过滤插件，H5跨平台桌面应用，个人微信智能助手，抢红包利器，精美个人博客页）</li>
+<li>带女票去一个远点的地方旅游</li>
+<li>提升薪资到自己能够接受的水平</li>
+</ul>
+<p>最后，如果大家对V5客服不熟悉的话，可以去搜搜，顺便替公司打个广告：绝对靠谱的智能客服系统，欢迎前来领用～</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>https://chyrain.github.io/2016/12/05/%E4%BD%BF%E7%94%A8React%E7%9A%84%E5%9D%91/</url>
+      <content type="html"><![CDATA[<h2 id="React-ES6开发过程中遇到的坑"><a href="#React-ES6开发过程中遇到的坑" class="headerlink" title="React/ES6开发过程中遇到的坑"></a>React/ES6开发过程中遇到的坑</h2><ol>
+<li>setState第二层级必须assign，而且$.assign({}, this.state.xxx, {x:x})，尽量不要使用一层以上层级</li>
+<li>redux connect 组件中，传入props内的函数function声明方式才可以获得bind或者call传入的this参数</li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[React实现国际象棋]]></title>
       <url>https://chyrain.github.io/2016/11/17/Chess-With-React/</url>
       <content type="html"><![CDATA[<h2 id="ChessWithReact"><a href="#ChessWithReact" class="headerlink" title="ChessWithReact"></a>ChessWithReact</h2><p>A chess web game use <a href="https://facebook.github.io/react" target="_blank" rel="external">react</a> and <a href="http://gaearon.github.io/react-dnd/" target="_blank" rel="external">react-dnd</a>.</p>
