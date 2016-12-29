@@ -53,7 +53,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[2016年终总结]]></title>
+      <title><![CDATA[使用React遇到的坑]]></title>
       <url>https://chyrain.github.io/2016/12/03/%E4%BD%BF%E7%94%A8React%E7%9A%84%E5%9D%91/</url>
       <content type="html"><![CDATA[<h2 id="React-ES6开发过程中遇到的坑"><a href="#React-ES6开发过程中遇到的坑" class="headerlink" title="React/ES6开发过程中遇到的坑"></a>React/ES6开发过程中遇到的坑</h2><ol>
 <li>setState第二层级必须assign，而且$.assign({}, this.state.xxx, {x:x})，尽量不要使用一层以上层级</li>
