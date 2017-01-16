@@ -4,6 +4,15 @@
   
     
     <entry>
+      <title><![CDATA[在MAC上使用SVN]]></title>
+      <url>https://chyrain.github.io/2017/01/16/SVN%E5%9C%A8MAC%E4%B8%8A%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+      <content type="html"><![CDATA[<h2 id="SVN在MAC"><a href="#SVN在MAC" class="headerlink" title="SVN在MAC"></a>SVN在MAC</h2><ul>
+<li>checkout一个远程库</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">svn checkout https://svn.duapp.com/appid8dt61afdcf --username=chy19910810@163.com --password=chy10350722. ./baidu</div></pre></td></tr></table></figure>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[微信抢红包神器，安卓党的福音]]></title>
       <url>https://chyrain.github.io/2017/01/05/%E5%BE%AE%E4%BF%A1%E6%8A%A2%E7%BA%A2%E5%8C%85%E7%A5%9E%E5%99%A8%EF%BC%8C%E5%AE%89%E5%8D%93%E5%85%9A%E7%9A%84%E7%A6%8F%E9%9F%B3/</url>
       <content type="html"><![CDATA[<h2 id="微信红包助手"><a href="#微信红包助手" class="headerlink" title="微信红包助手"></a>微信红包助手</h2><p><a href="http://chyrain.com/app/wxbot/app.html" target="_blank" rel="external"><br><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/V5WxBot_m.gif" width="330" alt="chess_react" align="center"><br></a></p>
