@@ -213,6 +213,16 @@
 <li>checkout一个远程库</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">svn checkout https://svn.duapp.com/appid8dt61afdcf --username=chy19910810@163.com --password=chy10350722. ./baidu</div></pre></td></tr></table></figure>
+<ul>
+<li>从本地导入代码到服务器(第一次初始化导入)，在终端中输入</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">svn import /Users/apple/Documents/eclipse_workspace/weibo svn://localhost/mycode/weibo --username=mj --password=123 -m &quot;初始化导入&quot;</div></pre></td></tr></table></figure>
+<ul>
+<li>提交代码到服务器：svn commit -m “修改了main.m文件”</li>
+<li>更新服务器端的代码到客户端：svn update</li>
+<li>svn的其他用法，可以在终端输入：svn help</li>
+</ul>
+
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
