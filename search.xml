@@ -4,6 +4,24 @@
   
     
     <entry>
+      <title><![CDATA[有意思的JS]]></title>
+      <url>https://chyrain.github.io/2017/01/19/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84JS/</url>
+      <content type="html"><![CDATA[<h2 id="柯里化-amp-函数闭包"><a href="#柯里化-amp-函数闭包" class="headerlink" title="柯里化&amp;函数闭包"></a>柯里化&amp;函数闭包</h2><p>有这么一道题：</p>
+<blockquote>
+<p>要实现一个函数，主要功能是对参数进行加法运算，但是参数传递方式略有不同：</p>
+<p><code>CISDI_Cal(0).toString() //输出0</code><br><code>CISDI_Cal(0)(1).toString() //输出1</code><br><code>CISDI_Cal(0)(1)(2).toString() //输出3</code><br><code>var v = CISDI_Cal(0)(1); v(2).toString() //输出3</code></p>
+</blockquote>
+<p>这个题考察的是javascript里面常用的函数闭包，从示例可以看到：</p>
+<ol>
+<li>从第二个示例<code>CISDI_Cal(n)</code>返回的是一个函数对象，从第三和四示例可以看到<code>CISDI_Cal(n)(n)</code>返回的也是一个函数对象；</li>
+<li><code>CISDI_Cal(0).toString()</code>返回了累加的结果，说明每个返回的函数对象都有<code>toString</code>方法；</li>
+<li>多次函数调用累加得到结果，故前一函数获得参数累加后的值保留到了后一函数进行累加。</li>
+</ol>
+<p>由上面分析可知，<code>CISDI_Cal</code>内部有一个函数，这个函数执行后对输入进行了累加并返回了一个同样的函数，这个函数有<code>toString</code>方法输出累加结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">function CISDI_Cal(n) &#123;</div><div class="line">    function add(a) &#123;</div><div class="line">        n += a;</div><div class="line">        return add;</div><div class="line">    &#125;</div><div class="line">    add.toString = function() &#123;</div><div class="line">        return rst;</div><div class="line">    &#125;</div><div class="line">    return n;</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[在MAC上使用SVN]]></title>
       <url>https://chyrain.github.io/2017/01/16/SVN%E5%9C%A8MAC%E4%B8%8A%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
       <content type="html"><![CDATA[<h2 id="SVN在MAC"><a href="#SVN在MAC" class="headerlink" title="SVN在MAC"></a>SVN在MAC</h2><ul>
@@ -145,6 +163,14 @@
 <p>  or</p>
 <p>  git push origin :<branchname></branchname></p>
 </li>
+<li><p>本地clone后更新远程库内容</p>
+<p>  如果你不是fork的项目的话：</p>
+<pre><code>git pull
+</code></pre><p>  即可。如果你是fork的话，把原来的项目添加到：</p>
+<pre><code>git remote add usp [主项目地址]
+</code></pre><p>  然后：</p>
+<pre><code>git fetch ups &amp;&amp; git merge ups/master
+</code></pre></li>
 </ul>
 ]]></content>
     </entry>
