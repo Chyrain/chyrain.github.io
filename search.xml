@@ -4,8 +4,28 @@
   
     
     <entry>
+      <title><![CDATA[微信小程序-ToolTip信息提示组件]]></title>
+      <url>https://chyrain.github.io/2017/01/20/WXA-ToolTip/</url>
+      <content type="html"><![CDATA[<h1 id="WXA-ToolTip"><a href="#WXA-ToolTip" class="headerlink" title="WXA-ToolTip"></a>WXA-ToolTip</h1><p>微信小程序-ToolTip信息提示组件</p>
+<p><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/tooltip.gif" alt="tooltip"></p>
+<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Chyrain/WXA-ToolTip.git" target="_blank" rel="external">https://github.com/Chyrain/WXA-ToolTip.git</a></p>
+<h2 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h2><p>将ToolTip文件夹复制到pages文件夹内</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul>
+<li><p>在需要使用ToolTip的页面对应的.wxml文件中添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;import src=&quot;../ToolTip/toolTip.wxml&quot;/&gt;</div><div class="line"></div><div class="line">&lt;!-- 引入toolTip模板 --&gt;</div><div class="line">&lt;template is=&quot;toolTip&quot; data=&quot;&#123;&#123;_toolTip_&#125;&#125;&quot;/&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>在需要使用ToolTip的页面对应的.wxss文件顶部添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">@import &quot;./ToolTip/toolTip.wxss&quot;;</div></pre></td></tr></table></figure>
+</li>
+<li><p>在.js中调用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">// 在顶部引入toolTip.js</div><div class="line">var toolTip = require(&apos;../ToolTip/toolTip.js&apos;);</div><div class="line"></div><div class="line">// 在onLoad中初始化toolTip</div><div class="line">toolTip.init(this);</div><div class="line"></div><div class="line">// 调用showToolTip显示提示信息，参数:</div><div class="line">// type:类型包含&apos;success&apos;|&apos;info&apos;|&apos;warn&apos;|&apos;error&apos;, </div><div class="line">// text:内容</div><div class="line">// delay:延迟消失时间,不填不自动消失,只有success|info类型会自动消失</div><div class="line">toolTip.showToolTip(&apos;success&apos;, &apos;显示success提示&apos;, 2000);</div></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[有意思的JS]]></title>
-      <url>https://chyrain.github.io/io/2017/01/19/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84JS/</url>
+      <url>https://chyrain.github.io/2017/01/19/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84JS/</url>
       <content type="html"><![CDATA[<h2 id="函数闭包-amp-柯里化"><a href="#函数闭包-amp-柯里化" class="headerlink" title="函数闭包&amp;柯里化"></a>函数闭包&amp;柯里化</h2><h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><p>有这么一道题：</p>
 <blockquote>
 <p>要实现一个函数，主要功能是对参数进行加法运算，但是参数传递方式略有不同：</p>
@@ -57,7 +77,7 @@
     
     <entry>
       <title><![CDATA[在MAC上使用SVN]]></title>
-      <url>https://chyrain.github.io/io/2017/01/16/SVN%E5%9C%A8MAC%E4%B8%8A%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+      <url>https://chyrain.github.io/2017/01/16/SVN%E5%9C%A8MAC%E4%B8%8A%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
       <content type="html"><![CDATA[<h2 id="SVN在MAC"><a href="#SVN在MAC" class="headerlink" title="SVN在MAC"></a>SVN在MAC</h2><ul>
 <li>checkout一个远程库</li>
 </ul>
@@ -76,7 +96,7 @@
     
     <entry>
       <title><![CDATA[微信抢红包神器，安卓党的福音]]></title>
-      <url>https://chyrain.github.io/io/2017/01/05/%E5%BE%AE%E4%BF%A1%E6%8A%A2%E7%BA%A2%E5%8C%85%E7%A5%9E%E5%99%A8%EF%BC%8C%E5%AE%89%E5%8D%93%E5%85%9A%E7%9A%84%E7%A6%8F%E9%9F%B3/</url>
+      <url>https://chyrain.github.io/2017/01/05/%E5%BE%AE%E4%BF%A1%E6%8A%A2%E7%BA%A2%E5%8C%85%E7%A5%9E%E5%99%A8%EF%BC%8C%E5%AE%89%E5%8D%93%E5%85%9A%E7%9A%84%E7%A6%8F%E9%9F%B3/</url>
       <content type="html"><![CDATA[<h2 id="微信红包助手"><a href="#微信红包助手" class="headerlink" title="微信红包助手"></a>微信红包助手</h2><p><a href="http://chyrain.com/app/wxbot/app.html" target="_blank" rel="external"><br><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/V5WxBot_m.gif" width="330" alt="chess_react" align="center"><br></a></p>
 <h3 id="更新说明"><a href="#更新说明" class="headerlink" title="更新说明"></a>更新说明</h3><ol>
 <li>使用手机时，自动识别微信通知，快速抢红包</li>
@@ -99,7 +119,7 @@
     
     <entry>
       <title><![CDATA[2016年终总结]]></title>
-      <url>https://chyrain.github.io/io/2016/12/23/2016%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</url>
+      <url>https://chyrain.github.io/2016/12/23/2016%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</url>
       <content type="html"><![CDATA[<h1 id="2016年终总结"><a href="#2016年终总结" class="headerlink" title="2016年终总结"></a>2016年终总结</h1><blockquote>
 <p>“时间是一切财富中最宝贵的财富。。。” — 狭缩德</p>
 </blockquote>
@@ -148,7 +168,7 @@
     
     <entry>
       <title><![CDATA[使用React遇到的坑]]></title>
-      <url>https://chyrain.github.io/io/2016/12/03/%E4%BD%BF%E7%94%A8React%E7%9A%84%E5%9D%91/</url>
+      <url>https://chyrain.github.io/2016/12/03/%E4%BD%BF%E7%94%A8React%E7%9A%84%E5%9D%91/</url>
       <content type="html"><![CDATA[<h2 id="React-ES6开发过程中遇到的坑"><a href="#React-ES6开发过程中遇到的坑" class="headerlink" title="React/ES6开发过程中遇到的坑"></a>React/ES6开发过程中遇到的坑</h2><ol>
 <li>setState第二层级必须assign，而且$.assign({}, this.state.xxx, {x:x})，尽量不要使用一层以上层级</li>
 <li>redux connect 组件中，传入props内的函数function声明方式才可以获得bind或者call传入的this参数</li>
@@ -158,7 +178,7 @@
     
     <entry>
       <title><![CDATA[React实现国际象棋]]></title>
-      <url>https://chyrain.github.io/io/2016/11/17/Chess-With-React/</url>
+      <url>https://chyrain.github.io/2016/11/17/Chess-With-React/</url>
       <content type="html"><![CDATA[<h2 id="ChessWithReact"><a href="#ChessWithReact" class="headerlink" title="ChessWithReact"></a>ChessWithReact</h2><p>A chess web game use <a href="https://facebook.github.io/react" target="_blank" rel="external">react</a> and <a href="http://gaearon.github.io/react-dnd/" target="_blank" rel="external">react-dnd</a>.</p>
 <p>本实例参考<code>react-dnd</code>官方Tutorial实例，并进行扩展和改进。</p>
 <h2 id="Sample"><a href="#Sample" class="headerlink" title="Sample"></a>Sample</h2><p><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/chess_react.gif" width="330" alt="chess_react" align="center"></p>
@@ -173,7 +193,7 @@
     
     <entry>
       <title><![CDATA[git操作记录]]></title>
-      <url>https://chyrain.github.io/io/2016/06/08/git%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/</url>
+      <url>https://chyrain.github.io/2016/06/08/git%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/</url>
       <content type="html"><![CDATA[<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><ul>
 <li><p>放弃本地所有修改，强制更新</p>
 <p>  git fetch –all<br>  git reset –hard origin/master</p>
@@ -211,7 +231,7 @@
     
     <entry>
       <title><![CDATA[sudo 命令的一些小技巧]]></title>
-      <url>https://chyrain.github.io/io/2016/03/17/sudo%20Tips/</url>
+      <url>https://chyrain.github.io/2016/03/17/sudo%20Tips/</url>
       <content type="html"><![CDATA[<h2 id="sudo"><a href="#sudo" class="headerlink" title="sudo"></a>sudo</h2><blockquote>
 <p>在Linux下，我们需要使用sudo命令，让普通用户也能执行一些root命令，本文对常用的一些sudo操作以及平时没有发现的小技巧进行简单介绍。</p>
 </blockquote>
@@ -261,7 +281,7 @@
     
     <entry>
       <title><![CDATA[Hello World]]></title>
-      <url>https://chyrain.github.io/io/2015/05/16/hello-world/</url>
+      <url>https://chyrain.github.io/2015/05/16/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
