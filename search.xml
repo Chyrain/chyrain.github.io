@@ -13,6 +13,7 @@
 <p>注意EC2控制面板有个<code>弹性IP（Elastic IP）</code>如果申请了Elastic IP而没有与任何Instance绑定的话，每小时会收1美分，如果已经与某一Instance绑定则不会收费，所以没有用到的时候千万不要申请，避免被无辜扣费。</p>
 <p>详细问题可查看：<a href="https://aws.amazon.com/cn/ec2/faqs/" target="_blank" rel="external">AWS FAQ</a></p>
 <h2 id="连接EC2服务器"><a href="#连接EC2服务器" class="headerlink" title="连接EC2服务器"></a>连接EC2服务器</h2><p>下载<em>.pem文件后会提示一个连接远程服务器的命令，在你的shell终端里执行这个命令（注意：</em>.pem文件要在终端运行当前目录下，且权限为“400”才可以成功连接）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># 首先，找到刚刚保存的*.pem文件，比如文件名叫amazon.pem，确认文件路径，</div><div class="line"># 打开终端，进到*.pem文件所在目录，</div><div class="line"># 执行chmod 400 *.pem 修改文件权限</div><div class="line">ssh -i &quot;pem文件名.pem&quot; 服务器用户账号名@你的服务器节点和ip信息</div></pre></td></tr></table></figure></p>
+<p>上传文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scp -i pem文件.pem 上传的文件 服务器用户账号名@你的服务器节点和ip信息:/home/ec2-user/接收文件路径</div></pre></td></tr></table></figure></p>
 <h2 id="安装配置shadowsocks"><a href="#安装配置shadowsocks" class="headerlink" title="安装配置shadowsocks"></a>安装配置shadowsocks</h2><blockquote>
 <p>注：以下安装配置都是针对Amazon Linux AMI，也即CentOS Linux系统的，其他系统安装配置方法会有所不同。</p>
 </blockquote>
