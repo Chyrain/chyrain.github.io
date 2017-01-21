@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[AWS配置shadowsocks和node.js]]></title>
-      <url>https://chyrain.github.io/2017/01/20/AWS%E9%85%8D%E7%BD%AEshadowsocks%E5%92%8Cnode.js/</url>
+      <url>https://chyrain.github.io/2017/01/21/AWS%E9%85%8D%E7%BD%AEshadowsocks%E5%92%8Cnode.js/</url>
       <content type="html"><![CDATA[<p>听说AWS绑定信用卡免费使用一年，屁颠屁颠跑去开了个账户，折腾了半天，搞了个shadowsocks代理(不懂是什么？google一下你就知道了，对了，有了它你就能google了)，装了个node.js，这里简要说说。</p>
 <h2 id="申请AWS"><a href="#申请AWS" class="headerlink" title="申请AWS"></a>申请AWS</h2><p>首先是注册账户并绑定信用卡，这个不需要我多说了，打开<a href="http://aws.amazon.com/cn/" target="_blank" rel="external">AWS官网</a>，按照操作提示进行即可，绑定信用卡会有一个电话打来，让你打开键盘输入网页上显示的PIN码，绑定成功后选择支持方案为“基本（免费）”，即创建成功。</p>
 <h2 id="创建和配置EC2"><a href="#创建和配置EC2" class="headerlink" title="创建和配置EC2"></a>创建和配置EC2</h2><p>（网上看到一篇类似的配置文章可作为参考：<a href="http://www.cnblogs.com/gyouxu/p/3617906.html" target="_blank" rel="external">http://www.cnblogs.com/gyouxu/p/3617906.html</a>）</p>
@@ -197,7 +197,6 @@
 <li>带女票去一个远点的地方旅游</li>
 <li>提升薪资到自己能够接受的水平</li>
 </ul>
-<p>最后，如果大家对V5客服不熟悉的话，可以去搜搜，顺便替公司打个广告：绝对靠谱的智能客服系统，欢迎前来领用～</p>
 ]]></content>
     </entry>
     
