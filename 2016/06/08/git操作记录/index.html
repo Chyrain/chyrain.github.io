@@ -209,7 +209,8 @@
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><ul>
+      		<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>学习Git: <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">https://git-scm.com/book/zh/v2</a></p>
+<ul>
 <li><p>放弃本地所有修改，强制更新</p>
 <p>  git fetch –all<br>  git reset –hard origin/master</p>
 </li>
@@ -240,6 +241,9 @@
 </code></pre><p>  然后：</p>
 <pre><code>git fetch ups &amp;&amp; git merge ups/master
 </code></pre></li>
+<li><p>merge合并<br>  合并dev到当前分枝，–no-ff保留目的分支dev的commit记录，即使dev被删除</p>
+<p>  git merge –no-ff -m “merge dev with no-ff” dev</p>
+</li>
 </ul>
 
             <div class="clearfix"></div>
