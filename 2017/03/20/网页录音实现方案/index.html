@@ -18,7 +18,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>git操作记录 | Chyrain</title>
+  <title>Chyrain</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -200,70 +200,35 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2016-06-08T01:33:12.000Z" itemprop="datePublished">
-          2016-06-08
+      <time datetime="2017-03-20T06:37:27.000Z" itemprop="datePublished">
+          2017-03-20
       </time>
     
 </span>
-                <h1>git操作记录</h1>
+                <h1></h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>学习Git: <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">https://git-scm.com/book/zh/v2</a></p>
-<ul>
-<li><p>放弃本地所有修改，强制更新</p>
-<p>  git fetch –all<br>  git reset –hard origin/master</p>
-</li>
-<li><p>删除本地tag</p>
-<p>  git tag -d ‘tagname’</p>
-</li>
-<li><p>删除远程tag</p>
-<p>  git push origin –delete tag ‘tagname’</p>
-<p>  or</p>
-<p>  git tag -d ‘tagname’<br>  git push origin :refs/tags/‘tagname’</p>
-</li>
-<li><p>本地tag推送到远程</p>
-<p>  git push –tags</p>
-</li>
-<li><p>获取远程tag</p>
-<p>  git fetch origin tag ‘tagname’</p>
-</li>
-<li><p>删除远程分支</p>
-<p>  git push origin –delete ‘branchName’</p>
-<p>  or</p>
-<p>  git push origin :‘branchName’</p>
-</li>
-<li><p>本地clone后更新远程库内容</p>
-<p>  如果你不是fork的项目的话：</p>
-<pre><code>git pull
-</code></pre><p>  即可。如果你是fork的话，把原来的项目添加到：</p>
-<pre><code>git remote add usp [主项目地址]
-</code></pre><p>  然后：</p>
-<pre><code>git fetch ups &amp;&amp; git merge ups/master
-</code></pre></li>
-<li><p>merge合并<br>  合并dev到当前分枝，–no-ff保留目的分支dev的commit记录，即使dev被删除</p>
-<p>  git merge –no-ff -m “merge dev with no-ff” dev</p>
-</li>
-</ul>
+      		<h2 id="H5实现"><a href="#H5实现" class="headerlink" title="H5实现"></a>H5实现</h2><p><a href="https://github.com/mattdiamond/Recorderjs" target="_blank" rel="external">RecorderJS</a><br>原理：使用H5的getUserMedia接口，不支持IE</p>
+<h2 id="flash实现"><a href="#flash实现" class="headerlink" title="flash实现"></a>flash实现</h2><p><a href="https://github.com/michalstocki/FlashWavRecorder" target="_blank" rel="external">FlashWavRecoeder</a></p>
+<p>此外，还有：<br><a href="https://github.com/uikoo9/recorder-online-upload" target="_blank" rel="external">https://github.com/uikoo9/recorder-online-upload</a></p>
+<h2 id="综合兼容"><a href="#综合兼容" class="headerlink" title="综合兼容"></a>综合兼容</h2><p><a href="https://github.com/jwagener-soundcloud/recorder.js" target="_blank" rel="external">https://github.com/jwagener-soundcloud/recorder.js</a></p>
+<p>这个插件基于 swfObject.js，低版本浏览器中使用 flash 实现录音功能，在高版本支持 HTML5 的浏览器中使用 Audio 实现，同时它还封装好了上传功能，支持上传到服务器和 SoundCloud。</p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="pagination" role="pagination">
     
-    <a class="pull-left" href="/2016/11/17/Chess-With-React/" style="float: left;">
-        ← React实现国际象棋
-    </a>
     
-    
-    <a class="pull-right" href="/2016/03/17/sudo Tips/">
-        sudo 命令的一些小技巧 →
+    <a class="pull-right" href="/2017/02/28/JS-基础问题不基础/">
+        JS-基础问题不基础 →
     </a>
     
 </nav>
 
         <div class="duoshuo">
-<div class="ds-thread" data-thread-key="2016/06/08/git操作记录/" data-title="git操作记录" data-url="https://chyrain.github.io/2016/06/08/git操作记录/"></div>
+<div class="ds-thread" data-thread-key="2017/03/20/网页录音实现方案/" data-title="" data-url="https://chyrain.github.io/2017/03/20/网页录音实现方案/"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"chyrain"};
 (function() {

@@ -4,6 +4,17 @@
   
     
     <entry>
+      <title></title>
+      <url>https://chyrain.github.io/2017/03/20/%E7%BD%91%E9%A1%B5%E5%BD%95%E9%9F%B3%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%A1%88/</url>
+      <content type="html"><![CDATA[<h2 id="H5实现"><a href="#H5实现" class="headerlink" title="H5实现"></a>H5实现</h2><p><a href="https://github.com/mattdiamond/Recorderjs" target="_blank" rel="external">RecorderJS</a><br>原理：使用H5的getUserMedia接口，不支持IE</p>
+<h2 id="flash实现"><a href="#flash实现" class="headerlink" title="flash实现"></a>flash实现</h2><p><a href="https://github.com/michalstocki/FlashWavRecorder" target="_blank" rel="external">FlashWavRecoeder</a></p>
+<p>此外，还有：<br><a href="https://github.com/uikoo9/recorder-online-upload" target="_blank" rel="external">https://github.com/uikoo9/recorder-online-upload</a></p>
+<h2 id="综合兼容"><a href="#综合兼容" class="headerlink" title="综合兼容"></a>综合兼容</h2><p><a href="https://github.com/jwagener-soundcloud/recorder.js" target="_blank" rel="external">https://github.com/jwagener-soundcloud/recorder.js</a></p>
+<p>这个插件基于 swfObject.js，低版本浏览器中使用 flash 实现录音功能，在高版本支持 HTML5 的浏览器中使用 Audio 实现，同时它还封装好了上传功能，支持上传到服务器和 SoundCloud。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[JS-基础问题不基础]]></title>
       <url>https://chyrain.github.io/2017/02/28/JS-%E5%9F%BA%E7%A1%80%E9%97%AE%E9%A2%98%E4%B8%8D%E5%9F%BA%E7%A1%80/</url>
       <content type="html"><![CDATA[<h2 id="JS基础问题"><a href="#JS基础问题" class="headerlink" title="JS基础问题"></a>JS基础问题</h2><p>推荐：<a href="https://book.douban.com/subject/26351021/" target="_blank" rel="external">《你不知道的Javascript》</a></p>
@@ -314,23 +325,23 @@
 <p>  git fetch –all<br>  git reset –hard origin/master</p>
 </li>
 <li><p>删除本地tag</p>
-<p>  git tag -d <tagname></tagname></p>
+<p>  git tag -d ‘tagname’</p>
 </li>
 <li><p>删除远程tag</p>
-<p>  git push origin –delete tag <tagname></tagname></p>
+<p>  git push origin –delete tag ‘tagname’</p>
 <p>  or</p>
-<p>  git tag -d <tagname><br>  git push origin :refs/tags/<tagname></tagname></tagname></p>
+<p>  git tag -d ‘tagname’<br>  git push origin :refs/tags/‘tagname’</p>
 </li>
 <li><p>本地tag推送到远程</p>
 <p>  git push –tags</p>
 </li>
 <li><p>获取远程tag</p>
-<p>  git fetch origin tag <tagname></tagname></p>
+<p>  git fetch origin tag ‘tagname’</p>
 </li>
 <li><p>删除远程分支</p>
-<p>  git push origin –delete <branchname></branchname></p>
+<p>  git push origin –delete ‘branchName’</p>
 <p>  or</p>
-<p>  git push origin :<branchname></branchname></p>
+<p>  git push origin :‘branchName’</p>
 </li>
 <li><p>本地clone后更新远程库内容</p>
 <p>  如果你不是fork的项目的话：</p>
