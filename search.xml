@@ -4,6 +4,55 @@
   
     
     <entry>
+      <title><![CDATA[git项目管理]]></title>
+      <url>https://chyrain.github.io/2017/04/05/git%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/</url>
+      <content type="html"><![CDATA[<h2 id="优秀文章"><a href="#优秀文章" class="headerlink" title="优秀文章"></a>优秀文章</h2><blockquote>
+<p> 修改于2017-04-05</p>
+<ul>
+<li><a href="https://segmentfault.com/a/1190000002413519" target="_blank" rel="external">git协同开发与分支模型</a></li>
+<li><a href="https://segmentfault.com/a/1190000003728094" target="_blank" rel="external">git基础操作汇总</a></li>
+</ul>
+</blockquote>
+<h2 id="Git笔记"><a href="#Git笔记" class="headerlink" title="Git笔记"></a>Git笔记</h2><p>学习Git: <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">https://git-scm.com/book/zh/v2</a></p>
+<ul>
+<li><p>放弃本地所有修改，强制更新</p>
+<p>  git fetch –all<br>  git reset –hard origin/master</p>
+</li>
+<li><p>删除本地tag</p>
+<p>  git tag -d ‘tagname’</p>
+</li>
+<li><p>删除远程tag</p>
+<p>  git push origin –delete tag ‘tagname’</p>
+<p>  or</p>
+<p>  git tag -d ‘tagname’<br>  git push origin :refs/tags/‘tagname’</p>
+</li>
+<li><p>本地tag推送到远程</p>
+<p>  git push –tags</p>
+</li>
+<li><p>获取远程tag</p>
+<p>  git fetch origin tag ‘tagname’</p>
+</li>
+<li><p>删除远程分支</p>
+<p>  git push origin –delete ‘branchName’</p>
+<p>  or</p>
+<p>  git push origin :‘branchName’</p>
+</li>
+<li><p>本地clone后更新远程库内容</p>
+<p>  如果你不是fork的项目的话：</p>
+<pre><code>git pull
+</code></pre><p>  即可。如果你是fork的话，把原来的项目添加到：</p>
+<pre><code>git remote add usp [主项目地址]
+</code></pre><p>  然后：</p>
+<pre><code>git fetch ups &amp;&amp; git merge ups/master
+</code></pre></li>
+<li><p>merge合并<br>  合并dev到当前分枝，–no-ff保留目的分支dev的commit记录，即使dev被删除</p>
+<p>  git merge –no-ff -m “merge dev with no-ff” dev</p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[网页录音实现方案]]></title>
       <url>https://chyrain.github.io/2017/03/28/%E7%BD%91%E9%A1%B5%E5%BD%95%E9%9F%B3%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%A1%88/</url>
       <content type="html"><![CDATA[<h2 id="H5实现"><a href="#H5实现" class="headerlink" title="H5实现"></a>H5实现</h2><p><a href="https://github.com/mattdiamond/Recorderjs" target="_blank" rel="external">RecorderJS</a><br>原理：使用H5的getUserMedia接口，不支持IE</p>
@@ -313,55 +362,6 @@
 <p>  Permission is hereby granted, free of charge, to any person obtaining a copy<br>    of this software and associated documentation files (the “Software”), to deal<br>    in the Software without restriction, including without limitation the rights<br>    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br>    copies of the Software, and to permit persons to whom the Software is<br>    furnished to do so, subject to the following conditions:</p>
 <p>  The above copyright notice and this permission notice shall be included in all<br>    copies or substantial portions of the Software.</p>
 </blockquote>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[git项目管理]]></title>
-      <url>https://chyrain.github.io/2016/06/08/git%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/</url>
-      <content type="html"><![CDATA[<h2 id="优秀文章"><a href="#优秀文章" class="headerlink" title="优秀文章"></a>优秀文章</h2><blockquote>
-<p> 修改于2017-04-05</p>
-<ul>
-<li><a href="https://segmentfault.com/a/1190000002413519" target="_blank" rel="external">git协同开发与分支模型</a></li>
-<li><a href="https://segmentfault.com/a/1190000003728094" target="_blank" rel="external">git基础操作汇总</a></li>
-</ul>
-</blockquote>
-<h2 id="Git笔记"><a href="#Git笔记" class="headerlink" title="Git笔记"></a>Git笔记</h2><p>学习Git: <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">https://git-scm.com/book/zh/v2</a></p>
-<ul>
-<li><p>放弃本地所有修改，强制更新</p>
-<p>  git fetch –all<br>  git reset –hard origin/master</p>
-</li>
-<li><p>删除本地tag</p>
-<p>  git tag -d ‘tagname’</p>
-</li>
-<li><p>删除远程tag</p>
-<p>  git push origin –delete tag ‘tagname’</p>
-<p>  or</p>
-<p>  git tag -d ‘tagname’<br>  git push origin :refs/tags/‘tagname’</p>
-</li>
-<li><p>本地tag推送到远程</p>
-<p>  git push –tags</p>
-</li>
-<li><p>获取远程tag</p>
-<p>  git fetch origin tag ‘tagname’</p>
-</li>
-<li><p>删除远程分支</p>
-<p>  git push origin –delete ‘branchName’</p>
-<p>  or</p>
-<p>  git push origin :‘branchName’</p>
-</li>
-<li><p>本地clone后更新远程库内容</p>
-<p>  如果你不是fork的项目的话：</p>
-<pre><code>git pull
-</code></pre><p>  即可。如果你是fork的话，把原来的项目添加到：</p>
-<pre><code>git remote add usp [主项目地址]
-</code></pre><p>  然后：</p>
-<pre><code>git fetch ups &amp;&amp; git merge ups/master
-</code></pre></li>
-<li><p>merge合并<br>  合并dev到当前分枝，–no-ff保留目的分支dev的commit记录，即使dev被删除</p>
-<p>  git merge –no-ff -m “merge dev with no-ff” dev</p>
-</li>
-</ul>
 ]]></content>
     </entry>
     
