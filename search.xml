@@ -4,10 +4,9 @@
   
     
     <entry>
-      <title></title>
-      <url>https://chyrain.github.io/2017/04/05/iTerm2%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</url>
-      <content type="html"><![CDATA[<p>—iTerm2的使用方法<br>title:<br>create: 2017-4-6 9:20:00<br>date: 2017-4-6 9:20:00<br>categories: 摆好pose</p>
-<h2 id="toc-true"><a href="#toc-true" class="headerlink" title="toc: true"></a>toc: true</h2><h2 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h2><p>iTerm2 是 MAC 下最好的终端工具。</p>
+      <title><![CDATA[iTerm2的使用方法]]></title>
+      <url>https://chyrain.github.io/2017/04/06/iTerm2%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</url>
+      <content type="html"><![CDATA[<h2 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h2><p>iTerm2 是 MAC 下最好的终端工具。</p>
 <h3 id="标签变色"><a href="#标签变色" class="headerlink" title="标签变色"></a>标签变色</h3><p>iTerm2 的标签的颜色会变化，以指示该 tab 当前的状态。当该标签有新输出的时候，标签会变成洋红色；新的输出长时间没有查看，标签会变成红色。可在设置中关掉该功能。</p>
 <h3 id="智能选中"><a href="#智能选中" class="headerlink" title="智能选中"></a>智能选中</h3><p>在 iTerm2 中，双击选中，三击选中整行，四击智能选中（智能规则可配置），可以识别网址，引号引起的字符串，邮箱地址等。（很多时候双击的选中就已经很智能了）</p>
 <p>在 iTerm2 中，选中即复制。即任何选中状态的字符串都被放到了系统剪切板中。</p>
