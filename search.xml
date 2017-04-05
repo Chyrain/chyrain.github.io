@@ -19,8 +19,7 @@
 <li>点击文件夹：在 finder 中打开该文件夹；</li>
 <li>同时按住option键，可以以矩形选中，类似于vim中的ctrl v操作。</li>
 </ul>
-<p>###Meta 键</p>
-<p>在emacs中，meta键的使用非常频繁，而 OSX 系统没有提供meta键。在 iTerm2 中可以选择左右两个的Option键作为meta键。官方推荐的配置如下图所示。右Option键依然是 OSX 的默认功能（输入特殊字符）。</p>
+<h3 id="Meta-键"><a href="#Meta-键" class="headerlink" title="Meta 键"></a>Meta 键</h3><p>在emacs中，meta键的使用非常频繁，而 OSX 系统没有提供meta键。在 iTerm2 中可以选择左右两个的Option键作为meta键。官方推荐的配置如下图所示。右Option键依然是 OSX 的默认功能（输入特殊字符）。</p>
 <h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><ul>
 <li>切换 tab：⌘+←, ⌘+→, ⌘+{, ⌘+}。⌘+数字直接定位到该 tab；</li>
 <li>新建 tab：⌘+t；</li>
