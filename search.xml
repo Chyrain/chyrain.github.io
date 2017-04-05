@@ -4,8 +4,8 @@
   
     
     <entry>
-      <title></title>
-      <url>https://chyrain.github.io/2017/03/20/%E7%BD%91%E9%A1%B5%E5%BD%95%E9%9F%B3%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%A1%88/</url>
+      <title><![CDATA[网页录音实现方案]]></title>
+      <url>https://chyrain.github.io/2017/03/28/%E7%BD%91%E9%A1%B5%E5%BD%95%E9%9F%B3%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%A1%88/</url>
       <content type="html"><![CDATA[<h2 id="H5实现"><a href="#H5实现" class="headerlink" title="H5实现"></a>H5实现</h2><p><a href="https://github.com/mattdiamond/Recorderjs" target="_blank" rel="external">RecorderJS</a><br>原理：使用H5的getUserMedia接口，不支持IE</p>
 <h2 id="flash实现"><a href="#flash实现" class="headerlink" title="flash实现"></a>flash实现</h2><p><a href="https://github.com/michalstocki/FlashWavRecorder" target="_blank" rel="external">FlashWavRecoeder</a></p>
 <p>此外，还有：<br><a href="https://github.com/uikoo9/recorder-online-upload" target="_blank" rel="external">https://github.com/uikoo9/recorder-online-upload</a></p>
