@@ -215,8 +215,7 @@
 </ol>
 <p><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/importAS01.png" width="500" alt="chess_react" align="center"><br><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/importAS02.png" width="380" alt="chess_react" align="center"></p>
 <ol>
-<li>Library会同时被全部导入进来成为module，有报错把所有module的AndroidManifest.xml文件里的<pre><code>android:allowBackup=&quot;true&quot;删掉，把导入的androidsupportv7包删掉改为在对应module的build.gradle里的dependencies中加上compile &apos;com.android.support:appcompat-v7:23.4.0&apos;等需要使用的support包
-</code></pre></li>
+<li>Library会同时被全部导入进来成为module，有报错把所有module的AndroidManifest.xml文件里的android:allowBackup=”true”删掉，把导入的androidsupportv7包删掉改为在对应module的build.gradle里的dependencies中加上compile ‘com.android.support:appcompat-v7:23.4.0’等需要使用的support包</li>
 </ol>
 <h2 id="方案二：新建项目一一导入"><a href="#方案二：新建项目一一导入" class="headerlink" title="方案二：新建项目一一导入"></a>方案二：新建项目一一导入</h2><ol>
 <li>在Android Studio新建项目，填写项目主包名跟原来Eclipse的主包名一样。</li>
