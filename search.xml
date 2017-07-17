@@ -6,7 +6,7 @@
     <entry>
       <title><![CDATA[Android项目从eclipse迁移到Android Studio（含Library）]]></title>
       <url>https://chyrain.github.io/2017/07/17/Android%E9%A1%B9%E7%9B%AE%E4%BB%8Eeclipse%E8%BF%81%E7%A7%BB%E5%88%B0Android%20Studio%EF%BC%88%E5%90%ABLibrary%EF%BC%89/</url>
-      <content type="html"><![CDATA[<h1 id="Android项目从eclipse迁移到Android-Studio（含Library）"><a href="#Android项目从eclipse迁移到Android-Studio（含Library）" class="headerlink" title="Android项目从eclipse迁移到Android Studio（含Library）"></a>Android项目从eclipse迁移到Android Studio（含Library）</h1><h2 id="方案一：整个项目导入"><a href="#方案一：整个项目导入" class="headerlink" title="方案一：整个项目导入"></a>方案一：整个项目导入</h2><p>这个方案导入的项目会自动把依赖库也导入进来，一般小项目没问题，一键导入，如果导进来问题比较多，还是建议使用方案二，步骤和工作量大点，但是问题少容易解决。</p>
+      <content type="html"><![CDATA[<h2 id="方案一：整个项目导入"><a href="#方案一：整个项目导入" class="headerlink" title="方案一：整个项目导入"></a>方案一：整个项目导入</h2><p>这个方案导入的项目会自动把依赖库也导入进来，一般小项目没问题，一键导入，如果导进来问题比较多，还是建议使用方案二，步骤和工作量大点，但是问题少容易解决。</p>
 <ol>
 <li>Import From eclipse</li>
 </ol>
