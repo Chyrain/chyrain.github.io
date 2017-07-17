@@ -10,7 +10,7 @@
 <ol>
 <li>Import From eclipse</li>
 </ol>
-<p><a href="!">./importAS01.png</a><br><a href="!">./importAS02.png</a></p>
+<p><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/importAS01.png" width="330" alt="chess_react" align="center"><br><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/importAS02.png" width="330" alt="chess_react" align="center"></p>
 <ol>
 <li>Library会同时被全部导入进来成为module，有报错把所有module的AndroidManifest.xml文件里的<pre><code>android:allowBackup=&quot;true&quot;删掉，把导入的androidsupportv7包删掉改为在对应module的build.gradle里的dependencies中加上compile &apos;com.android.support:appcompat-v7:23.4.0&apos;等需要使用的support包
 </code></pre></li>
