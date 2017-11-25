@@ -112,11 +112,11 @@
 				    
 				    <li><a href="/categories/others/" class="animsition-link">others<small>(2)</small></a></li>
 				    
-				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(6)</small></a></li>
+				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(7)</small></a></li>
 				    
 				    <li><a href="/categories/小程序/" class="animsition-link">小程序<small>(1)</small></a></li>
 				    
-				    <li><a href="/categories/摆好pose/" class="animsition-link">摆好pose<small>(6)</small></a></li>
+				    <li><a href="/categories/摆好pose/" class="animsition-link">摆好pose<small>(7)</small></a></li>
 				    
 				</ul>
         	</li>
@@ -227,7 +227,7 @@
 <ol>
 <li>利用setTimeout第三个参数<br>很多人容易忽略定时器可以传递三个及以上的参数 (从第三个参数开始是传入函数里面的参数)，这个参数传递恰好可以解决i的作用域问题</li>
 </ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</div><div class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params">j</span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span>, j);</div><div class="line">    &#125;, <span class="number">1000</span> * i ,i);</div><div class="line">&#125;</div><div class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span>, i);</div><div class="line">&#125;, i * <span class="number">1000</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</div><div class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params">j</span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span>, j);</div><div class="line">    &#125;, <span class="number">1000</span> * i, i);</div><div class="line">&#125;</div><div class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span>, i);</div><div class="line">&#125;, i * <span class="number">1000</span>);</div></pre></td></tr></table></figure>
 <ol>
 <li>利用ES6的<code>let</code></li>
 </ol>
@@ -247,6 +247,10 @@
             <hr class="nogutter">
         </div>
         <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2017/11/14/为什么我选 React 而不是 Vue(翻译)/" style="float: left;">
+        ← 为什么我选 React 而不是 Vue(翻译)
+    </a>
     
     
     <a class="pull-right" href="/2017/07/17/Android项目从eclipse迁移到Android Studio（含Library）/">
