@@ -18,7 +18,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>iTerm2的使用方法 | Chyrain</title>
+  <title>Redux在非react下的应用 | Chyrain</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -200,60 +200,38 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2017-04-06T01:20:00.000Z" itemprop="datePublished">
-          2017-04-06
+      <time datetime="2017-12-12T12:21:24.000Z" itemprop="datePublished">
+          2017-12-12
       </time>
     
 </span>
-                <h1>iTerm2的使用方法</h1>
+                <h1>Redux在非react下的应用</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h2 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h2><p>iTerm2 是 MAC 下最好的终端工具。</p>
-<h3 id="标签变色"><a href="#标签变色" class="headerlink" title="标签变色"></a>标签变色</h3><p>iTerm2 的标签的颜色会变化，以指示该 tab 当前的状态。当该标签有新输出的时候，标签会变成洋红色；新的输出长时间没有查看，标签会变成红色。可在设置中关掉该功能。</p>
-<h3 id="智能选中"><a href="#智能选中" class="headerlink" title="智能选中"></a>智能选中</h3><p>在 iTerm2 中，双击选中，三击选中整行，四击智能选中（智能规则可配置），可以识别网址，引号引起的字符串，邮箱地址等。（很多时候双击的选中就已经很智能了）</p>
-<p>在 iTerm2 中，选中即复制。即任何选中状态的字符串都被放到了系统剪切板中。</p>
-<h3 id="巧用-Command-键"><a href="#巧用-Command-键" class="headerlink" title="巧用 Command 键"></a>巧用 Command 键</h3><p>按住⌘键:</p>
-<ul>
-<li>可以拖拽选中的字符串；</li>
-<li>点击 url：调用默认浏览器访问该网址；</li>
-<li>点击文件：调用默认程序打开文件；</li>
-<li>如果文件名是filename:42，且默认文本编辑器是Macvim、Textmate或BBEdit，将会直接打开到这一行；</li>
-<li>点击文件夹：在 finder 中打开该文件夹；</li>
-<li>同时按住option键，可以以矩形选中，类似于vim中的ctrl v操作。</li>
-</ul>
-<h3 id="Meta-键"><a href="#Meta-键" class="headerlink" title="Meta 键"></a>Meta 键</h3><p>在emacs中，meta键的使用非常频繁，而 OSX 系统没有提供meta键。在 iTerm2 中可以选择左右两个的Option键作为meta键。官方推荐的配置如下图所示。右Option键依然是 OSX 的默认功能（输入特殊字符）。</p>
-<h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><ul>
-<li>切换 tab：⌘+←, ⌘+→, ⌘+{, ⌘+}。⌘+数字直接定位到该 tab；</li>
-<li>新建 tab：⌘+t；</li>
-<li>顺序切换 pane：⌘+[, ⌘+]；</li>
-<li>按方向切换 pane：⌘+Option+方向键；</li>
-<li>切分屏幕：⌘+d 水平切分，⌘+Shift+d 垂直切分；</li>
-<li>智能查找，支持正则查找：⌘+f。</li>
-</ul>
-<h3 id="自动完成"><a href="#自动完成" class="headerlink" title="自动完成"></a>自动完成</h3><p>iTerm2 可以自动补齐命令，输入若干字符，按⌘+d弹出自动补齐窗口，列出曾经使用过的命令。</p>
-<p>iTerm2 autocomplete<br>iTerm2 也可以使用历史记录，按⌘+Shift+h弹出历史记录窗口。</p>
-<h3 id="Expose-Tabs"><a href="#Expose-Tabs" class="headerlink" title="Exposé Tabs"></a>Exposé Tabs</h3><p>⌘+Option+e全屏展示所有的 tab，可以搜索。</p>
-<h3 id="高亮当前鼠标的位置"><a href="#高亮当前鼠标的位置" class="headerlink" title="高亮当前鼠标的位置"></a>高亮当前鼠标的位置</h3><p>一个标签页中开的窗口太多，有时候会找不到当前的鼠标，⌘+/找到它。</p>
-
+      		<h1 id="Redux在非react下的应用"><a href="#Redux在非react下的应用" class="headerlink" title="Redux在非react下的应用"></a>Redux在非react下的应用</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'header'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'body'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'footer'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* 通过 provider 生成这个 store 对应的 connect 函数 */</span></div><div class="line"><span class="keyword">const</span> connect = provider(store)</div><div class="line"></div><div class="line"><span class="comment">/* 普通的 render 方法(类似React中的组件) */</span></div><div class="line"><span class="keyword">let</span> renderHeader = <span class="function">(<span class="params">props</span>) =&gt;</span> &#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'render header'</span>)</div><div class="line">  $(<span class="string">'#header'</span>).html(props.header)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/* 用 connect 取数据传给 render 方法 */</span></div><div class="line"><span class="keyword">const</span> mapStateToProps = <span class="function">(<span class="params">state</span>) =&gt;</span> &#123;</div><div class="line">  <span class="keyword">return</span> &#123; <span class="attr">header</span>: state.header &#125;</div><div class="line">&#125;</div><div class="line">renderHeader = connect(mapStateToProps)(renderHeader)</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> provider = <span class="function">(<span class="params">store</span>) =&gt;</span> &#123;</div><div class="line">  <span class="keyword">return</span> <span class="function">(<span class="params">mapStateToProps</span>) =&gt;</span> &#123; <span class="comment">// connect 函数</span></div><div class="line">    <span class="keyword">return</span> <span class="function">(<span class="params">render</span>) =&gt;</span> &#123;</div><div class="line">        <span class="comment">/* 返回新的渲染函数，就像 React-redux 的 connect 返回新组件 */</span></div><div class="line">        <span class="keyword">const</span> renderWrapper = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">            <span class="keyword">const</span> newProps = mapStateToProps(store.getState())</div><div class="line">            <span class="comment">/* 如果新的结果和原来的一样，就不要重新渲染了 */</span></div><div class="line">            <span class="keyword">if</span> (shallowEqual(props, newProps)) <span class="keyword">return</span></div><div class="line">            props = newProps</div><div class="line">            render(props)</div><div class="line">        &#125;</div><div class="line">        <span class="comment">/* 监听数据变化重新渲染 */</span></div><div class="line">        store.subscribe(renderWrapper)</div><div class="line">        <span class="keyword">return</span> renderWrapper</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* body */</span></div><div class="line"><span class="keyword">let</span> renderBody = <span class="function">(<span class="params">props</span>) =&gt;</span> &#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'render body'</span>)</div><div class="line">  $(<span class="string">'#body'</span>).html(props.body)</div><div class="line">&#125;</div><div class="line">mapStateToProps = <span class="function">(<span class="params">state</span>) =&gt;</span> &#123;</div><div class="line">  <span class="keyword">return</span> &#123; <span class="attr">body</span>: state.body &#125;</div><div class="line">&#125;</div><div class="line">renderBody = connect(mapStateToProps)(renderBody)</div><div class="line"></div><div class="line"><span class="comment">/* footer */</span></div><div class="line"><span class="keyword">let</span> renderFooter = <span class="function">(<span class="params">props</span>) =&gt;</span> &#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'render footer'</span>)</div><div class="line">  $(<span class="string">'#footer'</span>).html(props.footer)</div><div class="line">&#125;</div><div class="line">mapStateToProps = <span class="function">(<span class="params">state</span>) =&gt;</span> &#123;</div><div class="line">  <span class="keyword">return</span> &#123; <span class="attr">footer</span>: state.footer &#125;</div><div class="line">&#125;</div><div class="line">renderFooter = connect(mapStateToProps)(renderFooter)</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">shallowEqual</span>(<span class="params">left, right</span>) </span>&#123;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> key <span class="keyword">in</span> left) &#123;</div><div class="line">        <span class="keyword">if</span> (left[key] !== right[key]) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="pagination" role="pagination">
     
-    <a class="pull-left" href="/2017/07/17/Android项目从eclipse迁移到Android Studio（含Library）/" style="float: left;">
-        ← Android项目从eclipse迁移到Android Studio（含Library）
+    <a class="pull-left" href="/2017/12/24/Javascript的事件循环/" style="float: left;">
+        ← Javascript的事件循环
     </a>
     
     
-    <a class="pull-right" href="/2017/04/05/各种awesome项目汇总/">
-        各种awesome项目汇总 →
+    <a class="pull-right" href="/2017/11/25/中文文档写作规范/">
+        中文技术文档写作规范 →
     </a>
     
 </nav>
 
         <div class="duoshuo">
-<div class="ds-thread" data-thread-key="2017/04/06/iTerm2的使用方法/" data-title="iTerm2的使用方法" data-url="https://chyrain.github.io/2017/04/06/iTerm2的使用方法/"></div>
+<div class="ds-thread" data-thread-key="2017/12/12/Redux在非React环境下的应用/" data-title="Redux在非react下的应用" data-url="https://chyrain.github.io/2017/12/12/Redux在非React环境下的应用/"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"chyrain"};
 (function() {
