@@ -338,8 +338,10 @@
 <p>特点：</p>
 <ul>
 <li>包含组合继承的所有优点，并解决了父类实例属性初始化两次的问题</li>
-<li>实现稍复杂</li>
 </ul>
+<blockquote>
+<p>唯一缺点是实现稍复杂</p>
+</blockquote>
 ]]></content>
     </entry>
     
