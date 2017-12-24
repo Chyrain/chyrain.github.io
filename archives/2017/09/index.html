@@ -18,7 +18,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>为什么我选 React 而不是 Vue(翻译) | Chyrain</title>
+  <title>Archives: 2017/9 | Chyrain</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -85,7 +85,7 @@
 </head>
 
 <!--
-<body class="post-template">
+<body class="home-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -194,67 +194,69 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      
-<section id="intro">
-    <div class="container">
-        <div class="row col-md-offset-2">
-            <div class="col-md-8">
-    			<span class="post-meta">
-      <time datetime="2017-11-14T06:33:12.000Z" itemprop="datePublished">
-          2017-11-14
-      </time>
-    
-</span>
-                <h1>为什么我选 React 而不是 Vue(翻译)</h1>
+      <!-- ============================ Hero Image =========================== -->
+
+<section id="hero" class="scrollme">
+    <div class="container-fluid element-img" style="background: url(/img/1.jpeg) no-repeat center center fixed;background-size: cover">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost">
+                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                    <div>
+                        
+                        <p></p>
+                        <h2>Working & Learning</h2>
+                        
+                        <p>简 生活</p>
+                        <h2></h2>
+                        
+
+                    </div>
+                </div>
             </div>
+            <!-- // .col-md-12 -->
         </div>
-        <div class="col-md-8 col-md-offset-2">
-      		<p>你是否注意到了我起的相当老练的标题？这是一篇依据我个人喜好而非客观评价好坏试图引起框架口舌之争的文章。我猜想这并不会发生。</p>
-<p>React和Vue看起来非常相似的并且我在项目中两者都用过。他们都使用了虚拟DOM，并且都专注于组件化视图。<br>React 和 Vue 从表面上来看是非常相似的，我在项目当中使用了这两个框架。他们都运用了 virtual DOM 并且都是重点关注 View 层的。两者都是为了解决相同的作为动态 HTML 渲染工具的问题，但我相信它们两者之间肯定存在着定义上的差异，贯穿着整个工作流。 React 是完全采用 Javascript 的， 而 Vue 不是。</p>
-<p>在 React 的使用者中，有一个非常常见且真实的口头禅，那就是“这只是 Javascript”（“it’s just Javascript”），Vue 似乎有很多不必要的功能，这就会让组件更难理解，下面给出一些例子：</p>
-<h2 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h2><p>一个 React 组件可以简单地被认为是返回元素的函数（或者至少有一个具有这样的功能的类）。 这种功能性方法对于 Javascript 开发人员是非常自然的。 传入数据，得到元素。 如果你有一堆内容在数组当中，你可以简单地将它们遍历出一系列元素。 如果你想排除这些项目中的某一些元素，你可以使用 Array 数组对象中的 filter 方法和 map 方法去处理元素并且得到结果。这个功能性工作流程完美地反映了您对应用程序的其他部分的理解。 这种方法是对Javascript的优势的补充。</p>
-<p>一个 Vue 组件更像是一个能够从数据结构当中引用数据的模板。它包含了一个 DSL（Domain specific language），虽然是次要的，但是显然是完全没有必要的。我<strong>不需要</strong> v-for 因为我可以使用 map()。我<strong>不需要</strong> v-if 因为我可以使用普通的老旧的 if。模板至少会带来一定程度的有限或无益的认知压力。</p>
-<p>模板还引入了作用域的问题。 如果我将一些静态数据导入到我的 React 组件中，我可以在我的渲染函数中使用它，因为<strong>所有标准的 JavaScript 作用域规则都应用于此</strong>。 它只是一个 函数，与其他任何 函数 完全一样。 Vue 的模板与 Javascript 的单独作用域相互作用，因此您必须将该静态数据写到 Vue 组件中，并将其作为计算属性字段返回。 这些东西都不是特别痛苦，但都是不必要的。</p>
-<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>因为 React 是“Just Javascript”，在我的经验中，开发经验要好得多。 例如，prettier-js（一个令人惊讶的，有主见的代码格式化程序）只适用于JSX，但是在 Vue 模板中可以嵌入表达式，因为 Vue 的模板不是“Just Javascript”。 另外，由于模板和 Javascript 在不同的范围内运行，所以对于 linter （此处 Linter 参考维基百科） 来说，模板中缺少/拼错的变量是不可能的（至少目前是这样）。 这是另一个烦心且不必要的地方。</p>
-<h2 id="惯例的颠覆者：响应式状态"><a href="#惯例的颠覆者：响应式状态" class="headerlink" title="惯例的颠覆者：响应式状态"></a>惯例的颠覆者：响应式状态</h2><p>React 和 Redux 永远不变地拥抱它们的核心。同样，React 是一个 reducer 渲染函数，它将 props 传入一个元素当中，React 状态变化也是简单的函数将旧状态和一个动作变成一个新的状态。而 Vue（和Vuex）有 <strong> 响应式状态 </strong>，这意味着你可以使用规定的方法修改状态。这与我在 JavaScript 中其他地方使用的操作风格不太协调。</p>
-<p>我已经习惯了不可变的数据结构，这对我来说会觉得比较靠谱。Vuex 几乎迫使你不去使用它们，因为所有的 getter/setter 都被添加进了 store。在 React/Redux 中也有 state/store，你猜对了，“只是 JavaScript 对象”。</p>
-<p>如果你喜欢这篇文章，请点击 :green_heart: 标志，让更多的人能读到它！</p>
-<p>_Steven Poulton 是一位居住在英国曼彻斯特的 Web开发者和技术架构师。 在空余时间，他喜欢制作独立音乐和独立游戏，与自己的猫咪们一起玩耍。</p>
-
-            <div class="clearfix"></div>
-            <hr class="nogutter">
-        </div>
-        <nav class="pagination" role="pagination">
-    
-    <a class="pull-left" href="/2017/11/25/中文文档写作规范/" style="float: left;">
-        ← 中文技术文档写作规范
-    </a>
-    
-    
-    <a class="pull-right" href="/2017/09/03/React填坑笔记/">
-        React填坑笔记 →
-    </a>
-    
-</nav>
-
-        <div class="duoshuo">
-<div class="ds-thread" data-thread-key="2017/11/14/为什么我选 React 而不是 Vue(翻译)/" data-title="为什么我选 React 而不是 Vue(翻译)" data-url="https://chyrain.github.io/2017/11/14/为什么我选 React 而不是 Vue(翻译)/"></div>
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"chyrain"};
-(function() {
-	var ds = document.createElement('script');
-	ds.type = 'text/javascript';ds.async = true;
-	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	ds.charset = 'UTF-8';
-	(document.getElementsByTagName('head')[0] 
-	 || document.getElementsByTagName('body')[0]).appendChild(ds);
-})();
-</script>
-</div>
+        <div class="herofade beige-dk"></div>
     </div>
 </section>
 
+<!-- Height spacing helper -->
+<div class="heightblock"></div>
+<!-- // End height spacing helper -->
 
+<!-- ============================ END Hero Image =========================== -->
+
+
+
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row boxes">
+                    
+                    
+                        
+                        
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                            
+                              <h4 class="title"><a href="/2017/09/03/React填坑笔记/">React填坑笔记</a></h4>
+                            
+                            <p><time datetime="2017-09-03T06:21:54.000Z"><a href="/2017/09/03/React填坑笔记/">2017-09-03</a></time></p>
+                        </div>
+                    
+                </div>
+            </div>    
+        </div>
+    </div>
+</section> 
+
+<section id="statement">
+    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+            <p>每一个不曾起舞的日子都是对生命的辜负</p>
+        </div>
+    </div>
+</section>
       
 <!-- ============================ Footer =========================== -->
 
