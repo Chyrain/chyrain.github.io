@@ -18,7 +18,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Android项目从eclipse迁移到Android Studio（含Library） | Chyrain</title>
+  <title>Chyrain</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -85,7 +85,7 @@
 </head>
 
 <!--
-<body class="post-template">
+<body class="home-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -194,74 +194,86 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      
-<section id="intro">
-    <div class="container">
-        <div class="row col-md-offset-2">
-            <div class="col-md-8">
-    			<span class="post-meta">
-      <time datetime="2017-07-17T02:45:32.000Z" itemprop="datePublished">
-          2017-07-17
-      </time>
-    
-</span>
-                <h1>Android项目从eclipse迁移到Android Studio（含Library）</h1>
+      <!-- ============================ Hero Image =========================== -->
+
+<section id="hero" class="scrollme">
+    <div class="container-fluid element-img" style="background: url(/img/1.jpeg) no-repeat center center fixed;background-size: cover">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost">
+                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                    <div>
+                        
+                        <p></p>
+                        <h2>Working & Learning</h2>
+                        
+                        <p>简 生活</p>
+                        <h2></h2>
+                        
+
+                    </div>
+                </div>
             </div>
+            <!-- // .col-md-12 -->
         </div>
-        <div class="col-md-8 col-md-offset-2">
-      		<h2 id="方案一：整个项目导入"><a href="#方案一：整个项目导入" class="headerlink" title="方案一：整个项目导入"></a>方案一：整个项目导入</h2><p>这个方案导入的项目会自动把依赖库也导入进来，一般小项目没问题，一键导入，如果导进来问题比较多，还是建议使用方案二，步骤和工作量大点，但是问题少容易解决。</p>
-<ol>
-<li>Import From eclipse</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/importAS01.png" width="500" alt="chess_react" align="center"><br><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/importAS02.png" width="380" alt="chess_react" align="center"></p>
-<ol>
-<li>Library会同时被全部导入进来成为module，有报错把所有module的AndroidManifest.xml文件里的android:allowBackup=”true”删掉，把导入的androidsupportv7包删掉改为在对应module的build.gradle里的dependencies中加上compile ‘com.android.support:appcompat-v7:23.4.0’等需要使用的support包</li>
-</ol>
-<h2 id="方案二：新建项目一一导入"><a href="#方案二：新建项目一一导入" class="headerlink" title="方案二：新建项目一一导入"></a>方案二：新建项目一一导入</h2><ol>
-<li>在Android Studio新建项目，填写项目主包名跟原来Eclipse的主包名一样。</li>
-<li>把AndroidMainfest.xml内容全部覆盖过来。</li>
-<li>复制src：首先新建好eclipse下有的全部package，构建好包结构，然后将整个src/内的内容复制到app/src/main/java内，注意不要直接从Eclipse copy过去，包名会丢失的。</li>
-<li>Eclipse res目录copy到Android Studio的app/src/main/res目录下就好了。</li>
-<li>Eclipse的libs目录copy到app/libs，新建项目后build.gradle会有一句：compile fileTree(dir:’libs’,include: [‘*.jar’])，这个可以加载所有jar，而so文件放armeabi等文件夹内就搞定了，保持原有目录结构。</li>
-<li>导入eclipse的依赖库作为module：File-&gt;New-&gt;Import Module，选择依赖库项目文件夹，最后点OK引入即可。</li>
-<li>依赖保包含v4、v7包的在对应module的build.gradle里的dependencies中加上compile ‘com.android.support:appcompat-v7:23.4.0’等需要使用的support包。</li>
-<li>添加module依赖，把导入的module添加到app项目依赖：app项目右键Open Module Setting -&gt; app -&gt; dependencies -&gt; + -&gt; Module Dependencies选择需要依赖的module。</li>
-<li>build一下就OK了。如果有问题，根据问题去处理。</li>
-</ol>
-
-            <div class="clearfix"></div>
-            <hr class="nogutter">
-        </div>
-        <nav class="pagination" role="pagination">
-    
-    <a class="pull-left" href="/2017/07/28/JS继承的几种方式/" style="float: left;">
-        ← JS继承的几种方式
-    </a>
-    
-    
-    <a class="pull-right" href="/2017/04/06/iTerm2的使用方法/">
-        iTerm2的使用方法 →
-    </a>
-    
-</nav>
-
-        <div class="duoshuo">
-<div class="ds-thread" data-thread-key="2017/07/17/Android项目从eclipse迁移到Android Studio（含Library）/" data-title="Android项目从eclipse迁移到Android Studio（含Library）" data-url="https://chyrain.github.io/2017/07/17/Android项目从eclipse迁移到Android Studio（含Library）/"></div>
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"chyrain"};
-(function() {
-	var ds = document.createElement('script');
-	ds.type = 'text/javascript';ds.async = true;
-	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	ds.charset = 'UTF-8';
-	(document.getElementsByTagName('head')[0] 
-	 || document.getElementsByTagName('body')[0]).appendChild(ds);
-})();
-</script>
-</div>
+        <div class="herofade beige-dk"></div>
     </div>
 </section>
 
+<!-- Height spacing helper -->
+<div class="heightblock"></div>
+<!-- // End height spacing helper -->
+
+<!-- ============================ END Hero Image =========================== -->
+<!-- ============================ Content =========================== -->
+
+<section id="intro">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2015/05/16/hello-world/">Hello World</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-05-16T08:49:00.000Z" itemprop="datePublished">
+          2015-05-16
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new p
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/05/16/hello-world/">查看全文...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <nav class="pagination" role="pagination">
+          <a class="pull-left" href="/page/2/">← Newer Posts</a>
+          
+        </nav>
+    </div>
+</section>
+<section id="statement">
+    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+            <p>每一个不曾起舞的日子都是对生命的辜负</p>
+        </div>
+    </div>
+</section>
+<!-- ============================ END Content =========================== -->
 
       
 <!-- ============================ Footer =========================== -->
