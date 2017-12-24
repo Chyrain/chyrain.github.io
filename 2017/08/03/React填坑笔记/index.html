@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********   
+    -----Edit By Chyrain(https://chyrain.github.io)  -----Theme By Kieran(http://go.kieran.top) 
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>React填坑笔记 | Chyrain</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Chyrain">
+    <meta name="author" content="Chyrain">
+    <meta name="description" content="working & learning" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Chyrain" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+    
+
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='https://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/Android/" class="animsition-link">Android<small>(2)</small></a></li>
+				    
+				    <li><a href="/categories/Linux/" class="animsition-link">Linux<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/others/" class="animsition-link">others<small>(2)</small></a></li>
+				    
+				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(9)</small></a></li>
+				    
+				    <li><a href="/categories/小程序/" class="animsition-link">小程序<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/摆好pose/" class="animsition-link">摆好pose<small>(7)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://chyrain.com/" class="animsition-link">Chyrain</a></li>
+                    
+                    <li><a href="http://www.v5kf.com/" class="animsition-link">V5KF</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about/" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                        
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Chyrain</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/chyrain" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            
+                            
+                            
+                            <li><a href="https://weibo.com/1960951513" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2017-08-03T06:21:54.000Z" itemprop="datePublished">
+          2017-08-03
+      </time>
+    
+</span>
+                <h1>React填坑笔记</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h2 id="组件的生命周期"><a href="#组件的生命周期" class="headerlink" title="组件的生命周期"></a>组件的生命周期</h2><p>图例</p>
+<p><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/react_lifecircle.png" alt="res/react_lifecircle.png"><br><img src="https://raw.githubusercontent.com/Chyrain/MDPictures/master/res/ajs-life.png" alt="res/ajs-life.png"></p>
+<p>实例</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line">import React from 'react';</div><div class="line"></div><div class="line">class Card extends React.Component &#123;</div><div class="line">    /*</div><div class="line">     - 组件的生命周期</div><div class="line">     */</div><div class="line"></div><div class="line">    constructor (props, context) &#123;</div><div class="line">        super(props, context);</div><div class="line">        this.state = &#123;text: 'Hello world'&#125;;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    componentWillMount() &#123;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    // render</div><div class="line">    componentDidMount() &#123;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    componentWillReceiveProps(nextProps) &#123;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    shouldComponentUpdate(nextProps, nextState) &#123;</div><div class="line">        return nextState.text != this.state.text;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    componentWillUpdate (nextProps, nextState) &#123;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    // render</div><div class="line">    componentDidUpdate() &#123;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    componentWillUnmount() &#123;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    render() &#123;</div><div class="line">        return (</div><div class="line">            &lt;div&gt;</div><div class="line">                &#123;this.state.text&#125;</div><div class="line">            &lt;/div&gt;</div><div class="line">        );</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">export default Card</div></pre></td></tr></table></figure>
+<h3 id="mounting"><a href="#mounting" class="headerlink" title="mounting"></a>mounting</h3><ul>
+<li>constructor()</li>
+<li>componentWillMount()</li>
+<li>render()</li>
+<li>componentDidMount()</li>
+</ul>
+<h3 id="Updating"><a href="#Updating" class="headerlink" title="Updating"></a>Updating</h3><ul>
+<li>componentWillReceiveProps()</li>
+<li>shouldComponentUpdate()</li>
+<li>componentWillUpdate()</li>
+<li>componentDidUpdate()</li>
+<li>render()</li>
+<li>componentDidUpdate()</li>
+</ul>
+<h3 id="Unmounting"><a href="#Unmounting" class="headerlink" title="Unmounting"></a>Unmounting</h3><ul>
+<li>componentWillUnmount()</li>
+</ul>
+<h3 id="调用forceUpdate时"><a href="#调用forceUpdate时" class="headerlink" title="调用forceUpdate时"></a>调用forceUpdate时</h3><ul>
+<li>componentWillUpdate()</li>
+<li>render()</li>
+<li>componentDidUpdate()</li>
+</ul>
+<h3 id="接收到新参数时props"><a href="#接收到新参数时props" class="headerlink" title="接收到新参数时props"></a>接收到新参数时props</h3><ul>
+<li>同Updating</li>
+</ul>
+<h3 id="setState时"><a href="#setState时" class="headerlink" title="setState时"></a>setState时</h3><ul>
+<li>shouldComponentUpdate()</li>
+<li>componentWillUpdate()</li>
+<li>componentDidUpdate()</li>
+<li>render()</li>
+<li>componentDidUpdate()</li>
+</ul>
+<h2 id="React的-props-amp-state"><a href="#React的-props-amp-state" class="headerlink" title="React的 props &amp; state"></a>React的 <code>props</code> &amp; <code>state</code></h2><ul>
+<li><p><em><code>props</code></em></p>
+<blockquote>
+<p><code>props</code> (properties的简称) 是一个组件的 配置选项 。<code>props</code>是由上到下指定且不可改变的。一个组件不能改变自身的<code>props</code>, 但要负责设置子组件的<code>props</code>。</p>
+</blockquote>
+</li>
+<li><p><em><code>state</code></em></p>
+<blockquote>
+<p>当组件加载时，<code>state</code>有一个默认值，后来<code>state</code>会不定期地改变（主要是用户行为触发的）。<code>state</code>是每一时间点组件状态的代表-快照。<br>一个组件在内部管理自己的<code>state</code>，除了设置子组件的<code>state</code>之外，该组件与其子组件的<code>state</code>没有任何联系。你可以认为<code>state</code>是私有的。</p>
+</blockquote>
+</li>
+<li><p>改变 <code>props</code> &amp; <code>state</code></p>
+<p>  | -    | <code>props</code> | <code>state</code> |<br>  |: — |: — :|: — :|<br>  | 能否从父组件获取初始值？ | <code>Yes</code> | <code>Yes</code> |<br>  | 能否被父组件改变？ | <code>Yes</code> | <code>No</code> |<br>  | 能否在组件内设置默认值?* | <code>Yes</code> | <code>Yes</code> |<br>  | 能否在组件内改变? | <code>No</code> | <code>Yes</code> |<br>  | 能否设置子组件的初始值? | <code>Yes</code> | <code>Yes</code> |<br>  | 能否在子组件中改变? | <code>Yes</code> | <code>No</code> |</p>
+</li>
+<li><p>组件的类型与 <code>props</code> &amp; <code>state</code> 关系</p>
+<ul>
+<li><p>组件是否应该有<code>state</code>?</p>
+<blockquote>
+<p><code>state</code>是可选项，不是React强制实现的。因为state增加了组件的复杂度同时降低了组件的可预见性，所以没有<code>state</code>的组件 要略胜一筹。即便在一个交互式应用中，你显然离不开<code>state</code>，你也要避免有太多的有状态化组件（含有<code>state</code>的组件）。</p>
+</blockquote>
+</li>
+<li><p>组件类型:</p>
+<ul>
+<li><em>无状态组件</em><blockquote>
+<p>— 只有<code>props</code>, 没有<code>state</code>。 除去render() 函数和所有围绕props的逻辑之外，没有什么要关心的地方。这使他们易于理解且易于测试</p>
+</blockquote>
+</li>
+<li><em>有状态组件</em><blockquote>
+<p>既有<code>props</code>又有<code>state</code>。也被称作状态管理者 。他们负责客户端-服务器通信(通过XHR, web sockets, 等)，数据处理和给用户行为反馈。 </p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>哪些组件应该有 State？</p>
+<blockquote>
+<p>大部分组件的工作应该是从 <code>props</code> 里取数据并渲染出来。但是，有时需要对用户输入、服务器请求或者时间变化等作出响应，这时才需要使用 <code>state</code>。</p>
+<p><strong><em>尝试把尽可能多的组件无状态化</em></strong>。 这样做能隔离state，把它放到最合理的地方，也能减少冗余，同时易于解释程序运作过程。</p>
+<p>常用的模式是创建多个只负责渲染数据的无状态<em>（stateless）</em>组件，在它们的上层创建一个有状态<em>（stateful）</em>组件并把它的状态通过<code>props</code>传给子级。这个有状态的组件封装了所有用户的交互逻辑，而这些无状态组件则负责声明式地渲染数据。</p>
+</blockquote>
+</li>
+<li><p>哪些应该作为<code>State</code>？</p>
+<blockquote>
+<p><code>State</code>应该包括那些可能被组件的事件处理器改变并触发用户界面更新的数据。真实的应用中这种数据一般都很小且能被 <em>JSON</em> 序列化。当创建一个状态化的组件时，想象一下表示它的状态最少需要哪些数据，并只把这些数据存入<code>this.state</code>。在<code>render()</code>里再根据<code>state</code>来计算你需要的其它数据。你会发现以这种方式思考和开发程序最终往往是正确的，因为如果在<code>state</code>里添加冗余数据或计算所得数据，需要你经常手动保持数据同步，不能让 <em>React</em> 来帮你处理。</p>
+</blockquote>
+</li>
+<li><p>哪些不应该作为 State？</p>
+<p>  <code>this.state</code> 应该仅包括能表示用户界面状态所需的最少数据。因此，它不应该包括：</p>
+<ul>
+<li><blockquote>
+<p>计算所得数据： 不要担心根据 state 来预先计算数据 —— 把所有的计算都放到 <code>render()</code> 里更容易保证用户界面和数据的一致性。例如，在 <code>state</code> 里有一个数组<em>（listItems）</em>，我们要把数组长度渲染成字符串， 直接在 <code>render()</code> 里使用 <code>this.state.listItems.length + ’ list items’</code> 比把它放到 <code>state</code> 里好的多。</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p><em>React</em> 组件： 在 <code>render()</code> 里使用当前 <code>props</code> 和 <code>state</code> 来创建它。</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>基于 <code>props</code> 的重复数据： 尽可能使用 <code>props</code> 来作为惟一数据来源。把 <code>props</code> 保存到 <code>state</code> 的一个有效的场景是需要知道它以前值的时候，因为未来的 <code>props</code> 可能会变化。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>判断数据是否可以作为 <code>state</code> ，简单地对每一项数据提出三个问题：</p>
+<ul>
+<li><blockquote>
+<p>是否是从父级通过 <code>props</code> 传入的？如果是，可能不是 <code>state</code> 。</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>是否会随着时间改变？如果不是，可能不是 <code>state</code> 。</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>能根据组件中其它 <code>state</code> 数据或者 <code>props</code> 计算出来吗？如果是，就不是 <code>state</code> 。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="React最佳实践"><a href="#React最佳实践" class="headerlink" title="React最佳实践"></a>React最佳实践</h2><h3 id="一些细节"><a href="#一些细节" class="headerlink" title="一些细节"></a>一些细节</h3><ul>
+<li>组件绑定 this</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//Constructor 内绑定</span></div><div class="line"><span class="keyword">constructor</span>(props) &#123;</div><div class="line">  <span class="keyword">super</span>(props);</div><div class="line">  <span class="keyword">this</span>.handleChange = <span class="keyword">this</span>.handleChange.bind(<span class="keyword">this</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//Class 属性中使用 = 和箭头函数</span></div><div class="line">handleChange = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">  <span class="comment">// call this function from render </span></div><div class="line">  <span class="comment">// and this.whatever in here works fine.</span></div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<ul>
+<li>setState 接受一个函数作为参数(setState的异步性)</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">this</span>.setState(<span class="function"><span class="params">prevState</span> =&gt;</span> (&#123; <span class="attr">expanded</span>: !prevState.expanded &#125;))</div></pre></td></tr></table></figure>
+<ul>
+<li>避免以下情况</li>
+</ul>
+<blockquote>
+<p>因为每次父组件 render 的时候，都会新建一个新的函数并传递给 input，如果 input 是一个 React 组件，这会粗暴地直接导致这个组件的 re-render（props参数改变）</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//不要：</span></div><div class="line">onChange = &#123;(e) =&gt; &#123; model.name = e.target.value &#125;&#125;</div><div class="line"></div><div class="line"><span class="comment">//而是：</span></div><div class="line">onChange = &#123;<span class="keyword">this</span>.handleChange&#125;</div><div class="line"></div><div class="line">handleChange = <span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</div><div class="line">  <span class="keyword">this</span>.props.model.name = e.target.value</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="React-组件设计"><a href="#React-组件设计" class="headerlink" title="React 组件设计"></a>React 组件设计</h3><ol>
+<li><p>分解组件，切割子组件</p>
+</li>
+<li><p>模板化组件，利用React 可以传递 React element 的特性，我们将 React element 进行组件间传递</p>
+</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Comment</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">const</span> metadata = <span class="keyword">this</span>.props.publishTime ?</div><div class="line">      &lt;PublishTime time=&#123;this.props.publishTime&#125; /&gt; :</div><div class="line">      &lt;span&gt;Saving...&lt;/span&gt;;</div><div class="line"></div><div class="line">    const actions = [];</div><div class="line">    if (this.props.isSignedIn) &#123;</div><div class="line">      actions.push(&lt;LikeAction /&gt;);</div><div class="line">      actions.push(&lt;ReplyAction /&gt;);</div><div class="line">    &#125;</div><div class="line">    if (this.props.isAuthor) &#123;</div><div class="line">      actions.push(&lt;DeleteAction /&gt;);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    return &lt;CommentTemplate metadata=&#123;metadata&#125; actions=&#123;actions&#125; /&gt;;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ol>
+<li>高阶组件</li>
+</ol>
+<p>withLinkAnalytics 函数并不会去改变 WrappedComponent 组件本身，更不会去改变 WrappedComponent 组件的行为。而是返回了一个被包裹的新组件:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//场景：我们想统计页面中所有链接的点击信息。在链接点击时，发送统计请求，同时这条请求需要包含此页面 document 的 id 值</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">withLinkAnalytics</span>(<span class="params">mapPropsToData, WrappedComponent</span>) </span>&#123;</div><div class="line">  <span class="class"><span class="keyword">class</span> <span class="title">LinkAnalyticsWrapper</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</div><div class="line">    componentDidMount() &#123;</div><div class="line">      ReactDOM.findDOMNode(<span class="keyword">this</span>).addEventListener(<span class="string">'click'</span>, <span class="keyword">this</span>.onClick);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    componentWillUnmount() &#123;</div><div class="line">      ReactDOM.findDOMNode(<span class="keyword">this</span>).removeEventListener(<span class="string">'click'</span>, <span class="keyword">this</span>.onClick);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    onClick = <span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</div><div class="line">      <span class="keyword">if</span> (e.target.tagName === <span class="string">'A'</span>) &#123; <span class="comment">// Naive check for &lt;a&gt; elements</span></div><div class="line">        <span class="keyword">const</span> data = mapPropsToData ? mapPropsToData(<span class="keyword">this</span>.props) : &#123;&#125;;</div><div class="line">        sendAnalytics(<span class="string">'link clicked'</span>, data);</div><div class="line">      &#125;</div><div class="line">    &#125;;</div><div class="line"></div><div class="line">    render() &#123;</div><div class="line">      <span class="comment">// Simply render the WrappedComponent with all props</span></div><div class="line">      <span class="keyword">return</span> &lt;WrappedComponent &#123;...this.props&#125; /&gt;;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line"></div><div class="line"></div><div class="line">class Document extends React.Component &#123;</div><div class="line">  render() &#123;</div><div class="line">    // ...</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">export default withLinkAnalytics((props) =&gt; (&#123;</div><div class="line">  documentId: props.documentId</div><div class="line">&#125;), Document);</div></pre></td></tr></table></figure>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2017/11/14/一道神奇的前端面试题/" style="float: left;">
+        ← 一道神奇的前端面试题
+    </a>
+    
+    
+    <a class="pull-right" href="/2017/07/28/JS继承的几种方式/">
+        JS继承的几种方式 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2017/08/03/React填坑笔记/" data-title="React填坑笔记" data-url="https://chyrain.github.io/2017/08/03/React填坑笔记/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"chyrain"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By Chyrain. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/chyrain" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://weibo.com/1960951513" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+            <div style="display:none">
+                <script src="https://s19.cnzz.com/z_stat.php?id=1264487432&web_id=1264487432" language="JavaScript"></script>
+            </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+        
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+    
+    resizeHero();
+    
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+<!-- v5kf.com -->
+<script type="text/javascript" charset="utf-8" src="https://www.v5kf.com/105723/v5kf.js"></script>
+<!-- / v5kf.com -->
+</body>
+</html>

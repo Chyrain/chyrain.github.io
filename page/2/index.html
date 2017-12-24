@@ -112,7 +112,7 @@
 				    
 				    <li><a href="/categories/others/" class="animsition-link">others<small>(2)</small></a></li>
 				    
-				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(8)</small></a></li>
+				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(9)</small></a></li>
 				    
 				    <li><a href="/categories/小程序/" class="animsition-link">小程序<small>(1)</small></a></li>
 				    
@@ -228,6 +228,86 @@
 
 <section id="intro">
     <div class="container">
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2017/04/05/git项目管理/">git项目管理</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2017-04-05T03:50:00.000Z" itemprop="datePublished">
+          2017-04-05
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        优秀文章
+ 修改于2017-04-05
+
+
+链接：git协同开发与分支模型
+链接：git基础操作汇总
+
+Git笔记学习Git: https://git-scm.com/book/zh/v2
+
+放弃本地所有修改，强制更新
+  git fetch --all  git reset --hard origin/master
+
+删除本地tag
+  git tag -d ‘tagname’
+
+删除远程tag
+  git push origin -
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2017/04/05/git项目管理/">查看全文...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2017/03/28/网页录音实现方案/">网页录音实现方案</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2017-03-28T02:33:12.000Z" itemprop="datePublished">
+          2017-03-28
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        H5实现RecorderJS原理：使用H5的getUserMedia接口，不支持IE
+flash实现FlashWavRecoeder
+此外，还有：https://github.com/uikoo9/recorder-online-upload
+综合兼容https://github.com/jwagener-soundcloud/recorder.js
+这个插件基于 swfObject.js，低版本浏览器中使用 flash 实现录音功能，
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2017/03/28/网页录音实现方案/">查看全文...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
         
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
@@ -489,40 +569,6 @@ checkout一个远程库
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2016/12/03/使用React的坑/">使用React遇到的坑</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2016-12-03T06:21:54.000Z" itemprop="datePublished">
-          2016-12-03
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        React/ES6开发过程中遇到的坑
-setState第二层级必须assign，而且$.assign({}, this.state.xxx, {x:x})，尽量不要使用一层以上层级
-redux connect 组件中，传入props内的函数function声明方式才可以获得bind或者call传入的this参数
-
-
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2016/12/03/使用React的坑/">查看全文...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
                     <h3><a href="/2016/11/17/Chess-With-React/">React实现国际象棋</a></h3>
                     <span>
                         <span class="post-meta">
@@ -548,41 +594,6 @@ License
                     
                     <p class="pull-right readMore">
                         <a href="/2016/11/17/Chess-With-React/">查看全文...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2016/03/17/sudo Tips/">sudo 命令的一些小技巧</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2016-03-17T14:23:00.000Z" itemprop="datePublished">
-          2016-03-17
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        sudo
-在Linux下，我们需要使用sudo命令，让普通用户也能执行一些root命令，本文对常用的一些sudo操作以及平时没有发现的小技巧进行简单介绍。
-
-1. 授权普通用户如果没有权限访问某些文件或者执行某个命令时，要是该用户获得root授权，就可以通过在要执行的命令前加上sudo，临时切换到root用户的权限完成相关操作。
-怎样让用户可以临时获取root权限呢？这就需要在/etc/sudoers文件中进行配置：
-12#授权给单个用
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2016/03/17/sudo Tips/">查看全文...</a>
                     </p>
                     
                 </div>
