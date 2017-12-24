@@ -209,7 +209,30 @@
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<p>&lt;未完成，待续&gt;</p>
+      		<h2 id="从一个示例开始"><a href="#从一个示例开始" class="headerlink" title="从一个示例开始"></a>从一个示例开始</h2><p>在查看解析之前，思考一下下面的代码会输出什么内容？</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="number">1</span>)</div><div class="line">&#125;, <span class="number">0</span>);</div><div class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span> <span class="title">executor</span>(<span class="params">resolve</span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="number">2</span>);</div><div class="line">  <span class="keyword">for</span>( <span class="keyword">var</span> i=<span class="number">0</span> ; i&lt;<span class="number">10000</span> ; i++ ) &#123;</div><div class="line">    i == <span class="number">9999</span> &amp;&amp; resolve();</div><div class="line">  &#125;</div><div class="line">  <span class="built_in">console</span>.log(<span class="number">3</span>);</div><div class="line">&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="number">4</span>);</div><div class="line">&#125;);</div><div class="line"><span class="built_in">console</span>.log(<span class="number">5</span>);</div></pre></td></tr></table></figure>
+<p>正确输出顺序是：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="number">2</span></div><div class="line"><span class="number">3</span></div><div class="line"><span class="number">5</span></div><div class="line"><span class="number">4</span></div><div class="line"><span class="number">1</span></div></pre></td></tr></table></figure>
+<p>解析：</p>
+<ul>
+<li>首先 <code>setTimeout</code> 里的内容进入 Event Loop 的 <strong>macrotask</strong>，在下一个 Event Loop 中执行，所以暂不执行.</li>
+<li>Promise里的函数是立即执行的，其中 <code>resolve</code> 中的任务会进入 Event Loop 的 <strong>microtask</strong>，所以最先输出 2 和 3.</li>
+<li>而后是Promise之后的语句，输出 5. 到这里立即执行的语句已经结束.</li>
+<li>下一阶段开始执行 <strong>microtask</strong> 中的任务，即 <code>resolve</code> 后 <code>then</code> 中的回调，故输出 4 .</li>
+<li>然后，开始下一轮循环，执行 <strong>macrotask</strong> 中的任务，所以是执行到 <code>setTimeout</code> 的回调输出 1.</li>
+</ul>
+<blockquote>
+<p>其中要注意的是，Promise.then()里面的回调属于 <strong>microtask</strong>, 会在当前 Event Loop 的最后执行, 而 <code>setTimeout</code> 内的回调属于 <strong>macrotask</strong>, 会在下一个 Event Loop 中执行.</p>
+</blockquote>
+<h2 id="Event-Loop"><a href="#Event-Loop" class="headerlink" title="Event Loop"></a>Event Loop</h2><p>一个线程中，事件循环是唯一的，但是任务队列可以拥有多个。</p>
+<p>任务队列又分为macro-task（宏任务）与micro-task（微任务）。</p>
+<ul>
+<li><p>macro-task大概包括：script(整体代码), setTimeout, setInterval, setImmediate, I/O, UI rendering。</p>
+</li>
+<li><p>micro-task大概包括: process.nextTick, Promise, Object.observe(已废弃), MutationObserver(html5新特性)</p>
+</li>
+</ul>
+<p>事件循环的顺序，决定了JavaScript代码的执行顺序。它从script(整体代码)开始第一次循环。之后全局上下文进入函数调用栈。直到调用栈清空(只剩全局)，然后执行所有的micro-task。当所有可执行的micro-task执行完毕之后。循环再次从macro-task开始，找到其中一个任务队列执行完毕，然后再执行所有的micro-task，这样一直循环下去。</p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
