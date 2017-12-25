@@ -215,17 +215,25 @@
 <ul>
 <li>首先是优化列表项，每个列表项内的节点数尽量少；</li>
 <li>不在页面显示区域的项目需要将列表高度撑起，不用渲染，只需要一个占位元素，高度为全部列表项加载完的scrollHeight<blockquote>
-<p>令列表中的每个元素的高度是 itemHeight，列表一共10000条数据，总高度为 itemheight * 10000.</p>
+<p>令列表中的每个元素的高度是 <code>itemHeight</code>， 列表高度是 <code>clientHeight</code>，列表一共10000条数据，总高度为 itemheight * 10000，可视区域列表项数量为 <code>visibleCount = Math.ceil(clientHeight / itemHeight)</code>.</p>
 </blockquote>
 </li>
-<li>在快速滚动时，跳过中间滚动列表项的细节，只需渲染出大致的骨骼框架，减少需要渲染的节点数；</li>
-<li>滚动速度低于一定阈值时就需要渲染出可视区域的列表项的完整细节了；<blockquote>
-<p>通过onScroll监听当前滚动位置并计算滚动速率，判断速率是否高于阈值，高于则计算得到当前位置列表位置序号，得到该序号位置前后的数据用 start, end 记录可见区域开始和结束位置索引；低于阈值则不必渲染数据，显示一个类似渲染结果的骨骼框架即可（快速滑动下人眼看不清具体内容）</p>
+<li>计算当前在可视区域的元素数据索引并渲染<blockquote>
+<p>通过onScroll监听当前滚动位置 <code>scrollTop</code>，计算得到当前位置列表位置序号<code>var start = Math.floor(scrollTop / itemHeight)</code>，<code>var end = start + visibleCount</code>， start 和 end 分别记录可见区域开始和结束位置索引；然后截取数据 <code>data.slice(start, end)}</code> 渲染到列表上，这样每次仅渲染 visibleCount 数量节点，大大提高渲染效率</p>
+</blockquote>
+</li>
+<li>此时滚动起来后面的数据就看不见了，还需要优化滚动位置<blockquote>
+<p>给占位元素加上一个 <code>transform = `translate(0, ${fixedScrollTop}px)</code>，其中 <code>fixedScrollTop = scrollTop - scrollTop % 30</code>.</p>
 </blockquote>
 </li>
 </ul>
-<p>此方法在某些scroll事件支持不好的浏览器下存在问题，回调不够及时</p>
+<p>此方法在某些scroll事件支持不好的浏览器下可能存在问题，另外还有限制列表项高度是固定的</p>
 <p>具体实现可查看<a href="https://jsfiddle.net/quvkwyqn/" target="_blank" rel="external">demo</a></p>
+<p><del>此外，还思考在快递滚动下是否可以再进一步优化性能，或许可能影响一点点视觉效果，比如：</del></p>
+<ul>
+<li><del>在快速滚动时，跳过中间滚动列表项的细节，只需渲染出大致的骨骼框架，减少需要渲染的节点数；</del></li>
+<li><del>通过判断滚动速度低于一定阈值时就需要渲染出可视区域的列表项的完整细节了；</del></li>
+</ul>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
