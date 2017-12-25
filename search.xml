@@ -1182,15 +1182,13 @@
     <entry>
       <title><![CDATA[about]]></title>
       <url>https://chyrain.github.io/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="About"><a href="#About" class="headerlink" title="About"></a>About</h1><ul>
-<li>Chyrain<blockquote>
-<ul>
-<li>chyrain.com</li>
-</ul>
-</blockquote>
-</li>
-</ul>
-]]></content>
+      <content type="html"><![CDATA[<h1 id="Chyrain"><a href="#Chyrain" class="headerlink" title="Chyrain"></a>Chyrain</h1><pre><code>&gt; Home: **[chyrain.github.io](https://chyrain.github.io)**
+&gt; E-mail: chyrain_v5kf@qq.com
+&gt; Github: [Chyrain](https://github.com/Chyrain)
+&gt; Graduated from: BUPT
+&gt; Experience: [@TP-LINK](http://www.tp-link.com.cn/) iOS development engineer, [@V5KF](https://www.v5kf.com) iOS &amp; Android &amp; FrontEnd development engineer.
+&gt; Skills: Android, iOS, javascript(React, webpack, nodejs)
+</code></pre>]]></content>
     </entry>
     
   
