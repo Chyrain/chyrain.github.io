@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title><![CDATA[前端长列表如何流畅高效渲染]]></title>
+      <url>https://chyrain.github.io/2017/12/25/%E5%89%8D%E7%AB%AF%E9%95%BF%E5%88%97%E8%A1%A8%E5%A6%82%E4%BD%95%E6%B5%81%E7%95%85%E9%AB%98%E6%95%88%E6%B8%B2%E6%9F%93/</url>
+      <content type="html"><![CDATA[<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>长列表渲染节点数由于较多，直接渲染肯定会造成页面的卡顿，一种方式是滚动加载（infinite scrool），并非一次性渲染全部列表，而在滚动到页面底部的时候，再去加载剩余的数据，二是通过合理的逻辑来限制仅渲染可视区域部分；</p>
+<p>当然方式一需要产品设计允许，毕竟滚动到底步才加载的方式对体验有一定折损，而方式二就需要比较复杂的逻辑了。</p>
+<p>对于方式二实现的一些思路：</p>
+<ul>
+<li>首先是优化列表项，每个列表项内的节点数尽量少；</li>
+<li>不在页面显示区域的项目需要将列表高度撑起，不用渲染，只需要一个占位元素，高度为全部列表项加载完的scrollHeight<blockquote>
+<p>令列表中的每个元素的高度是 itemHeight，列表一共10000条数据，总高度为 itemheight * 10000.</p>
+</blockquote>
+</li>
+<li>在快速滚动时，跳过中间滚动列表项的细节，只需渲染出大致的骨骼框架，减少需要渲染的节点数；</li>
+<li>滚动速度低于一定阈值时就需要渲染出可视区域的列表项的完整细节了；<blockquote>
+<p>通过onScroll监听当前滚动位置并计算滚动速率，判断速率是否高于阈值，高于则计算得到当前位置列表位置序号，得到该序号位置前后的数据用 start, end 记录可见区域开始和结束位置索引；低于阈值则不必渲染数据，显示一个类似渲染结果的骨骼框架即可（快速滑动下人眼看不清具体内容）</p>
+</blockquote>
+</li>
+</ul>
+<p>此方法在某些scroll事件支持不好的浏览器下存在问题，回调不够及时</p>
+<p>具体实现可查看<a href="https://jsfiddle.net/quvkwyqn/" target="_blank" rel="external">demo</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Javascript的事件循环]]></title>
       <url>https://chyrain.github.io/2017/12/24/Javascript%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF/</url>
       <content type="html"><![CDATA[<h2 id="从一个示例开始"><a href="#从一个示例开始" class="headerlink" title="从一个示例开始"></a>从一个示例开始</h2><p>在查看解析之前，思考一下下面的代码会输出什么内容？</p>

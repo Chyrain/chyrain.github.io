@@ -18,7 +18,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Category: others | Chyrain</title>
+  <title>前端长列表如何流畅高效渲染 | Chyrain</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -85,7 +85,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -194,78 +194,69 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/1.jpeg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <p></p>
-                        <h2>Working & Learning</h2>
-                        
-                        <p>简 生活</p>
-                        <h2></h2>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/12/23/2016年终总结/">2016年终总结</a></h4>
-                            
-                            <p><time datetime="2016-12-23T01:33:12.000Z"><a href="/2016/12/23/2016年终总结/">2016-12-23</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2015/05/16/hello-world/">Hello World</a></h4>
-                            
-                            <p><time datetime="2015-05-16T08:49:00.000Z"><a href="/2015/05/16/hello-world/">2015-05-16</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2017-12-25T02:33:12.000Z" itemprop="datePublished">
+          2017-12-25
+      </time>
+    
+</span>
+                <h1>前端长列表如何流畅高效渲染</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>长列表渲染节点数由于较多，直接渲染肯定会造成页面的卡顿，一种方式是滚动加载（infinite scrool），并非一次性渲染全部列表，而在滚动到页面底部的时候，再去加载剩余的数据，二是通过合理的逻辑来限制仅渲染可视区域部分；</p>
+<p>当然方式一需要产品设计允许，毕竟滚动到底步才加载的方式对体验有一定折损，而方式二就需要比较复杂的逻辑了。</p>
+<p>对于方式二实现的一些思路：</p>
+<ul>
+<li>首先是优化列表项，每个列表项内的节点数尽量少；</li>
+<li>不在页面显示区域的项目需要将列表高度撑起，不用渲染，只需要一个占位元素，高度为全部列表项加载完的scrollHeight<blockquote>
+<p>令列表中的每个元素的高度是 itemHeight，列表一共10000条数据，总高度为 itemheight * 10000.</p>
+</blockquote>
+</li>
+<li>在快速滚动时，跳过中间滚动列表项的细节，只需渲染出大致的骨骼框架，减少需要渲染的节点数；</li>
+<li>滚动速度低于一定阈值时就需要渲染出可视区域的列表项的完整细节了；<blockquote>
+<p>通过onScroll监听当前滚动位置并计算滚动速率，判断速率是否高于阈值，高于则计算得到当前位置列表位置序号，得到该序号位置前后的数据用 start, end 记录可见区域开始和结束位置索引；低于阈值则不必渲染数据，显示一个类似渲染结果的骨骼框架即可（快速滑动下人眼看不清具体内容）</p>
+</blockquote>
+</li>
+</ul>
+<p>此方法在某些scroll事件支持不好的浏览器下存在问题，回调不够及时</p>
+<p>具体实现可查看<a href="https://jsfiddle.net/quvkwyqn/" target="_blank" rel="external">demo</a></p>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>每一个不曾起舞的日子都是对生命的辜负</p>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2017/12/24/Javascript的事件循环/">
+        Javascript的事件循环 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2017/12/25/前端长列表如何流畅高效渲染/" data-title="前端长列表如何流畅高效渲染" data-url="https://chyrain.github.io/2017/12/25/前端长列表如何流畅高效渲染/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"chyrain"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
