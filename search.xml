@@ -1182,13 +1182,10 @@
     <entry>
       <title><![CDATA[about]]></title>
       <url>https://chyrain.github.io/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="Chyrain"><a href="#Chyrain" class="headerlink" title="Chyrain"></a>Chyrain</h1><pre><code>&gt; Home: **[chyrain.github.io](https://chyrain.github.io)**
-&gt; E-mail: chyrain_v5kf@qq.com
-&gt; Github: [Chyrain](https://github.com/Chyrain)
-&gt; Graduated from: BUPT
-&gt; Experience: [@TP-LINK](http://www.tp-link.com.cn/) iOS development engineer, [@V5KF](https://www.v5kf.com) iOS &amp; Android &amp; FrontEnd development engineer.
-&gt; Skills: Android, iOS, javascript(React, webpack, nodejs)
-</code></pre>]]></content>
+      <content type="html"><![CDATA[<h1 id="Chyrain"><a href="#Chyrain" class="headerlink" title="Chyrain"></a>Chyrain</h1><blockquote>
+<p>Home: <strong><a href="https://chyrain.github.io">chyrain.github.io</a></strong><br>E-mail: chyrain_v5kf@qq.com<br>Github: <a href="https://github.com/Chyrain" target="_blank" rel="external">Chyrain</a><br>Graduated from: BUPT<br>Experience: <a href="http://www.tp-link.com.cn/" target="_blank" rel="external">@TP-LINK</a> iOS development engineer, <a href="https://www.v5kf.com" target="_blank" rel="external">@V5KF</a> iOS &amp; Android &amp; FrontEnd development engineer.<br>Skills: Android, iOS, javascript(React, webpack, nodejs)</p>
+</blockquote>
+]]></content>
     </entry>
     
   
