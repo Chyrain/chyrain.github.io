@@ -4,6 +4,54 @@
   
     
     <entry>
+      <title><![CDATA[前端优化]]></title>
+      <url>https://chyrain.github.io/2017/12/26/%E5%89%8D%E7%AB%AF%E4%BC%98%E5%8C%96/</url>
+      <content type="html"><![CDATA[<p><strong>前端优化途径</strong></p>
+<h2 id="页面级优化"><a href="#页面级优化" class="headerlink" title="页面级优化"></a>页面级优化</h2><ul>
+<li>从设计实现层面简化页面</li>
+<li>合理设置HTTP缓存策略</li>
+<li>资源合并与压缩（webpack打包压缩，Google closure compile来，图片压缩）</li>
+<li>CSS Sprites（合并CSS图片）</li>
+<li>Inline Images（data:base64）</li>
+<li>Lazy Load Images（不可见区域图片暂缓加载，显示时才加载）</li>
+<li>CSS前置，重要端渲染相关js脚本前置，与渲染无关端script标签加defer、async，将js脚本置后加载</li>
+<li>异步执行 inline脚本(保证脚本在页面内容后面加载)</li>
+<li>Lazy Load Javascript（外部库可在需要加载的时候才加载）</li>
+<li>减少不必要的 HTTP跳转（略链接最后带 ’/‘，减少服务器隐藏的301跳转）</li>
+</ul>
+<h2 id="js代码级优化"><a href="#js代码级优化" class="headerlink" title="js代码级优化"></a>js代码级优化</h2><ul>
+<li>减少作用域链查找（避免直接用全局变量进行大量计算，使用同一作用域内的变量计算，而后赋值到全局）</li>
+<li>遍历到的HTML DOM集合（HTML Collection）尽量将它转为数组后再访问，因“访问集合”遍历较慢<blockquote>
+<p>原因是这个集合并不是一个静态的结果，它表示的仅仅是一个特定的查询，每次访问该集合时都会重新执行这个查询从而更新查询结果</p>
+</blockquote>
+</li>
+<li>Reflow &amp; Repaint（这个尚未了解）</li>
+<li>慎用 with<blockquote>
+<p>with 语句是运行缓慢的代码块，尤其是在已设置了属性值时。大多数情况下，如果可能，最好避免使用它。</p>
+</blockquote>
+</li>
+<li>避免使用 eval和 Function(脚本引擎都需要将源代码转换成可执行代码)</li>
+<li>数据访问 多使用直接量 (字符串、正则表达式 )和局部变量替代，访问更快，尽可能的减少对对象以及数组深度查找</li>
+<li>字符串拼接（字符串拼接较多时，可将子串放入数组，最后使用join拼接，性能相对直接加+更高）</li>
+</ul>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><ul>
+<li>CSS的选择符的解析是从右往左进行的，最容易找到的放在右边</li>
+<li>CSS media 加载品台对应的脚本</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">media</span>=<span class="string">"only screen and (max-device-width: 480px)"</span> <span class="attr">href</span>=<span class="string">"mobile-device.css"</span> /&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="服务器级优化"><a href="#服务器级优化" class="headerlink" title="服务器级优化"></a>服务器级优化</h2><ul>
+<li>CDN</li>
+<li>gzip压缩</li>
+<li>多域名方案</li>
+<li>无cookie服务器方案</li>
+<li>HTTP2（暂未在生产环境下接触过）</li>
+<li>页面静态化，前后端分离（异步请求），后端渲染</li>
+</ul>
+<p>推荐阅读：<a href="https://zhuanlan.zhihu.com/p/21417465?refer=no-backend" target="_blank" rel="external">【译】唯快不破：Web 应用的 13 个优化步骤</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[前端长列表如何流畅高效渲染]]></title>
       <url>https://chyrain.github.io/2017/12/25/%E5%89%8D%E7%AB%AF%E9%95%BF%E5%88%97%E8%A1%A8%E5%A6%82%E4%BD%95%E6%B5%81%E7%95%85%E9%AB%98%E6%95%88%E6%B8%B2%E6%9F%93/</url>
       <content type="html"><![CDATA[<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>长列表渲染节点数由于较多，直接渲染肯定会造成页面的卡顿，一种方式是滚动加载（infinite scrool），并非一次性渲染全部列表，而在滚动到页面底部的时候，再去加载剩余的数据，二是通过合理的逻辑来限制仅渲染可视区域部分；</p>
