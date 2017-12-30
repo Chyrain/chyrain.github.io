@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********   
+    -----Edit By Chyrain(https://chyrain.github.io)  -----Theme By Kieran(http://go.kieran.top) 
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>React编码规范总结 | Chyrain</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Chyrain">
+    <meta name="author" content="Chyrain">
+    <meta name="description" content="working & learning" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Chyrain" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+    
+
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='https://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/Android/" class="animsition-link">Android<small>(2)</small></a></li>
+				    
+				    <li><a href="/categories/Linux/" class="animsition-link">Linux<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/others/" class="animsition-link">others<small>(2)</small></a></li>
+				    
+				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(12)</small></a></li>
+				    
+				    <li><a href="/categories/前端-React/" class="animsition-link">前端,React<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/小程序/" class="animsition-link">小程序<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/摆好pose/" class="animsition-link">摆好pose<small>(7)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://chyrain.com/" class="animsition-link">Chyrain</a></li>
+                    
+                    <li><a href="http://www.v5kf.com/" class="animsition-link">V5KF</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about/" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                        
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/about/" class="animsition-link">Chyrain</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/chyrain" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            
+                            
+                            
+                            <li><a href="https://weibo.com/1960951513" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2017-09-03T06:21:54.000Z" itemprop="datePublished">
+          2017-09-03
+      </time>
+    
+</span>
+                <h1>React编码规范总结</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h2 id="基本规范"><a href="#基本规范" class="headerlink" title="基本规范"></a>基本规范</h2><ul>
+<li>尽可能使用ES6语法（可包含一些ES7语法）</li>
+<li>每个文件仅export一个React组件，命名要顾名思义。<blockquote>
+<p>文件内允许包含不可复用的子组件，无状态组件尽可能使用函数式组件</p>
+</blockquote>
+</li>
+<li>调试时console的代码要在调试完尽快删除，注释掉的代码尽快删除<blockquote>
+<p>虽然目前配合webpack打包工具可以打包时删除，但调试完没必要的代码还是尽量删除的好</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h2><ul>
+<li>文件夹和文件名使用大驼峰命名法，比如：<code>Component/TitleBar.jsx</code></li>
+<li>通用组件放在 <code>Component</code> 文件夹，入口文件尽量使用 index.js</li>
+<li>JSX组件命名必须大写开头(React要求，否则不视为组件)，组件名即文件名，同样采用大驼峰命名法： <code>&lt;TitleBar /&gt;</code></li>
+<li>JSX中组件的属性使用小驼峰命名法，如：className, htmlFor</li>
+<li>组件类的方法命名使用小驼峰命名，不要使用下划线前缀：</li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Component</span> <span class="keyword">extends</span> <span class="title">React</span> </span>&#123;</div><div class="line">    <span class="comment">// good</span></div><div class="line">    onClickSubmit() &#123;</div><div class="line">        <span class="comment">// do something</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="JSX规范"><a href="#JSX规范" class="headerlink" title="JSX规范"></a>JSX规范</h2><ul>
+<li>使用外联样式时（CSS-IN-JS）属性名最好带 <code>Style</code> 关键字，小驼峰命名方式：buttonStyle.js</li>
+<li>属性较多的组件使用 <code>{...this.props}</code> 语法传递属性，如重复设置属性值时,前面的值会被后面的覆盖</li>
+<li>属性较少时可以行内排列，属性较多时每行一个属性,闭合标签单独成行，如：</li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// good</span></div><div class="line">&lt;Component name=<span class="string">"name"</span> title=<span class="string">"title"</span> /&gt;</div><div class="line"><span class="comment">// bad</span></div><div class="line">&lt;Component name=<span class="string">"name"</span> title=<span class="string">"title"</span> action=<span class="string">"action"</span> onCallback=&#123;func&#125; /&gt;</div><div class="line"><span class="comment">// bad</span></div><div class="line">&lt;Component</div><div class="line">    name=<span class="string">"name"</span></div><div class="line">    title=<span class="string">"title"</span></div><div class="line">    action=<span class="string">"action"</span></div><div class="line">    onCallback=&#123;func&#125; /&gt;</div><div class="line"><span class="comment">// good</span></div><div class="line">&lt;Component</div><div class="line">    name=<span class="string">"name"</span></div><div class="line">    title=<span class="string">"title"</span></div><div class="line">    action=<span class="string">"action"</span></div><div class="line">    onCallback=&#123;func&#125;</div><div class="line">    /&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>运算逻辑简单的直接使用行内迭代</li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">return</span> (</div><div class="line">    &lt;div&gt;</div><div class="line">        &#123;this.props.data.map(function(data, i) &#123;</div><div class="line">            return (&lt;Component data=&#123;data&#125; key=&#123;i&#125; /&gt;)</div><div class="line">        &#125;)&#125;</div><div class="line">    &lt;/div&gt;</div><div class="line">);</div></pre></td></tr></table></figure>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ul>
+<li>组件之间的注释需要用 {/<em> 注释内容 </em>/} 包裹。</li>
+<li>HTML/JSX 属性使用双引号 “；JS 使用单引号 ‘</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// bad</span></div><div class="line">&lt;Foo bar=<span class="string">'bar'</span> /&gt;</div><div class="line"><span class="comment">// good</span></div><div class="line">&lt;Foo bar=<span class="string">"bar"</span> /&gt;</div><div class="line"><span class="comment">// bad</span></div><div class="line">&lt;Foo style=&#123;&#123; <span class="attr">left</span>: <span class="string">"20px"</span> &#125;&#125; /&gt;</div><div class="line"><span class="comment">// good</span></div><div class="line">&lt;Foo style=&#123;&#123; <span class="attr">left</span>: <span class="string">'20px'</span> &#125;&#125; /&gt;</div><div class="line"><span class="comment">// JavaScript Expression</span></div><div class="line"><span class="keyword">const</span> person = &lt;Person name=&#123;window.isLoggedIn ? window.name : ''&#125; /&gt;;</div><div class="line">// HTML/JSX</div><div class="line">const myDivElement = &lt;div className="foo" /&gt;;</div><div class="line">const app = &lt;Nav color="blue" /&gt;;</div><div class="line">const content = (</div><div class="line">  &lt;Container&gt;</div><div class="line">    &#123;window.isLoggedIn ? &lt;Nav /&gt; : &lt;Login /&gt;&#125;</div><div class="line">  &lt;/Container&gt;</div><div class="line">);</div></pre></td></tr></table></figure>
+<ul>
+<li>简短的输出在行内直接三元运算符；</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&#123;<span class="keyword">this</span>.state.show &amp;&amp; <span class="string">'This is Shown'</span>&#125;</div><div class="line">&#123;<span class="keyword">this</span>.state.on ? <span class="string">'On'</span> : <span class="string">'Off'</span>&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>多行的 JSX 使用 () 包裹，有组件嵌套时使用多行模式；</li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// bad</span></div><div class="line"><span class="keyword">return</span> (&lt;div&gt;&lt;ComponentOne /&gt;&lt;ComponentTwo /&gt;&lt;/div&gt;);</div><div class="line"><span class="comment">// good</span></div><div class="line"><span class="keyword">var</span> multilineJsx = (</div><div class="line">  &lt;header&gt;</div><div class="line">    &lt;Logo /&gt;</div><div class="line">    &lt;Nav /&gt;</div><div class="line">  &lt;/header&gt;</div><div class="line">);</div><div class="line"><span class="comment">// good</span></div><div class="line"><span class="keyword">return</span> (</div><div class="line">  &lt;div&gt;</div><div class="line">    &lt;ComponentOne /&gt;</div><div class="line">    &lt;ComponentTwo /&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">);</div></pre></td></tr></table></figure>
+<ul>
+<li>单行 JSX 省略 ()</li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> singleLineJsx = &lt;h1&gt;Simple JSX&lt;/h1&gt;;  </div><div class="line"><span class="comment">// good, when single line</span></div><div class="line">render() &#123;</div><div class="line">  <span class="keyword">const</span> body = &lt;div&gt;hello&lt;/div&gt;;</div><div class="line">  <span class="keyword">return</span> &lt;MyComponent&gt;&#123;body&#125;&lt;/MyComponent&gt;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>JSX 中所有标签必须闭合；没有子元素的组件使用自闭合标签语法，自闭合标签 / 前留一个空格。</li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// bad</span></div><div class="line">&lt;Logo&gt;&lt;/Logo&gt;</div><div class="line">&lt;Logo/&gt;</div><div class="line"><span class="comment">// very bad</span></div><div class="line">&lt;Foo    /&gt;</div><div class="line"><span class="comment">// bad</span></div><div class="line">&lt;Foo</div><div class="line"> /&gt;</div><div class="line"><span class="comment">// good</span></div><div class="line">&lt;Logo /&gt;</div></pre></td></tr></table></figure>
+<h2 id="组件内部代码"><a href="#组件内部代码" class="headerlink" title="组件内部代码"></a>组件内部代码</h2><ul>
+<li>按照生命周期组顺序织组件的方法、属性；方法（属性）之间空一行；</li>
+<li>.render() 方法始终放在最后；</li>
+<li>自定义方法 React API 方法之后、.render() 之前。</li>
+<li>有初始化state需求或者绑定this的代码放到 <code>constructor</code>中，没有则不写 <code>constructor</code> 方法</li>
+<li>绑定this可采用，<code>constructor</code> 中 <code>bind(this)</code> 的方式, 如下面的 <code>handleClick</code>，也可以使用属性命名方法的方式, 如下面的 <code>postMessage</code>，但是需要统一使用其中一种，两者不要混用，下面只是示例</li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// React 组件中按照以下顺序组织代码</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyComponent</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</div><div class="line"></div><div class="line">  <span class="keyword">constructor</span>(props) &#123;</div><div class="line">    <span class="keyword">super</span>(props);</div><div class="line">    <span class="keyword">this</span>.handleClick = <span class="keyword">this</span>.handleClick.bind(<span class="keyword">this</span>);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  componentWillMount() &#123;</div><div class="line">    <span class="comment">// do something</span></div><div class="line">  &#125;</div><div class="line"></div><div class="line">  componentDidMount() &#123;</div><div class="line">    <span class="comment">// do something: add DOM event listener, etc.</span></div><div class="line">  &#125;</div><div class="line"></div><div class="line">  componentWillReceiveProps() &#123;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  shouldComponentUpdate() &#123;</div><div class="line"></div><div class="line">  &#125;</div><div class="line"></div><div class="line">  componentWillUpdate() &#123;</div><div class="line"></div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  componentDidUpdate() &#123;</div><div class="line"></div><div class="line">  &#125;</div><div class="line"></div><div class="line">  componentWillUnmount() &#123;</div><div class="line">    <span class="comment">// do something: remove DOM event listener. etc.</span></div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  <span class="comment">// clickHandlers or eventHandlers like onClickSubmit() or onChangeDescription()</span></div><div class="line">  handleClick() &#123;</div><div class="line">    <span class="comment">// ...</span></div><div class="line">  &#125;</div><div class="line"></div><div class="line">  postMessage = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">      <span class="comment">//.....</span></div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="comment">// getter methods for render like getSelectReason() or getFooterContent()</span></div><div class="line">  <span class="comment">// Optional render methods like renderNavigation() or renderProfilePicture()</span></div><div class="line">  render() &#123;</div><div class="line">    <span class="comment">// ...</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2017/10/25/中文文档写作规范/" style="float: left;">
+        ← 中文技术文档写作规范
+    </a>
+    
+    
+    <a class="pull-right" href="/2017/09/03/React填坑笔记/">
+        React填坑笔记 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2017/09/03/React编码规范总结/" data-title="React编码规范总结" data-url="https://chyrain.github.io/2017/09/03/React编码规范总结/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"chyrain"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By Chyrain. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/chyrain" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://weibo.com/1960951513" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+            <div style="display:none">
+                <script src="https://s19.cnzz.com/z_stat.php?id=1264487432&web_id=1264487432" language="JavaScript"></script>
+            </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+        
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+    
+    resizeHero();
+    
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+<!-- v5kf.com -->
+<script type="text/javascript">
+	(function (w, d, s, i, v, j, b) {
+		w[i] = w[i] || function () {
+			(w[i].v = w[i].v || []).push(arguments)
+		};
+		j = d.createElement(s),
+			b = d.getElementsByTagName(s)[0];
+		j.async = true;
+		j.charset = "UTF-8";
+		j.src = "https://www.v5kf.com/105723/v5kf.js";
+		b.parentNode.insertBefore(j, b);
+	})(window, document, "script", "V5CHAT");
+      V5CHAT('language', 'en');
+</script>
+<!-- / v5kf.com -->
+</body>
+</html>
