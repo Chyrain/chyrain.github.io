@@ -18,7 +18,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>React开发工具库推荐 | Chyrain</title>
+  <title>Archives: 2018 | Chyrain</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -85,7 +85,7 @@
 </head>
 
 <!--
-<body class="post-template">
+<body class="home-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -114,7 +114,7 @@
 				    
 				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(10)</small></a></li>
 				    
-				    <li><a href="/categories/前端-React/" class="animsition-link">前端,React<small>(4)</small></a></li>
+				    <li><a href="/categories/前端-React/" class="animsition-link">前端,React<small>(5)</small></a></li>
 				    
 				    <li><a href="/categories/小程序/" class="animsition-link">小程序<small>(1)</small></a></li>
 				    
@@ -196,73 +196,69 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      
-<section id="intro">
-    <div class="container">
-        <div class="row col-md-offset-2">
-            <div class="col-md-8">
-    			<span class="post-meta">
-      <time datetime="2017-09-03T06:21:54.000Z" itemprop="datePublished">
-          2017-09-03
-      </time>
-    
-</span>
-                <h1>React开发工具库推荐</h1>
+      <!-- ============================ Hero Image =========================== -->
+
+<section id="hero" class="scrollme">
+    <div class="container-fluid element-img" style="background: url(/img/1.jpeg) no-repeat center center fixed;background-size: cover">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost">
+                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                    <div>
+                        
+                        <p></p>
+                        <h2>Working & Learning</h2>
+                        
+                        <p>简 生活</p>
+                        <h2></h2>
+                        
+
+                    </div>
+                </div>
             </div>
+            <!-- // .col-md-12 -->
         </div>
-        <div class="col-md-8 col-md-offset-2">
-      		<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>笔者从接触到产品上应用React已经有一段时间了，使用开发React了一个大项目，和几个小demo，本文记录了笔者在React开发中从广大网友那学习了解到的一些React好用的工具插件，在此做下分享记录。</p>
-<h2 id="项目构建工具"><a href="#项目构建工具" class="headerlink" title="项目构建工具"></a>项目构建工具</h2><p>首推 <a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="external">create-react-app</a>。</p>
-<p>create-react-app是来自于Facebook出品的零配置命令行工具，能够帮你自动创建基于Webpack+ES6的最简易的React项目模板，有助于初学者快速上手实践。</p>
-<h2 id="调试工具"><a href="#调试工具" class="headerlink" title="调试工具"></a>调试工具</h2><h3 id="React-Devtools"><a href="#React-Devtools" class="headerlink" title="React Devtools"></a>React Devtools</h3><p>React Devtools 是一个浏览器插件，是React官方提供的类似于浏览器调试台的插件，可以允许以查看组件的层次、各个组件的Props、States等等信息，使用方式很简单，去Chrome浏览器应用商店下载（需要翻墙）或者网上搜索该插件下载其crx文件拖到Chrome中安装即可。</p>
-<h3 id="Redux-DevTools"><a href="#Redux-DevTools" class="headerlink" title="Redux DevTools"></a>Redux DevTools</h3><p>Redux Devtools 也是一个浏览器插件，用来调试查看状态管理库Redux的信息（React的好伴侣），同样前往Chrome浏览器应用商店下载即可。</p>
-<h3 id="react-monocle"><a href="#react-monocle" class="headerlink" title="react-monocle"></a>react-monocle</h3><p><a href="https://github.com/team-gryff/react-monocle" target="_blank" rel="external">React Monocle</a>是一个帮助开发人员可视化浏览React组件的层次结构的工具，安装使用方式：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install -g react-monocle</div><div class="line"></div><div class="line">monocle -c &lt;html&gt; -b &lt;bundle&gt;</div></pre></td></tr></table></figure>
-<h3 id="React-StoryBook"><a href="#React-StoryBook" class="headerlink" title="React-StoryBook"></a>React-StoryBook</h3><p><a href="https://github.com/kadirahq/react-storybook" target="_blank" rel="external">React Storybook</a>可以在你开发的过程中将React组件独立于整个应用程序进行查看，其主要特征为：</p>
-<ul>
-<li>独立的组件运行环境</li>
-<li>组件的热加载</li>
-<li>可以与Redux、Relay以及Meteor无缝集成</li>
-<li>支持CSS</li>
-</ul>
-<h2 id="优化工具"><a href="#优化工具" class="headerlink" title="优化工具"></a>优化工具</h2><h3 id="why-did-you-update"><a href="#why-did-you-update" class="headerlink" title="why-did-you-update"></a>why-did-you-update</h3><p><a href="https://github.com/garbles/why-did-you-update" target="_blank" rel="external">why-did-you-update</a>是一个js库，可以通过npm安装，该函数会在出现不必要的重渲染的时候提醒你。使用方法很简单：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> (process.env.NODE_ENV !== <span class="string">'production'</span>) &#123;</div><div class="line">  <span class="keyword">const</span> &#123;whyDidYouUpdate&#125; = <span class="built_in">require</span>(<span class="string">'why-did-you-update'</span>)</div><div class="line">  whyDidYouUpdate(React)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="html-to-react-components"><a href="#html-to-react-components" class="headerlink" title="html-to-react-components"></a>html-to-react-components</h3><p>使用<a href="https://github.com/roman01la/html-to-react-components" target="_blank" rel="external">html-to-react-components</a>这个工具，可以自动将HTML标签转化为JSX的标签</p>
-
-            <div class="clearfix"></div>
-            <hr class="nogutter">
-        </div>
-        <nav class="pagination" role="pagination">
-    
-    <a class="pull-left" href="/2017/10/25/中文文档写作规范/" style="float: left;">
-        ← 中文技术文档写作规范
-    </a>
-    
-    
-    <a class="pull-right" href="/2017/09/03/React编码规范总结/">
-        React编码规范总结 →
-    </a>
-    
-</nav>
-
-        <div class="duoshuo">
-<div class="ds-thread" data-thread-key="2017/09/03/React开发工具库推荐/" data-title="React开发工具库推荐" data-url="https://chyrain.github.io/2017/09/03/React开发工具库推荐/"></div>
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"chyrain"};
-(function() {
-	var ds = document.createElement('script');
-	ds.type = 'text/javascript';ds.async = true;
-	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	ds.charset = 'UTF-8';
-	(document.getElementsByTagName('head')[0] 
-	 || document.getElementsByTagName('body')[0]).appendChild(ds);
-})();
-</script>
-</div>
+        <div class="herofade beige-dk"></div>
     </div>
 </section>
 
+<!-- Height spacing helper -->
+<div class="heightblock"></div>
+<!-- // End height spacing helper -->
 
+<!-- ============================ END Hero Image =========================== -->
+
+
+
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row boxes">
+                    
+                    
+                        
+                        
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                            
+                              <h4 class="title"><a href="/2018/01/03/180103-React项目框架重构/">前端项目框架重构</a></h4>
+                            
+                            <p><time datetime="2018-01-03T08:23:12.000Z"><a href="/2018/01/03/180103-React项目框架重构/">2018-01-03</a></time></p>
+                        </div>
+                    
+                </div>
+            </div>    
+        </div>
+    </div>
+</section> 
+
+<section id="statement">
+    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+            <p>每一个不曾起舞的日子都是对生命的辜负</p>
+        </div>
+    </div>
+</section>
       
 <!-- ============================ Footer =========================== -->
 

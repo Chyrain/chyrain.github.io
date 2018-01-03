@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********   
+    -----Edit By Chyrain(https://chyrain.github.io)  -----Theme By Kieran(http://go.kieran.top) 
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>前端项目框架重构 | Chyrain</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Chyrain">
+    <meta name="author" content="Chyrain">
+    <meta name="description" content="working & learning" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Chyrain" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+    
+
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='https://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/Android/" class="animsition-link">Android<small>(2)</small></a></li>
+				    
+				    <li><a href="/categories/Linux/" class="animsition-link">Linux<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/others/" class="animsition-link">others<small>(2)</small></a></li>
+				    
+				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(10)</small></a></li>
+				    
+				    <li><a href="/categories/前端-React/" class="animsition-link">前端,React<small>(5)</small></a></li>
+				    
+				    <li><a href="/categories/小程序/" class="animsition-link">小程序<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/摆好pose/" class="animsition-link">摆好pose<small>(7)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://chyrain.com/" class="animsition-link">Chyrain</a></li>
+                    
+                    <li><a href="http://www.v5kf.com/" class="animsition-link">V5KF</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about/" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                        
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/about/" class="animsition-link">Chyrain</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/chyrain" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            
+                            
+                            
+                            <li><a href="https://weibo.com/1960951513" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2018-01-03T08:23:12.000Z" itemprop="datePublished">
+          2018-01-03
+      </time>
+    
+</span>
+                <h1>前端项目框架重构</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>原项目结构使用了gulp+webpack进行项目自动化流程构建，核心页面使用react框架开发，存在比较严重的问题是由于产品功能的丰富，项目构建耗时越来越长，加上尤其是release项目发布时还使用了 <em>Google Closure Compile</em> 进行代码压缩，整个打包过程耗时近一分钟，实在忍不了，于是搞清楚整个项目构建框架，到底是因为什么导致的。</p>
+<h2 id="原项目结构"><a href="#原项目结构" class="headerlink" title="原项目结构"></a>原项目结构</h2><p>优点：</p>
+<ul>
+<li>webpack配置了externals，把React,ReactDOM,以及Redux，ReactRedux都排除在打包范围外，这样做减少了打包文件大小，也提高了打包效率</li>
+<li>功能需要使用amr解码，于是引入了音频编码库amrnb.js，采用了按需加载方式，值得肯定</li>
+<li>gulp工程化做得很好，包括iconfont字体、静态文件、图片等的压缩和批处理，优化做得不错</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>externals剔出的库都写到了html的标签中加载，大概有6个js文件和4个css文件，碎片化严重</li>
+<li>开发过程中没有热加载，每次修改功能需要调试时，都需要手动执行一次编译命令，然后刷新页面</li>
+<li>编译打包时间过慢，即便在开发环境下，也需耗时近一分钟，原因是每次打包都进行了代码压缩操作</li>
+</ul>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="优化开发环境下打包"><a href="#优化开发环境下打包" class="headerlink" title="优化开发环境下打包"></a>优化开发环境下打包</h3><p>使用webpack.DefinePlugin配置好开发环境变量，开发环境时，去掉GCC压缩，并添加调试环境代码，比如项目中使用到一个叫 <code>why-did-you-update</code> 的库用来优化React渲染，我们只需要在开发环境打包进去，生产环境下是不需要的：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 开发和生产环境代码</span></div><div class="line"><span class="keyword">if</span> (process.env.NODE_ENV !== <span class="string">'production'</span>) &#123;</div><div class="line">  <span class="keyword">const</span> &#123; whyDidYouUpdate &#125; = <span class="built_in">require</span>(<span class="string">'why-did-you-update'</span>)</div><div class="line">  whyDidYouUpdate(React);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>打包代码增加<code>devpack</code>任务（其中<code>webpack(env)</code>是生成webpack配置并打包过程）：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>),</div><div class="line">  rename = <span class="built_in">require</span>(<span class="string">'gulp-rename'</span>),</div><div class="line">  webpack = <span class="built_in">require</span>(<span class="string">'./webpack'</span>),</div><div class="line">  notifier = <span class="built_in">require</span>(<span class="string">'./notifier'</span>),</div><div class="line">  closure = <span class="built_in">require</span>(<span class="string">'gulp-closure-compiler'</span>),</div><div class="line"></div><div class="line">  gulp.task(<span class="string">'minpack'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> gulp.src(src, &#123;<span class="attr">cwd</span>: cwd&#125;)</div><div class="line">      .pipe(webpack(<span class="string">'production'</span>))</div><div class="line">      .pipe(rename(&#123; <span class="attr">dirname</span>: src.replace(<span class="regexp">/(\/)js\/.*/</span>, <span class="string">'$1'</span>) + <span class="string">'/'</span>, <span class="attr">basename</span>: <span class="string">'index'</span>, <span class="attr">extname</span>: <span class="string">'.js'</span> &#125;))</div><div class="line">      .pipe(gulp.dest(<span class="string">'dist/public'</span>))</div><div class="line">      .pipe(closure(&#123;</div><div class="line">        <span class="attr">fileName</span>: <span class="string">'index.js'</span>,</div><div class="line">        <span class="attr">compilerFlags</span>: &#123;</div><div class="line">          <span class="attr">warning_level</span>: <span class="string">'VERBOSE'</span>,</div><div class="line">          <span class="attr">language_in</span>: <span class="string">'ECMASCRIPT5'</span>,</div><div class="line">          <span class="attr">output_wrapper</span>: <span class="string">'/* Js minimized by &lt;chyrain_v5kf@qq.com&gt; */\n%output%\n'</span></div><div class="line">        &#125;</div><div class="line">      &#125;))</div><div class="line">      .pipe(rename(&#123;<span class="attr">dirname</span>: name, <span class="attr">suffix</span>: <span class="string">'.min'</span>&#125;))</div><div class="line">      .pipe(gulp.dest(<span class="string">'dist/public'</span>))</div><div class="line">      .pipe(notifier(&#123;</div><div class="line">        <span class="attr">title</span>: <span class="string">'WebPack完成'</span>,</div><div class="line">        <span class="attr">message</span>: <span class="string">'生成：'</span></div><div class="line">      &#125;));</div><div class="line">  &#125;);</div><div class="line"></div><div class="line">  <span class="comment">// 开发环境打包，env='development'，并去掉closure压缩</span></div><div class="line">  gulp.task(<span class="string">'devpack'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> gulp.src(src, &#123;<span class="attr">cwd</span>: cwd&#125;)</div><div class="line">      .pipe(webpack(<span class="string">'development'</span>))</div><div class="line">      .pipe(rename(&#123; <span class="attr">dirname</span>: src.replace(<span class="regexp">/(\/)js\/.*/</span>, <span class="string">'$1'</span>) + <span class="string">'/'</span>, <span class="attr">basename</span>: <span class="string">'index'</span>, <span class="attr">extname</span>: <span class="string">'.js'</span> &#125;))</div><div class="line">      .pipe(gulp.dest(<span class="string">'dist/public'</span>))</div><div class="line">      .pipe(notifier(&#123;</div><div class="line">        <span class="attr">title</span>: <span class="string">'WebPack完成'</span>,</div><div class="line">        <span class="attr">message</span>: <span class="string">'生成：'</span></div><div class="line">      &#125;));</div><div class="line">  &#125;);</div></pre></td></tr></table></figure>
+<p>然后，要解决改动代码每次都要手动编译问题。考虑到项目以gulp为主，辅以webpack进行打包，为了减少改动，不使用webpack热更新，而用了gulp的watch方法，监听文件变动后执行一次打包操作(其中<code>devpack</code>是gulp开发环境下打包命令)：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">gulp.task(<span class="string">'watch'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  gulp.watch(<span class="string">'src/public/js/**/*.jsx'</span>, [<span class="string">'devpack'</span>]);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="解决依赖库庞大和碎片化"><a href="#解决依赖库庞大和碎片化" class="headerlink" title="解决依赖库庞大和碎片化"></a>解决依赖库庞大和碎片化</h3><p>首先想到的是使用webpack的<code>DllPlugin</code>，把所有第三方库打包到一个独立文件，但是由于原项目配置了externals，所有代码页都以全局变量访问的 <code>React</code> 等第三方框架库，为了减少改动，我们需要继续暴露出这些第三方库的全局变量，一番摸索过后，发现webpack有一个<code>expose-loader</code>非常合适。</p>
+<p>于是新建一个dll打包配置文件 webpack.dll.js ：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</div><div class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">"path"</span>);</div><div class="line"></div><div class="line"><span class="keyword">const</span> PUBLIC_PATH = path.resolve(__dirname, <span class="string">'./src/public'</span>);</div><div class="line"><span class="keyword">const</span> SRC_PATH = path.resolve(__dirname, <span class="string">'./src'</span>); <span class="comment">// 所有源文件所在top路径</span></div><div class="line"><span class="keyword">const</span> LIB_PATH = path.resolve(PUBLIC_PATH, <span class="string">'./lib/js'</span>); <span class="comment">// js 库目录</span></div><div class="line"><span class="keyword">const</span> BUILD_PATH = LIB_PATH; <span class="comment">// 编译输出目录</span></div><div class="line"></div><div class="line"><span class="keyword">const</span> vendors = [</div><div class="line">  <span class="string">'react'</span>,</div><div class="line">  <span class="string">'react-dom'</span>,</div><div class="line">  path.resolve(LIB_PATH, <span class="string">'window_redux.js'</span>), <span class="comment">// 'redux'的包装</span></div><div class="line">  path.resolve(LIB_PATH, <span class="string">'window_react_redux.js'</span>), <span class="comment">// 'react-redux'的包装</span></div><div class="line">  path.resolve(LIB_PATH, <span class="string">'jqlite.js'</span>)</div><div class="line">];</div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">  <span class="attr">output</span>: &#123;</div><div class="line">    <span class="attr">path</span>: BUILD_PATH,</div><div class="line">    <span class="attr">filename</span>: <span class="string">'[name].js'</span>,</div><div class="line">    <span class="attr">library</span>: <span class="string">'[name]'</span>,</div><div class="line">  &#125;,</div><div class="line">  <span class="attr">entry</span>: &#123;</div><div class="line">    <span class="attr">dll</span>: vendors,</div><div class="line">  &#125;,</div><div class="line">  <span class="attr">module</span>: &#123;</div><div class="line">    <span class="attr">rules</span>: [</div><div class="line">      &#123;</div><div class="line">        <span class="attr">test</span>: <span class="built_in">require</span>.resolve(<span class="string">'react'</span>),</div><div class="line">        <span class="attr">use</span>: [&#123;</div><div class="line">          <span class="attr">loader</span>: <span class="string">'expose-loader'</span>,</div><div class="line">          <span class="attr">options</span>: <span class="string">'React'</span></div><div class="line">        &#125;]</div><div class="line">      &#125;,</div><div class="line">      <span class="comment">// 除了react外要用路径</span></div><div class="line">      &#123;</div><div class="line">        <span class="attr">test</span>: <span class="regexp">/\/node_modules\/react-dom\//</span>, <span class="comment">// require.resolve('react-dom'),</span></div><div class="line">        use: [&#123;</div><div class="line">          <span class="attr">loader</span>: <span class="string">'expose-loader'</span>,</div><div class="line">          <span class="attr">options</span>: <span class="string">'ReactDOM'</span></div><div class="line">        &#125;]</div><div class="line">      &#125;,</div><div class="line">      &#123;</div><div class="line">        <span class="attr">test</span>: <span class="regexp">/\/public\/lib\/js\/jqlite/</span>,</div><div class="line">        <span class="attr">use</span>: [&#123;</div><div class="line">          <span class="attr">loader</span>: <span class="string">'expose-loader'</span>,</div><div class="line">          <span class="attr">options</span>: <span class="string">'$'</span></div><div class="line">        &#125;,&#123;</div><div class="line">          <span class="attr">loader</span>: <span class="string">'expose-loader'</span>,</div><div class="line">          <span class="attr">options</span>: <span class="string">'jQuery'</span></div><div class="line">        &#125;]</div><div class="line">      &#125;</div><div class="line">    ]</div><div class="line">  &#125;,</div><div class="line">  <span class="attr">plugins</span>: [</div><div class="line">    <span class="keyword">new</span> webpack.DefinePlugin(&#123;</div><div class="line">      <span class="string">'process.env'</span>: &#123;</div><div class="line">        <span class="attr">NODE_ENV</span>: <span class="string">'"production"'</span></div><div class="line">      &#125;</div><div class="line">    &#125;),</div><div class="line">    <span class="keyword">new</span> webpack.DllPlugin(&#123;</div><div class="line">      <span class="attr">path</span>: path.resolve(PUBLIC_PATH, <span class="string">'./dll/manifest.json'</span>),</div><div class="line">      <span class="attr">name</span>: <span class="string">'[name]'</span>,</div><div class="line">      <span class="attr">context</span>: path.resolve(PUBLIC_PATH, <span class="string">'./dll'</span>)</div><div class="line">    &#125;),</div><div class="line">    <span class="keyword">new</span> webpack.optimize.UglifyJsPlugin(&#123;</div><div class="line">      <span class="attr">compress</span>: &#123; <span class="attr">warnings</span>: <span class="literal">false</span> &#125;,</div><div class="line">      <span class="attr">minimize</span>: <span class="literal">true</span>,</div><div class="line">      <span class="attr">sourceMap</span>: <span class="literal">true</span>,</div><div class="line">      <span class="attr">output</span>: &#123; <span class="attr">comments</span>: <span class="literal">false</span> &#125;</div><div class="line">    &#125;)</div><div class="line">  ]</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>然后在项目主入口打包配置文件中修改 webpack.config.js，添加 <code>DllReferencePlugin</code>：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">    <span class="attr">output</span>: &#123;</div><div class="line">      <span class="attr">path</span>: process.cwd(),</div><div class="line">      <span class="attr">filename</span>: <span class="string">'bundle.js'</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">resolve</span>: &#123;</div><div class="line">      <span class="attr">extensions</span>: [<span class="string">'.js'</span>, <span class="string">'.jsx'</span>]</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">module</span>: &#123;</div><div class="line">      <span class="attr">rules</span>: [</div><div class="line">        &#123;</div><div class="line">          <span class="attr">test</span>: <span class="regexp">/\.jsx?$/</span>,</div><div class="line">          <span class="attr">exclude</span>: <span class="regexp">/(node_modules|bower_components)/</span>,</div><div class="line">          <span class="attr">use</span>: <span class="string">'babel-loader'</span></div><div class="line">        &#125;</div><div class="line">      ]</div><div class="line">    &#125;,</div><div class="line">    <span class="comment">// externals全局变量不打包</span></div><div class="line">    <span class="comment">// externals: &#123;</span></div><div class="line">    <span class="comment">//   'react': 'React',</span></div><div class="line">    <span class="comment">//   'react-dom': 'ReactDOM',</span></div><div class="line">    <span class="comment">// &#125;,</span></div><div class="line">    <span class="comment">// 把全部外部库抽出到一个xx_dll.js中在html中&lt;script&gt;引入</span></div><div class="line">    plugins: [</div><div class="line">      <span class="keyword">new</span> webpack.DllReferencePlugin(&#123;</div><div class="line">        <span class="attr">context</span>: path.resolve(PUBLIC_PATH, <span class="string">'./dll'</span>),</div><div class="line">        <span class="attr">manifest</span>: <span class="built_in">require</span>(path.resolve(PUBLIC_PATH, <span class="string">'./dll/manifest.json'</span>)),</div><div class="line">      &#125;),</div><div class="line">      <span class="keyword">new</span> webpack.DefinePlugin(&#123;</div><div class="line">        <span class="string">'process.env.NODE_ENV'</span>: <span class="built_in">JSON</span>.stringify(<span class="string">'production'</span>)</div><div class="line">      &#125;)</div><div class="line">    ]</div><div class="line">  &#125;);</div></pre></td></tr></table></figure>
+<p><code>DllPlugin</code> 插件会在编译完第三方依赖库之后，生成一个模块相对路径到模块 id 的映射表 <code>manifest.json</code>，和 <code>dll.js</code> 文件，然后在编译业务代码时使用 <code>DllReferencePlugin</code> 导入这个映射表，业务代码就能找到第三方依赖里的对应模块了。并且dll中通过 <code>expose-loader</code> 把原先需要的全局变量都挂载到window上，兼容了原项目编码方式，但是需要注意的是 <code>expose-loader</code> 的配置中 <code>require.resolve</code> 是用来获取模块的绝对路径（”/…/app/node_modules/react/react.js”），这里的暴露只会作用于 React 模块。并且只在 bundle 中使用到它时，才进行暴露。所以其他模块需要以路径形式获取，比如jqlite <code>test: /\/public\/lib\/js\/jqlite/</code>，并在项目入口index.js中引入他们（只需引入一次即可）：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">'react-dom'</span>;</div><div class="line"><span class="keyword">import</span> Redux <span class="keyword">from</span> <span class="string">'../lib/js/window_redux.js'</span>;</div><div class="line"><span class="keyword">import</span> ReactRedux <span class="keyword">from</span> <span class="string">'../lib/js/window_react_redux.js'</span>;</div><div class="line"><span class="keyword">import</span> $ <span class="keyword">from</span> <span class="string">'../lib/js/jqlite.js'</span>;</div></pre></td></tr></table></figure>
+<p>对于redux、react-redux的引入，则需要包装一下，再添加到 <code>webpack.dll.js</code> 进行打包：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// window_redux.js</span></div><div class="line"><span class="keyword">import</span> * <span class="keyword">as</span> Redux <span class="keyword">from</span> <span class="string">'redux'</span></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> (<span class="built_in">window</span>.Redux = Redux)</div><div class="line"></div><div class="line"><span class="comment">// window_react_redux.js</span></div><div class="line"><span class="keyword">import</span> * <span class="keyword">as</span> ReactRedux <span class="keyword">from</span> <span class="string">'react-redux'</span></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> (<span class="built_in">window</span>.ReactRedux = ReactRedux)</div></pre></td></tr></table></figure>
+<p>好了，现在可以打包测试一下啦，输入 <code>gulp watch</code> 命令，修改代码，自动编译，完成，刷新页面。额。。。花了总共18s，还是很慢啊，不过没办法，项目庞大，代码打包后还有2MB，一个小小笔记本性能不足以支撑，可以考虑换个更强大的电脑了。不过，相比此前一分钟的打包时间，已经足够让我提升开发效率了。最后放到生产环境下在浏览器下比对，发现在服务端开启gzip的情况下，修改后的项目全部js加载后总大小比原先小了15KB，相当于gzip前小了近40多KB，不仅提升了开发效率，还提升了生产环境的贷款利用率，优化还是比较有效果的😊。</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2017/12/26/前端优化/">
+        前端优化 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2018/01/03/180103-React项目框架重构/" data-title="前端项目框架重构" data-url="https://chyrain.github.io/2018/01/03/180103-React项目框架重构/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"chyrain"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By Chyrain. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/chyrain" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://weibo.com/1960951513" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+            <div style="display:none">
+                <script src="https://s19.cnzz.com/z_stat.php?id=1264487432&web_id=1264487432" language="JavaScript"></script>
+            </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+        
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+    
+    resizeHero();
+    
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+<!-- v5kf.com -->
+<script type="text/javascript">
+	(function (w, d, s, i, v, j, b) {
+		w[i] = w[i] || function () {
+			(w[i].v = w[i].v || []).push(arguments)
+		};
+		j = d.createElement(s),
+			b = d.getElementsByTagName(s)[0];
+		j.async = true;
+		j.charset = "UTF-8";
+		j.src = "https://www.v5kf.com/105723/v5kf.js";
+		b.parentNode.insertBefore(j, b);
+	})(window, document, "script", "V5CHAT");
+      V5CHAT('language', 'en');
+</script>
+<!-- / v5kf.com -->
+</body>
+</html>
