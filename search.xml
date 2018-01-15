@@ -4,6 +4,17 @@
   
     
     <entry>
+      <title><![CDATA[javascript中void的作用]]></title>
+      <url>https://chyrain.github.io/2018/01/12/180112-javascript%E4%B8%ADvoid%E7%9A%84%E4%BD%9C%E7%94%A8/</url>
+      <content type="html"><![CDATA[<h1 id="作为undefined的替代"><a href="#作为undefined的替代" class="headerlink" title="作为undefined的替代"></a>作为undefined的替代</h1><p>因为<code>undefined</code>在<code>javascript</code>中不是保留字，所以可能有变量被无意命名为<code>undefined</code>：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> <span class="literal">undefined</span> = <span class="string">"Hello world!"</span>;</div><div class="line">  <span class="built_in">console</span>.log(<span class="literal">undefined</span> === <span class="keyword">void</span> <span class="number">0</span>);  <span class="comment">// false</span></div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(<span class="literal">undefined</span> === <span class="keyword">void</span> <span class="number">0</span>);  <span class="comment">// true</span></div><div class="line">test();</div></pre></td></tr></table></figure>
+<p>所以我们会用<code>void 0</code>来获取undefined</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">_.isUndefined = <span class="function"><span class="keyword">function</span>(<span class="params">obj</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> obj === <span class="keyword">void</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="HTML中的空链接或者图片"><a href="#HTML中的空链接或者图片" class="headerlink" title="HTML中的空链接或者图片"></a>HTML中的空链接或者图片</h1><p>确保<code>&lt;a/&gt;</code>点击时不会产生页面跳转;<br>确保<code>&lt;img/&gt;</code>不会向服务器发出垃圾请求.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:void(0)"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"javascript:void(0)"</span>&gt;</span><span class="tag">&lt;/<span class="name">img</span>&gt;</span></div></pre></td></tr></table></figure>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[关于“前端又出新框架了”的思考]]></title>
       <url>https://chyrain.github.io/2018/01/06/180106-%E5%85%B3%E4%BA%8E%E2%80%9D%E5%89%8D%E7%AB%AF%E5%8F%88%E5%87%BA%E6%96%B0%E6%A1%86%E6%9E%B6%E4%BA%86%E2%80%9C%E7%9A%84%E6%80%9D%E8%80%83/</url>
       <content type="html"><![CDATA[<p>一转眼2018就已经到来，来不及转身思考，已过了自己工作之后的三个年头。这几年我对自己的总结是：接触得多，得到的不一定多。公司需要我，我就去做，一直在各种研发方向间切换，让我有些不明白自己擅长什么。</p>
