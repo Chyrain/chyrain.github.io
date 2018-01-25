@@ -18,7 +18,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives: 2017/9 | Chyrain</title>
+  <title>javascript中void的作用 | Chyrain</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -85,7 +85,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -196,78 +196,57 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/1.jpeg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <p></p>
-                        <h2>Working & Learning</h2>
-                        
-                        <p>简 生活</p>
-                        <h2></h2>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2017/09/03/React编码规范总结/">React编码规范总结</a></h4>
-                            
-                            <p><time datetime="2017-09-03T06:21:54.000Z"><a href="/2017/09/03/React编码规范总结/">2017-09-03</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2017/09/03/React填坑笔记/">React填坑笔记</a></h4>
-                            
-                            <p><time datetime="2017-09-03T06:21:54.000Z"><a href="/2017/09/03/React填坑笔记/">2017-09-03</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2018-01-12T06:33:22.000Z" itemprop="datePublished">
+          2018-01-12
+      </time>
+    
+</span>
+                <h1>javascript中void的作用</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="作为undefined的替代"><a href="#作为undefined的替代" class="headerlink" title="作为undefined的替代"></a>作为undefined的替代</h1><p>因为<code>undefined</code>在<code>javascript</code>中不是保留字，所以可能有变量被无意命名为<code>undefined</code>：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> <span class="literal">undefined</span> = <span class="string">"Hello world!"</span>;</div><div class="line">  <span class="built_in">console</span>.log(<span class="literal">undefined</span> === <span class="keyword">void</span> <span class="number">0</span>);  <span class="comment">// false</span></div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(<span class="literal">undefined</span> === <span class="keyword">void</span> <span class="number">0</span>);  <span class="comment">// true</span></div><div class="line">test();</div></pre></td></tr></table></figure>
+<p>所以我们会用<code>void 0</code>来获取undefined</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">_.isUndefined = <span class="function"><span class="keyword">function</span>(<span class="params">obj</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> obj === <span class="keyword">void</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="HTML中的空链接或者图片"><a href="#HTML中的空链接或者图片" class="headerlink" title="HTML中的空链接或者图片"></a>HTML中的空链接或者图片</h1><p>确保<code>&lt;a/&gt;</code>点击时不会产生页面跳转;<br>确保<code>&lt;img/&gt;</code>不会向服务器发出垃圾请求.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:void(0)"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"javascript:void(0)"</span>&gt;</span><span class="tag">&lt;/<span class="name">img</span>&gt;</span></div></pre></td></tr></table></figure>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2018/01/06/180106-关于”前端又出新框架了“的思考/">
+        关于“前端又出新框架了”的思考 →
+    </a>
+    
+</nav>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>每一个不曾起舞的日子都是对生命的辜负</p>
-        </div>
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2018/01/12/180112-javascript中void的作用/" data-title="javascript中void的作用" data-url="https://chyrain.github.io/2018/01/12/180112-javascript中void的作用/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"chyrain"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 

@@ -112,7 +112,7 @@
 				    
 				    <li><a href="/categories/others/" class="animsition-link">others<small>(3)</small></a></li>
 				    
-				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(10)</small></a></li>
+				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(11)</small></a></li>
 				    
 				    <li><a href="/categories/前端-React/" class="animsition-link">前端,React<small>(5)</small></a></li>
 				    
@@ -230,6 +230,37 @@
 
 <section id="intro">
     <div class="container">
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2018/01/12/180112-javascript中void的作用/">javascript中void的作用</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2018-01-12T06:33:22.000Z" itemprop="datePublished">
+          2018-01-12
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        作为undefined的替代因为undefined在javascript中不是保留字，所以可能有变量被无意命名为undefined：
+123456function test() &#123;  var undefined = "Hello world!";  console.log(undefined === void 0);  // false&#125;console.log(undefined === void 0);  // t
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2018/01/12/180112-javascript中void的作用/">查看全文...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
         
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
@@ -578,49 +609,6 @@ React和Vue看起来非常相似的并且我在项目中两者都用过。他们
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2017/09/03/React编码规范总结/">React编码规范总结</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2017-09-03T06:21:54.000Z" itemprop="datePublished">
-          2017-09-03
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        基本规范
-尽可能使用ES6语法（可包含一些ES7语法）
-每个文件仅export一个React组件，命名要顾名思义。
-文件内允许包含不可复用的子组件，无状态组件尽可能使用函数式组件
-
-
-调试时console的代码要在调试完尽快删除，注释掉的代码尽快删除
-虽然目前配合webpack打包工具可以打包时删除，但调试完没必要的代码还是尽量删除的好
-
-
-
-命名规范
-文件夹和文件名使用大驼峰命名法，比如：Component/TitleBar.jsx
-
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2017/09/03/React编码规范总结/">查看全文...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
         <nav class="pagination" role="pagination">
           
           <a class="pull-right" href="/page/2/">Older Posts →</a>
@@ -715,7 +703,8 @@ React和Vue看起来非常相似的并且我在项目中两者都用过。他们
 		j.src = "https://www.v5kf.com/105723/v5kf.js";
 		b.parentNode.insertBefore(j, b);
 	})(window, document, "script", "V5CHAT");
-      V5CHAT('language', 'en');
+      // V5CHAT('language', 'en');
+      V5CHAT('showChatOnHuman', false); // false 则不自动显示对话框
 </script>
 <!-- / v5kf.com -->
 </body>

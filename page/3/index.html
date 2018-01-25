@@ -112,7 +112,7 @@
 				    
 				    <li><a href="/categories/others/" class="animsition-link">others<small>(3)</small></a></li>
 				    
-				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(10)</small></a></li>
+				    <li><a href="/categories/前端/" class="animsition-link">前端<small>(11)</small></a></li>
 				    
 				    <li><a href="/categories/前端-React/" class="animsition-link">前端,React<small>(5)</small></a></li>
 				    
@@ -230,6 +230,41 @@
 
 <section id="intro">
     <div class="container">
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2017/02/28/JS-基础问题不基础/">JS-基础问题不基础</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2017-02-28T08:21:54.000Z" itemprop="datePublished">
+          2017-02-28
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        JS基础问题推荐：《你不知道的Javascript》
+1. 引用传递与值传递js 中什么类型是引用传递, 什么类型是值传递? 如何将值类型的变量以引用的方式传递?
+
+简单点说, 对象是引用传递, 基础类型是值传递, 通过将基础类型包装 (boxing) 可以以引用的方式传递.
+
+仔细查看并理解下面代码：12345678910111213141516function changeStuff(a, b, c)&#123;  a = a * 
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2017/02/28/JS-基础问题不基础/">查看全文...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
         
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
@@ -649,7 +684,8 @@ Quick StartCreate a new p
 		j.src = "https://www.v5kf.com/105723/v5kf.js";
 		b.parentNode.insertBefore(j, b);
 	})(window, document, "script", "V5CHAT");
-      V5CHAT('language', 'en');
+      // V5CHAT('language', 'en');
+      V5CHAT('showChatOnHuman', false); // false 则不自动显示对话框
 </script>
 <!-- / v5kf.com -->
 </body>
