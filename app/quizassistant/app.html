@@ -46,10 +46,9 @@
     <div class="row">
         <div class="col-md-4 col-sm-5 col-xs-12  ">
                         <div class="phone-small">
-                                        <!-- ====== Start 无密码或者密码正确  ====== -->
+                <!-- ====== Start 无密码或者密码正确  ====== -->
                 <!-- ====== Start icon install btn ====== -->
                 <div class="install-btn" style="padding-top:90px;">
-                    
                     
                     
                     
@@ -193,12 +192,13 @@
                     <div id="uses_intro" class="col-md-10 col-md-offset-1" style="word-break:break-all;">
                         <div class="margin-bottom-40">
                             <h2>使用说明</h2>
-                            1. 进入“V5答题助手”，需要打开“机器人开关”和“答题助手浮动开关”开关，需要全托自动答题的还要打开“监听通知栏”开关。未根据引导成功设置“辅助服务”和“通知栏”权限的，可手动进入右上角菜单页的“打开辅助服务”，“设置悬浮窗权限”和“打开通知栏服务”检查对应服务是否被允许（魅族手机打开辅助服务需要在打开“打开辅助服务”后进入“无障碍”，再选择打开“答题助手”）。<br/>
+                            1. 进入“V5答题助手”，需要打开“机器人开关”和“答题助手浮动窗口”开关，需要全托自动答题的还要打开“监听通知栏”开关。未根据引导成功设置“辅助服务”和“通知栏”权限的，可手动进入右上角菜单页的“打开辅助服务”，“设置悬浮窗权限”和“打开通知栏服务”检查对应服务是否被允许（魅族手机打开辅助服务需要在打开“打开辅助服务”后进入“无障碍”，再选择打开“答题助手”）。<br/>
 							2. 开启对应答题平台的开关，答题开始前进入对应但直播答题平台App，确保浮动窗口开启，且对应浮动窗口正确显示答题平台的图标，并且为彩色（黑白色调说明答题助手为关闭状态），即可开始答题。<br/>
 							3. 确保“V5答题助手”在后台运行，不被系统的锁屏清理以及省电优化给关闭掉。
 							<br/>（例如：
 								<br/>&nbsp;&nbsp;&nbsp;&nbsp;魅族：手机管家->省电模式->待机耗电管理->选择保持运行的耗电应用开启“V5答题助手”的对应开关；
-								<br/>&nbsp;&nbsp;&nbsp;&nbsp;三星：设置->电池->应用程序省电[详情]->找到"V5答题助手"并点击选择“已禁用”选项）<br/>
+                                <br/>&nbsp;&nbsp;&nbsp;&nbsp;三星：设置->电池->应用程序省电[详情]->找到"V5答题助手"并点击选择“已禁用”选项
+                                <br/>）<br/>
                             4. 仅支持Android 4.3及以上系统。<br/>
                             <p style="color:darkgray;padding: 4px 0;">注：西瓜视频“百万英雄”暂不支持全自动托管模式，但可以在浮动窗口查看推荐答案，开启V5答题助手依然无法查看答案时需要关闭西瓜视频并重新进入。</p>
                         </div>
@@ -254,10 +254,14 @@ var aType = 'android',
     unableDownload = '应用提供者未进行实名认证，无法下载';
 
 function install_v5wxbot() {
-    window.location.href = "./download/QuizAssistant.apk";
+    window.location.href = "http://desk.v5kf.com/app/quizassistant/download/QuizAssistant.apk";
    	if (is_weixin()) {
    		alert("若使用微信打开链接,需要点击右上角选择[在浏览器打开]");
-   	}
+   	} else {
+        setTimeout(function() {
+            alert("若无法下载，需要点击右上角选择[在浏览器打开]");
+        }, 5000)
+    }
 }
 
 function is_weixin(){
