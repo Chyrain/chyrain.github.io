@@ -2,11 +2,14 @@
 <version>1.1.3</version>
 <versionCode>13</versionCode>
 <updateTime>2018-02-05 11:12</updateTime>
-<downloadURL>http://desk.v5kf.com/app/quizassistant/download/v5qa_v1.1.3_build13_open_download.apk</downloadURL>
-<qq_download>http://desk.v5kf.com/app/quizassistant/download/v5qa_v1.1.3_build13_qq_download.apk</qq_download>
-<qihoo360>http://desk.v5kf.com/app/quizassistant/download/v5qa_v1.1.3_build13_qihoo360.apk</qihoo360>
-<wandoujia>http://desk.v5kf.com/app/quizassistant/download/v5qa_v1.1.3_build13_wandoujia.apk</wandoujia>
+<downloadURL>http://desk.v5kf.com/app/quizassistant/download/v5qa_build13_113_5_open_download_sign.apk</downloadURL>
+<qq_download>http://desk.v5kf.com/app/quizassistant/download/v5qa_build13_113_9_qq_download_sign.apk</qq_download>
+<qihoo360>http://desk.v5kf.com/app/quizassistant/download/v5qa_build13_113_8_qihoo360_sign.apk</qihoo360>
+<wandoujia>http://desk.v5kf.com/app/quizassistant/download/v5qa_build13_113_6_wandoujia_sign.apk</wandoujia>
+<huawei>http://desk.v5kf.com/app/quizassistant/download/v5qa_build13_113_2_huawei_sign.apk</huawei>
+<baidu>http://desk.v5kf.com/app/quizassistant/download/v5qa_build13_113_10_baidu_sign.apk</baidu>
+<xiaomi>http://desk.v5kf.com/app/quizassistant/download/v5qa_build13_113_7_xiaomi_sign.apk</xiaomi>
 <displayTitle><![CDATA[【版本更新（1.1.3）】]]></displayTitle>
 <displayMessage><![CDATA[新版特性：<br>&nbsp;&nbsp;1.支持全自动托管答题]]></displayMessage>
-<appName>v5qa_v1.1.3_build13</appName>
+<appName>v5qa_build13_113</appName>
 <level>3</level>
