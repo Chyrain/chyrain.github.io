@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<version>1.1.4</version>
-<versionCode>14</versionCode>
-<updateTime>2018-02-06 11:12</updateTime>
-<downloadURL>http://desk.v5kf.com/app/quizassistant/download/v5qa_build14_114_5_open_download_sign.apk</downloadURL>
-<qq_download>http://desk.v5kf.com/app/quizassistant/download/v5qa_build14_114_3_qq_download_sign.apk</qq_download>
-<qihoo360>http://desk.v5kf.com/app/quizassistant/download/v5qa_build14_114_2_qihoo360_sign.apk</qihoo360>
-<wandoujia>http://desk.v5kf.com/app/quizassistant/download/v5qa_build14_114_4_wandoujia_sign.apk</wandoujia>
-<huawei>http://desk.v5kf.com/app/quizassistant/download/v5qa_build14_114_8_huawei_sign.apk</huawei>
-<baidu>http://desk.v5kf.com/app/quizassistant/download/v5qa_build14_114_7_baidu_sign.apk</baidu>
-<xiaomi>http://desk.v5kf.com/app/quizassistant/download/v5qa_build14_114_6_xiaomi_sign.apk</xiaomi>
-<displayTitle><![CDATA[【版本更新（1.1.4）】]]></displayTitle>
-<displayMessage><![CDATA[新版特性：<br>&nbsp;&nbsp;1.支持全自动托管答题<br>&nbsp;&nbsp;2.优化一些问题<br>]]></displayMessage>
-<appName>v5qa_build14_114</appName>
+<version>1.1.5</version>
+<versionCode>15</versionCode>
+<updateTime>2018-02-06 16:25</updateTime>
+<huawei>http://desk.v5kf.com/app/quizassistant/download/v5qa_build15_115_8_huawei_sign.apk</huawei>
+<baidu>http://desk.v5kf.com/app/quizassistant/download/v5qa_build15_115_7_baidu_sign.apk</baidu>
+<xiaomi>http://desk.v5kf.com/app/quizassistant/download/v5qa_build15_115_6_xiaomi_sign.apk</xiaomi>
+<downloadURL>http://desk.v5kf.com/app/quizassistant/download/v5qa_build15_115_5_open_download_sign.apk</downloadURL>
+<wandoujia>http://desk.v5kf.com/app/quizassistant/download/v5qa_build15_115_4_wandoujia_sign.apk</wandoujia>
+<qq_download>http://desk.v5kf.com/app/quizassistant/download/v5qa_build15_115_3_qq_download_sign.apk</qq_download>
+<qihoo360>http://desk.v5kf.com/app/quizassistant/download/v5qa_build15_115_2_qihoo360_sign.apk</qihoo360>
+<displayTitle><![CDATA[【版本更新（1.1.5）】]]></displayTitle>
+<displayMessage><![CDATA[新版特性：<br>&nbsp;&nbsp;1.增加全自动托管答题快捷开关<br>&nbsp;&nbsp;2.优化一些问题<br>]]></displayMessage>
+<appName>v5qa_build15_115</appName>
 <level>3</level>
