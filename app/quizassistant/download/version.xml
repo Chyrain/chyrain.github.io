@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<version>1.1.6</version>
-<versionCode>16</versionCode>
-<updateTime>2018-02-06 17:25</updateTime>
-<huawei>http://desk.v5kf.com/app/quizassistant/download/v5qa_build16_116_8_huawei_sign.apk</huawei>
-<baidu>http://desk.v5kf.com/app/quizassistant/download/v5qa_build16_116_7_baidu_sign.apk</baidu>
-<xiaomi>http://desk.v5kf.com/app/quizassistant/download/v5qa_build16_116_6_xiaomi_sign.apk</xiaomi>
-<downloadURL>http://desk.v5kf.com/app/quizassistant/download/v5qa_build16_116_5_open_download_sign.apk</downloadURL>
-<wandoujia>http://desk.v5kf.com/app/quizassistant/download/v5qa_build16_116_4_wandoujia_sign.apk</wandoujia>
-<qq_download>http://desk.v5kf.com/app/quizassistant/download/v5qa_build16_116_3_qq_download_sign.apk</qq_download>
-<qihoo360>http://desk.v5kf.com/app/quizassistant/download/v5qa_build16_116_2_qihoo360_sign.apk</qihoo360>
-<displayTitle><![CDATA[【版本更新（1.1.6）】]]></displayTitle>
-<displayMessage><![CDATA[新版特性：<br>&nbsp;&nbsp;1.增加全自动托管答题快捷开关<br>&nbsp;&nbsp;2.优化一些问题<br>]]></displayMessage>
-<appName>v5qa_build16_116</appName>
-<level>3</level>
+<version>1.1.7</version>
+<versionCode>17</versionCode>
+<updateTime>2018-02-07 17:05</updateTime>
+<huawei>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.7.apk</huawei>
+<baidu>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.7.apk</baidu>
+<xiaomi>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.7.apk</xiaomi>
+<downloadURL>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.7.apk</downloadURL>
+<wandoujia>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.7.apk</wandoujia>
+<qq_download>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.7.apk</qq_download>
+<qihoo360>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.7.apk</qihoo360>
+<displayTitle><![CDATA[【版本更新（1.1.7）】]]></displayTitle>
+<displayMessage><![CDATA[新版特性：<br>&nbsp;&nbsp;1.修复2月6号出现的无法获取答案的bug<br>&nbsp;&nbsp;2.优化一些问题<br>]]></displayMessage>
+<appName>QuizAssistantAdp1.1.7.apk</appName>
+<level>4</level>
