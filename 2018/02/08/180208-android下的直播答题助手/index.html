@@ -18,7 +18,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>前端长列表如何流畅高效渲染 | Chyrain</title>
+  <title>javascript中void的作用 | Chyrain</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -210,59 +210,59 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2017-12-25T02:33:12.000Z" itemprop="datePublished">
-          2017-12-25
+      <time datetime="2018-02-08T10:33:22.000Z" itemprop="datePublished">
+          2018-02-08
       </time>
     
 </span>
-                <h1>前端长列表如何流畅高效渲染</h1>
+                <h1>javascript中void的作用</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>长列表渲染节点数由于较多，直接渲染肯定会造成页面的卡顿，一种方式是滚动加载（infinite scrool），并非一次性渲染全部列表，而在滚动到页面底部的时候，再去加载剩余的数据，二是通过合理的逻辑来限制仅渲染可视区域部分；</p>
-<p>当然方式一需要产品设计允许，毕竟滚动到底步才加载的方式对体验有一定折损，而方式二就需要比较复杂的逻辑了。</p>
-<p>对于方式二实现的一些思路：</p>
-<ul>
-<li>首先是优化列表项，每个列表项内的节点数尽量少；</li>
-<li>不在页面显示区域的项目需要将列表高度撑起，不用渲染，只需要一个占位元素，高度为全部列表项加载完的scrollHeight<blockquote>
-<p>令列表中的每个元素的高度是 <code>itemHeight</code>， 列表高度是 <code>clientHeight</code>，列表一共10000条数据，总高度为 itemheight * 10000，可视区域列表项数量为 <code>visibleCount = Math.ceil(clientHeight / itemHeight)</code>.</p>
+      		<p><strong> Android下的直播答题助手 </strong></p>
+<blockquote>
+<p>文末有<a href="https://chyrain.github.io/app/quizassistant/appp.html">下载链接</a></p>
 </blockquote>
-</li>
-<li>计算当前在可视区域的元素数据索引并渲染<blockquote>
-<p>通过onScroll监听当前滚动位置 <code>scrollTop</code>，计算得到当前位置列表位置序号<code>var start = Math.floor(scrollTop / itemHeight)</code>，<code>var end = start + visibleCount</code>， start 和 end 分别记录可见区域开始和结束位置索引；然后截取数据 <code>data.slice(start, end)}</code> 渲染到列表上，这样每次仅渲染 visibleCount 数量节点，大大提高渲染效率</p>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>从出现到引爆仅仅半个月时间，直播答题赢奖金的模式已经迅速进入百万级——单场在线人数破百万、奖金额度破百万。各大平台纷纷入场，用提升奖金额度、拉明星助战等方式争夺用户。直播答题怎么玩？普通用户真能赚到钱吗？于是乎，我就下载了冲顶大会、芝士超人、西瓜视频（百万英雄）、花椒直播（百万赢家）、黄金十秒等平台的直播答题App，经过一天的来回奋战，真是一番操作猛如虎，结果答题只得两块五。然后，便看到了直播平台上评论里的“用外挂”字眼，百度搜索以下赫然出来一个“简单搜索”高居搜索排行榜榜首，这个这么高调的外挂。。。百度也是不遗余力地在推广啊，随之而来的是一篇文章说是从王小川朋友圈晒出的截图：</p>
+<p>搜狗CEO王小川在朋友圈表示，“搜狗借助汪仔在”一站到底”的OCR和答题技术，帮助大家冲顶各大问答平台。“这套技术不需要问答数据库，通过机器搜索语义以及搜索并给出唯一答案。”使得周鸿祎不禁发出评论，“我们撒币，你们作弊，太流氓了”。</p>
+<p>于是乎终于知道我为什么答题错误那么多（实话说我也不笨，但是问题覆盖范围实在太广，尤其是一些明星、美妆之类的问题都有，我一个直男程序员哪里会这么多。。。），却有如此多人胜出赢得奖金了，原来全是考“答题助（wai）手（gua）”的呀。</p>
+<p>但是，用过这类答题助手的网友应该都了解，这样一边看答案一边答题的模式，是需要两个手机的，并且答案出来前，眼睛要来回盯着屏幕，一边看题目，一遍观察答案是否出来了，不免过于繁琐，而且也不是人人都有两个手机，即便电脑用模拟器也需要电脑实时在身边才行。对于这个痛点，不得不舍弃了好多场次的答题。</p>
+<p>于是乎，作为一个”有经验“的开发者，首先想到的就是能不能想办法获取到某某答题助手的实时答案，然后使用Android的辅助服务功能和桌面悬浮窗，实现一个实时在悬浮窗里显示答案的App，从而当我切换到不同答题App自动显示对应的答案。参考一年多前做的一个微信红包助手的经验，想了想，这个应该不难吧，于是就动手了。</p>
+<p>功夫不负有心人，利用一两个星期的工作之余，终于把这个答题工（wai）具（gua）完成了，自己使用了几天，效果还不错，有些题也会答错甚至答不上，但总体正确率比我自己答高多了。当然，中间可以说是遇坑不少啊😂，首先需要印证我的想法可行性的就是如何获取答案，利用我的前端和网络基础知识，使出了洪荒之力👊，花了一个下午时间终于破解成功某某助手获取答案的接口（后来接口发生过变动，导致功能一度中断，还好我又给找回来了。这两天准备回老家过年了，这个过程等有时间再写篇文章说说吧），现在已经可以自由调用啦。接下来就比较简单了，就是利用apktool逆向各大直播答题App，获得他们的包名和直播页面的activity名称，并用Android Device Monitor摸清了题目和答案选项对应的layout结构和id，用在辅助服务上（和抢红包工具一样的原理）实现了进入和切换答题App的判断，并且实现了全自动托管答题功能（这个功能比较bug，本来是因为没时间盯着屏幕答题验证答题正确率，于是做了自动选择答案来做自动化测试的，发现全靠机器人的答题结果正确率并不能保证得到奖金的程度，但是想想还是留着吧，应该有人会喜欢😍）。因为界面比较粗糙，这段时间一直是我自己在用，但已经有朋友看到也想要装一个，于是稍微包装了一下，把它分享出来给大家吧，此处应该有掌声👏👏</p>
+<h2 id="V5答题助手介绍"><a href="#V5答题助手介绍" class="headerlink" title="V5答题助手介绍"></a>V5答题助手介绍</h2><blockquote>
+<p>你还在一边答题一遍搜答案？不！需！要！使用V5答题助手，悬浮窗口实时显示推荐答案，还能全自动托管帮您答题！<br>答题助手终极杀器，直播答题绝对神器，来不及解释了快上车！<br>V5答题助手是一款直播答题辅助工具软件，帮助使用者获取答案，通过浮动窗口实时获取答案。本软件仅供个人使用，全自动托管模式答题时会进行一些自动化操作（需要开启辅助功能和悬浮窗显示），答案来自AI机器人，准确率并非100%%，不涉及任何第三方软件接口，本软件无病毒、不收集用户隐私信息，只是由于投入比较多考虑加个小广告，大家别点就是了。</p>
 </blockquote>
-</li>
-<li>此时滚动起来后面的数据就看不见了，还需要优化滚动位置<blockquote>
-<p>给占位元素加上一个 <code>transform = `translate(0, ${fixedScrollTop}px)</code>，其中 <code>fixedScrollTop = scrollTop - scrollTop % 30</code>.</p>
-</blockquote>
-</li>
+<h2 id="最新版本1-1-8功能更新说明："><a href="#最新版本1-1-8功能更新说明：" class="headerlink" title="最新版本1.1.8功能更新说明："></a>最新版本1.1.8功能更新说明：</h2><ul>
+<li>开启浮动窗口，实时显示获取到的答案，支持平台：冲顶大会、芝士超人、西瓜视频（百万英雄）、花椒直播（百万赢家）、黄金十秒。</li>
+<li>开启全自动托管答题时，根据获取的答案自动点击提交。</li>
+<li>收到答题开始通知自动打开直播页面答题（前提是已经开启并允许直播答题软件的通知权限）。</li>
+<li>增加答不上时文字提示，修复已知bug。</li>
 </ul>
-<p>此方法在某些scroll事件支持不好的浏览器下可能存在问题，另外还有限制列表项高度是固定的</p>
-<p>具体实现可查看<a href="https://jsfiddle.net/quvkwyqn/" target="_blank" rel="external">demo</a></p>
-<p><del>此外，还思考在快递滚动下是否可以再进一步优化性能，或许可能影响一点点视觉效果，比如：</del></p>
-<ul>
-<li><del>在快速滚动时，跳过中间滚动列表项的细节，只需渲染出大致的骨骼框架，减少需要渲染的节点数；</del></li>
-<li><del>通过判断滚动速度低于一定阈值时就需要渲染出可视区域的列表项的完整细节了；</del></li>
+<h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><ul>
+<li>进入“V5答题助手”，需要打开“机器人开关”和“答题助手浮动窗口”开关，需要全托自动答题的还要打开“监听通知栏”开关。未根据引导成功设置“辅助服务”和“通知栏”权限的，可手动进入右上角菜单页的“打开辅助服务”，“设置悬浮窗权限”和“打开通知栏服务”检查对应服务是否被允许（魅族手机打开辅助服务需要在打开“打开辅助服务”后进入“无障碍”，再选择打开“答题助手”；小米手机开启桌面悬浮窗权限需要点击进入应用信息页的“权限管理”，再找到底部的“显示悬浮窗”开启）。</li>
+<li>开启对应答题平台的开关，答题开始前进入对应但直播答题平台App，确保浮动窗口开启，且对应浮动窗口正确显示答题平台的图标，即可开始答题。</li>
+<li>浮动窗口显示左侧的图标为“全自动托管”快捷开关，开启后显示为彩色（黑白色调说明“全自动托管”为关闭状态）。</li>
+<li>确保“V5答题助手”在后台运行，不被系统的锁屏清理以及省电优化给关闭掉。 </li>
 </ul>
+<blockquote>
+<p>注：仅支持Android 4.3及以上系统。西瓜视频“百万英雄”暂不支持全自动托管模式（辅助服务无法工作，看来西瓜还是做了些处理的，最近忙就懒得处理了），但可以在浮动窗口查看推荐答案，开启V5答题助手依然无法查看答案时需要关闭西瓜视频并重新进入，西瓜视频答题中途不可退出进入其他答题平台，目前所支持平台中仅西瓜视频答题时需要注意此问题。</p>
+</blockquote>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="https://chyrain.github.io/app/quizassistant/appp.html">V5答题助手</a></p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="pagination" role="pagination">
     
-    <a class="pull-left" href="/2017/12/26/前端优化/" style="float: left;">
-        ← 前端优化
-    </a>
     
-    
-    <a class="pull-right" href="/2017/12/13/React开发工具库推荐/">
-        React开发工具库推荐 →
+    <a class="pull-right" href="/2018/01/12/180112-javascript中void的作用/">
+        javascript中void的作用 →
     </a>
     
 </nav>
 
         <div class="duoshuo">
-<div class="ds-thread" data-thread-key="2017/12/25/前端长列表如何流畅高效渲染/" data-title="前端长列表如何流畅高效渲染" data-url="https://chyrain.github.io/2017/12/25/前端长列表如何流畅高效渲染/"></div>
+<div class="ds-thread" data-thread-key="2018/02/08/180208-android下的直播答题助手/" data-title="javascript中void的作用" data-url="https://chyrain.github.io/2018/02/08/180208-android下的直播答题助手/"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"chyrain"};
 (function() {

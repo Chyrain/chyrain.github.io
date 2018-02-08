@@ -967,7 +967,7 @@ span.sb-caret { /* Caret Down */
 	margin-bottom: 20px;
 	display: inline-block;
 	padding: 14px;
-	font-family: sans-serif, 'Georgia', serif, Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial;
+	font-family: Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial;
 	font-style: italic;
 	font-size: 16px;
 }
