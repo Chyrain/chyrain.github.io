@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <version>1.1.10_r</version>
-<versionCode>20</versionCode>
+<versionCode>21</versionCode>
 <updateTime>2018-02-09 10:50</updateTime>
-<huawei>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10_r.apk</huawei>
-<baidu>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10_r.apk</baidu>
-<xiaomi>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10_r.apk</xiaomi>
-<downloadURL>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10_r.apk</downloadURL>
-<wandoujia>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10_r.apk</wandoujia>
-<qq_download>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10_r.apk</qq_download>
-<qihoo360>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10_r.apk</qihoo360>
+<huawei>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10_r1.apk</huawei>
+<baidu>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10_r1.apk</baidu>
+<xiaomi>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10_r1.apk</xiaomi>
+<downloadURL>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10_r1.apk</downloadURL>
+<wandoujia>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10_r1.apk</wandoujia>
+<qq_download>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10_r1.apk</qq_download>
+<qihoo360>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10_r1.apk</qihoo360>
 <displayTitle><![CDATA[【版本更新（1.1.10_r）】]]></displayTitle>
 <displayMessage><![CDATA[新版特性：<br><br>&nbsp;&nbsp;1.修复上一版本闪退bug<br><br>（若无法下载更新，打开“关于”->"应用官网"后点击右上角在浏览器打开即可下载）<br>]]></displayMessage>
-<appName>QuizAssistantAdp1.1.10_r.apk</appName>
+<appName>QuizAssistantAdp1.1.10_r1.apk</appName>
 <level>3</level>
