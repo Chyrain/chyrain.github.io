@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<version>1.1.11</version>
-<versionCode>22</versionCode>
-<updateTime>2018-02-09 16:10</updateTime>
-<huawei>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.11.apk</huawei>
-<baidu>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.11.apk</baidu>
-<xiaomi>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.11.apk</xiaomi>
-<downloadURL>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.11.apk</downloadURL>
-<wandoujia>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.11.apk</wandoujia>
-<qq_download>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.11.apk</qq_download>
-<qihoo360>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.11.apk</qihoo360>
-<displayTitle><![CDATA[【版本更新（1.1.11）】]]></displayTitle>
-<displayMessage><![CDATA[新版特性：<br><br>&nbsp;&nbsp;1.修复花椒直播卡顿问题，花椒直播目前不支持全自动托管<br><br>（若无法下载更新，打开“关于”->"应用官网"后点击右上角在浏览器打开即可下载）<br>]]></displayMessage>
-<appName>QuizAssistantAdp1.1.11.apk</appName>
+<version>1.2.0</version>
+<versionCode>23</versionCode>
+<updateTime>2018-02-09 23:10</updateTime>
+<huawei>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.0.apk</huawei>
+<baidu>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.0.apk</baidu>
+<xiaomi>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.0.apk</xiaomi>
+<downloadURL>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.0.apk</downloadURL>
+<wandoujia>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.0.apk</wandoujia>
+<qq_download>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.0.apk</qq_download>
+<qihoo360>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.0.apk</qihoo360>
+<displayTitle><![CDATA[【版本更新（1.2.0）】]]></displayTitle>
+<displayMessage><![CDATA[新版特性：<br><br>&nbsp;&nbsp;1.增加对优酷【疯狂夺金】和小猿搜题【知识英雄】的支持<br><br>（若无法下载更新，打开“关于”->"应用官网"后点击右上角在浏览器打开即可下载）<br>]]></displayMessage>
+<appName>QuizAssistantAdp1.2.0.apk</appName>
 <level>3</level>
