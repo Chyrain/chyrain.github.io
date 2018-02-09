@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<version>1.1.9</version>
-<versionCode>19</versionCode>
-<updateTime>2018-02-08 19:50</updateTime>
-<huawei>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.9.apk</huawei>
-<baidu>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.9.apk</baidu>
-<xiaomi>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.9.apk</xiaomi>
-<downloadURL>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.9.apk</downloadURL>
-<wandoujia>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.9.apk</wandoujia>
-<qq_download>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.9.apk</qq_download>
-<qihoo360>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.9.apk</qihoo360>
-<displayTitle><![CDATA[【版本更新（1.1.9）】]]></displayTitle>
-<displayMessage><![CDATA[新版特性「务必更新」：<br>&nbsp;&nbsp;1.紧急修复上一版本闪退bug<br><br>（若无法下载更新，打开“关于”->"应用官网"后点击右上角在浏览器打开即可下载）<br>]]></displayMessage>
-<appName>QuizAssistantAdp1.1.9.apk</appName>
+<version>1.1.10</version>
+<versionCode>20</versionCode>
+<updateTime>2018-02-09 10:50</updateTime>
+<huawei>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10.apk</huawei>
+<baidu>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10.apk</baidu>
+<xiaomi>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10.apk</xiaomi>
+<downloadURL>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10.apk</downloadURL>
+<wandoujia>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10.apk</wandoujia>
+<qq_download>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10.apk</qq_download>
+<qihoo360>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.1.10.apk</qihoo360>
+<displayTitle><![CDATA[【版本更新（1.1.10）】]]></displayTitle>
+<displayMessage><![CDATA[新版特性：<br>&nbsp;&nbsp;1.修复上一版本闪退bug<br><br>（若无法下载更新，打开“关于”->"应用官网"后点击右上角在浏览器打开即可下载）<br>]]></displayMessage>
+<appName>QuizAssistantAdp1.1.10.apk</appName>
 <level>3</level>
