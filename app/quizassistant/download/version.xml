@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<version>1.2.0</version>
-<versionCode>24</versionCode>
-<updateTime>2018-02-09 23:10</updateTime>
-<huawei>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.0_r.apk</huawei>
-<baidu>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.0_r.apk</baidu>
-<xiaomi>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.0_r.apk</xiaomi>
-<downloadURL>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.0_r.apk</downloadURL>
-<wandoujia>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.0_r.apk</wandoujia>
-<qq_download>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.0_r.apk</qq_download>
-<qihoo360>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.0_r.apk</qihoo360>
-<displayTitle><![CDATA[【版本更新（1.2.0_r）】]]></displayTitle>
-<displayMessage><![CDATA[新版特性：<br><br>&nbsp;&nbsp;1.修复完善对优酷【疯狂夺金】和小猿搜题【知识英雄】的支持<br><br>（若无法下载更新，打开“关于”->"应用官网"后点击右上角在浏览器打开即可下载）<br>]]></displayMessage>
-<appName>QuizAssistantAdp1.2.0_r.apk</appName>
+<version>1.2.1</version>
+<versionCode>25</versionCode>
+<updateTime>2018-02-11 20:25</updateTime>
+<huawei>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.1.apk</huawei>
+<baidu>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.1.apk</baidu>
+<xiaomi>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.1.apk</xiaomi>
+<downloadURL>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.1.apk</downloadURL>
+<wandoujia>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.1.apk</wandoujia>
+<qq_download>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.1.apk</qq_download>
+<qihoo360>http://desk.v5kf.com/app/quizassistant/download/QuizAssistantAdp1.2.1.apk</qihoo360>
+<displayTitle><![CDATA[【版本更新（1.2.1）】]]></displayTitle>
+<displayMessage><![CDATA[新版特性：<br><br>&nbsp;&nbsp;1.增加对淘宝【点题成金】的支持，修复完善对优酷【疯狂夺金】和小猿搜题【知识英雄】的支持<br><br>（若无法下载更新，打开“关于”->"应用官网"后点击右上角在浏览器打开即可下载）<br>]]></displayMessage>
+<appName>QuizAssistantAdp1.2.1.apk</appName>
 <level>3</level>
