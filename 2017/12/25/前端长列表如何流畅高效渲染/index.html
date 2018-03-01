@@ -233,7 +233,7 @@
 </blockquote>
 </li>
 <li>此时滚动起来后面的数据就看不见了，还需要优化滚动位置<blockquote>
-<p>给占位元素加上一个 <code>transform = `translate(0, ${fixedScrollTop}px)</code>，其中 <code>fixedScrollTop = scrollTop - scrollTop % 30</code>.</p>
+<p>给占位元素加上一个 <code>transform = `translate(0, ${fixedScrollTop}px)</code>，其中 <code>fixedScrollTop = scrollTop - scrollTop % itemHeight</code>.</p>
 </blockquote>
 </li>
 </ul>

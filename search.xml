@@ -35,7 +35,7 @@
 <li>确保“V5答题助手”在后台运行，不被系统的锁屏清理以及省电优化给关闭掉。 </li>
 </ul>
 <blockquote>
-<p>注：仅支持Android 4.3及以上系统。西瓜视频“百万英雄”暂不支持全自动托管模式（辅助服务无法工作，看来西瓜还是做了些处理的，最近忙就懒得处理了），但可以在浮动窗口查看推荐答案，开启V5答题助手依然无法查看答案时需要关闭西瓜视频并重新进入，西瓜视频答题中途不可退出进入其他答题平台，目前所支持平台中仅西瓜视频答题时需要注意此问题。</p>
+<p>注：仅支持Android 4.3及以上系统。西瓜视频“百万英雄”和花椒直播“百万赢家”暂不支持全自动托管模式（辅助服务无法工作，看来西瓜还是做了些处理的，最近忙就懒得处理了），但可以在浮动窗口查看推荐答案。开启V5答题助手依然无法查看答案时需要关闭西瓜视频并重新进入，西瓜视频答题中途不可退出进入其他答题平台，目前所支持平台中仅西瓜视频答题时需要注意此问题。</p>
 </blockquote>
 <h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="https://chyrain.github.io/app/quizassistant/appp.html">点我下载-V5答题助手</a></p>
 ]]></content>
@@ -164,7 +164,7 @@
 </blockquote>
 </li>
 <li>此时滚动起来后面的数据就看不见了，还需要优化滚动位置<blockquote>
-<p>给占位元素加上一个 <code>transform = `translate(0, ${fixedScrollTop}px)</code>，其中 <code>fixedScrollTop = scrollTop - scrollTop % 30</code>.</p>
+<p>给占位元素加上一个 <code>transform = `translate(0, ${fixedScrollTop}px)</code>，其中 <code>fixedScrollTop = scrollTop - scrollTop % itemHeight</code>.</p>
 </blockquote>
 </li>
 </ul>
