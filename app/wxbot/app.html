@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>V5智能助手</title>
+    <meta name="keywords" content="抢红包,微信,智能机器人">
+    <meta name="description" content="微信红包提醒，自动抢红包，让你的小伙伴们惊讶吧！">
+    <meta property="og:type" content="webpage">
+    <meta property="og:url" content="https://chyrain.duapp.com/app/wxbot/app.html">
+    <meta property="og:title" content="V5智能助手">
+    <meta property="og:description" content="微信红包提醒，自动抢红包，让你的小伙伴们惊讶吧！">
+    <meta name="apple-mobile-web-app-title" content="V5智能助手">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no minimal-ui">
+
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="https://static.pgyer.com/static-20170105/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://static.pgyer.com/static-20170105/assets/css/style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="https://static.pgyer.com/static-20170105/assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="https://static.pgyer.com/static-20170105/assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://static.pgyer.com/static-20170105/assets/plugins/flexslider/flexslider.css">
+    <link rel="stylesheet" href="https://static.pgyer.com/static-20170105/assets/plugins/bxslider/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://static.pgyer.com/static-20170105/assets/plugins/horizontal-parallax/css/horizontal-parallax.css">
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="https://static.pgyer.com/static-20170105/assets/css/themes/default.css" id="style_color">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="https://static.pgyer.com/static-20170105/assets/css/custom.css">
+    <link rel="stylesheet" href="https://static.pgyer.com/static-20170105/assets/css/menu.css">
+
+    <link rel="stylesheet" href="https://static.pgyer.com/static-20170105/assets/css/viewFashion.css">
+    <link rel="stylesheet" href="https://static.pgyer.com/static-20170105/assets/css/appView.css">
+</head>	
+
+<body style="">
+<!-- wechat share icon -->
+<div style="display:none;">
+    <img src="https://o1wh05aeh.qnssl.com/image/view/app_icons/640c14ba95b78188b4f47f797359e0a7/f300" onerror="javascript:this.src=&#39;http://chyrain.duapp.com/app/wxbot/img/launcher.png&#39;;">
+</div>
+
+<div class="view-fashion-body">
+<div class="container view-fashion-content">
+    <div class="row">
+        <div class="col-md-4 col-sm-5 col-xs-12  ">
+                        <div class="phone-small">
+                                        <!-- ====== Start 无密码或者密码正确  ====== -->
+                <!-- ====== Start icon install btn ====== -->
+                <div class="install-btn" style="padding-top:90px;">
+                    
+                    
+                    
+                    
+                    <div id="" class="view row">    
+                                                <div class="span12" style="text-align:center;">
+                                                        <a href="javascript:void(0);" onclick="javascript:install();"><img src="https://o1wh05aeh.qnssl.com/image/view/app_icons/640c14ba95b78188b4f47f797359e0a7/120" class="appicon" onerror="javascript:this.src=&#39;http://chyrain.duapp.com/app/wxbot/img/launcher.png&#39;;"></a>
+                                                        <div>
+                            </div>
+                        </div>
+                                            </div>
+
+                    <div id="" class="view row" style="margin-top:30px;">    
+
+                        
+                <div class="span12 margin-bottom-20" style="text-align:center;">
+                       <div class="spinner">
+            <div id="showtext">正在安装，请按 Home 键在桌面查看</div>
+            <div class="loading"></div>
+                        <a href="javascript:void(0);" onclick="javascript:install_v5wxbot();" id="down_load" class="btn-u btn-u-lg"><i class="fa fa-download"></i> 点击安装</a>
+                       </div>
+
+                 </div>
+        
+                                                <div class="span12 margin-bottom-20" style="text-align:center;display:none;">
+                            
+                           <div class="spinner">
+                             <div id="showtext">正在安装，请按 Home 键在桌面查看</div>
+                             <div class="loading"></div>
+                               <a href="javascript:void(0);" id="down_load" onclick="javascript:install_v5wxbot();" class="btn-u btn-u-lg install-a"> 点击安装</a>
+                           </div>
+                                                 </div>
+                        
+                        <div class="span12 margin-bottom-20" style="text-align:center;">
+                                                            <span class="">适用于Android设备</span>
+                                                                                </div>
+                                            </div>
+                </div>
+                <!-- ====== End icon install btn ====== -->
+                <!-- ====== Start qrcode ======== -->
+                <div id="scan-qr" class="view row margin-bottom-30" style="padding-left:0px;padding-right:0px;">    
+                    <div class="span12" style="text-align:center;">
+                        <div class="row margin-bottom-10">
+                                <img class="img-qr " src="./img/qr_code_m.png">
+                        </div>
+                        <div class="row margin-bottom-10">
+                            <span>扫描二维码安装</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ====== End qrcode ======== -->
+                <!-- ====== End 无密码或者密码正确 dfasdfasdfsa f ====== -->
+                                    </div>
+            <!-- ===== Start appStore ======== -->
+                        <!-- ===== End appStore ======== -->
+            
+
+        </div>
+                        <div class="col-md-8 col-md-offset-0 col-sm-7 col-xs-12 app-info">
+                <!--=== Breadcrumbs ===-->
+                <div class="row view-fashion-app-info content-right">
+                    <div class="col-md-10 col-md-offset-1 ">
+                        <h1 class="pull-left app-name">V5智能助手</h1>
+                    </div>
+                </div>
+                <div class="row view-fashion-app-info ">
+                    <div class="col-md-10 col-md-offset-1 ">
+                        <ul class="pull-left breadcrumb" style="padding-left: 0px;padding-top:0px;">
+                                                    <li>版本：1.1 (build 1)</li>
+                            <li>大小：3 MB</li>
+                                                    <li>更新于：2017/01/06</li>
+                        </ul>
+                    </div>
+                </div>
+            <!--=== End Breadcrumbs ===-->
+            <!-- Start content -->
+            
+            <!-- ===== End appStore ======== -->
+            <!--=== Content Part ===-->
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1" style="word-break:break-all;">
+                        <div class="margin-bottom-40">
+                            <h2>更新说明</h2>
+                            1.使用手机时，自动识别微信通知，快速抢红包<br>
+                            2.屏幕未解锁，发出红包提醒<br>
+                            3.取消屏幕密码，息屏也能自动抢红包                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1" style="word-break:break-all;">
+                        <div class="margin-bottom-40">
+                            <h2>应用介绍</h2>
+                            微信红包提醒，自动抢红包，让你的小伙伴们惊讶吧！<br>
+注：本软件仅供学习使用，完全模拟人工操作，抢红包速度取决于你手机的性能与网络，不涉及任何第三方软件接口，本软件无病毒、不收集用户隐私信息，禁止使用本软件参与赌博活动。一切因使用本软件造成的任何后果，本软件责任人概不负责，亦不承担任何法律责任!<br>
+本应用源于codyboy的qianghongbao(github)项目，经过改进和再次开发以适应当前版本的微信，不做任何盈利性目的，特此声明，同时感谢原作者，如有侵权请联系客服告知。                        </div>
+                    </div>
+                </div>
+                
+                                                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="margin-bottom-40">
+                            <h2>应用截图</h2>
+                            <div class="table-responsive" style="border:none; overflow:auto;">
+                                <table class="table" style="margin-bottom:0;">
+                                    <tbody><tr>
+                                                                                    <td class="text-center" width="20%" style="border:none;">
+                                                                                                                                                <div style="">
+                                                    <img src="https://o1whyeemo.qnssl.com/image/view/app_screenshots/8203fe13686fd1d895df8c49a90f0f01/528" style="width:230px;">
+                                                </div>
+                                                                                            </td>
+                                                                                    <td class="text-center" width="20%" style="border:none;">
+                                                                                                                                                <div style="">
+                                                    <img src="https://o1whyeemo.qnssl.com/image/view/app_screenshots/951231aa84c83e63a07d61280a7d185c/528" style="width:230px;">
+                                                </div>
+                                                                                            </td>
+                                                                                    <td class="text-center" width="20%" style="border:none;">
+                                                                                                                                                <div style="">
+                                                    <img src="https://o1whyeemo.qnssl.com/image/view/app_screenshots/8ad3646ccd7640682435b3c74ee80f8e/528" style="width:230px;">
+                                                </div>
+                                                                                            </td>
+                                                                                    <td class="text-center" width="20%" style="border:none;">
+                                                                                                                                                <div style="">
+                                                    <img src="https://o1whyeemo.qnssl.com/image/view/app_screenshots/7f6d4800854a105dc13330974fc07be6/528" style="width:230px;">
+                                                </div>
+                                                                                            </td>
+                                                                                    <td class="text-center" width="20%" style="border:none;">
+                                                                                                                                                <div style="">
+                                                    <img src="https://o1whyeemo.qnssl.com/image/view/app_screenshots/1932dde59ffcb7319e41e27198bf3efc/528" style="width:230px;">
+                                                </div>
+                                                                                            </td>
+                                                                            </tr>
+                                </tbody></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="uses_intro" class="col-md-10 col-md-offset-1" style="word-break:break-all;">
+                        <div class="margin-bottom-40">
+                            <h2>使用说明</h2>
+                            1. 进入“V5红包助手”，需要打开“微信”开关和“快速监听通知栏”开关，并进入右上角菜单页的“打开辅助服务”和“打开通知栏服务”检查对应服务是否被允许（魅族手机打开辅助服务需要在打开“打开辅助服务”后进入“无障碍”，再选择打开“V5红包助手”）。<br/>
+							2. 进入微信，确保 微信 -> 我 -> 设置 -> 新消息提醒 -> 通知显示消息详情保持打开状态，且红包所在群聊不能开启消息免打扰。<br/>
+							3. 确保V5红包助手处于运行状态，不被系统后台清理，各系统手机设置不同，一般在省电管理中可以找到对应设置项。
+							<br/>（例如：
+								<br/>&nbsp;&nbsp;&nbsp;&nbsp;魅族：手机管家->省电模式->待机耗电管理->选择保持运行的耗电应用开启“V5红包助手”的对应开关；
+								<br/>&nbsp;&nbsp;&nbsp;&nbsp;三星：设置->电池->应用程序省电[详情]->找到"V5红包助手"并点击选择“已禁用”选项）<br/>
+							4. 仅支持Android 4.3及以上系统。                   
+                        </div>
+                    </div>
+                </div>
+             <!--/container-->	 	
+            <!--=== End Content Part ===-->
+                        <!-- End content  -->
+        </div>
+
+    </div>
+
+</div>
+</div>
+<div style="padding-left:15px;padding-right:15px;">
+</div>
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="https://static.pgyer.com/static-20170105/assets/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://static.pgyer.com/static-20170105/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://static.pgyer.com/static-20170105/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://static.pgyer.com/static-20170105/assets/plugins/sky-forms/version-2.0.1/js/jquery.validate.min.js"></script>
+<!--[if lt IE 9]>
+<script src="https://static.pgyer.com/static-20170105/assets/plugins/respond.js"></script>
+<![endif]-->    
+<!-- JS Page Level -->
+<script type="text/javascript">
+var aType = 'android',
+    aKey = '4a3097b142bdee45174637fdab0c0d03',
+    submiting = '请稍后...',
+    submitText = '立即进入',
+    isMobileRequest = '',
+    askBrowserAlert = '请在手机上使用浏览器打开本页面，或者扫描下面的二维码，即可安装',
+    forIosAlert = '您的手机是Android系统，无法安装iOS应用';
+    forAndroidAlert = '您的手机是iOS系统，无法安装Android应用';
+    isWechatRequest = '',
+    reminderWechatContent = '请点击微信右上角按钮，然后在弹出的菜单中，点击在浏览器中打开，即可安装',
+    isQQRequest = '',
+    reminderQQContent = '请点击QQ右上角按钮，然后在弹出的菜单中，点击在浏览器中打开，即可安装',
+    isUCRequest = '',
+    reminderUCContent = '您当前使用的是 UC 浏览器，该浏览器不支持安装App。请在浏览器中打开，即可安装',
+    isWeiboRequest = '',
+    reminderWeiboContent = '请点击微博右上角按钮，然后在弹出的菜单中，点击在浏览器中打开，即可安装',
+    browseType = 'other',
+    appInstallPasswordAlert = '请输入密码',
+    appStoreUrl = '',
+    reminderWechatDownloadContent = '请点击微信右上角按钮，然后在弹出的菜单中，点击在浏览器中打开，即可下载',
+    reminderUCDownloadContent = '您当前使用的是 UC 浏览器，该浏览器不支持安装App。请在浏览器中打开，即可下载',
+    reminderWeiboDownloadContent = '请点击微博右上角按钮，然后在弹出的菜单中，点击在浏览器中打开，即可下载',
+    reminderQQDownloadContent = '请点击QQ右上角按钮，然后在弹出的菜单中，点击在浏览器中打开，即可下载',
+    downloadOnlyForCertification = 1,
+    userIsCertification = false,
+    isIOS = 0,
+    unableDownload = '应用提供者未进行实名认证，无法下载';
+
+function install_v5wxbot() {
+    window.location.href = "http://www.v5kf.com/app/wxbot/V5WxBot.apk";
+   	if (is_weixin()) {
+   		alert("若使用微信打开链接,需要点击右上角选择[在浏览器打开]");
+   	}
+}
+
+function is_weixin(){
+	var ua = navigator.userAgent.toLowerCase();
+	if(ua.match(/MicroMessenger/i)=="micromessenger") {
+		return true;
+ 	} else {
+		return false;
+	}
+}
+</script>
+
+
+	<div style="display:none">
+		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261114638'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1261114638' type='text/javascript'%3E%3C/script%3E"));</script>
+	</div>
+</body></html>

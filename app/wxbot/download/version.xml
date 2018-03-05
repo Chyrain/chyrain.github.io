@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<version>2.0.10</version>
+<versionCode>40</versionCode>
+<updateTime>2016-08-29 15:12</updateTime>
+<downloadURL>http://chat.v5kf.com/app/download/v5kf_android_v2.0.10_build40_open_download.apk</downloadURL>
+<qq_download>http://chat.v5kf.com/app/download/v5kf_android_v2.0.10_build40_qq_download.apk</qq_download>
+<qihoo360>http://chat.v5kf.com/app/download/v5kf_android_v2.0.10_build40_qihoo360.apk</qihoo360>
+<wandoujia>http://chat.v5kf.com/app/download/v5kf_android_v2.0.10_build40_wandoujia.apk</wandoujia>
+<displayTitle><![CDATA[【版本更新（2.0.10）】]]></displayTitle>
+<displayMessage><![CDATA[更新内容：<br>&nbsp;&nbsp;1.修复图片查看导致崩溃问题]]></displayMessage>
+<appName>v5kf_android_v2.0.10_build40</appName>
+<level>0</level>
